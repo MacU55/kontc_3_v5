@@ -25,6 +25,8 @@ namespace prog_kontc_3_v5
 
         private void Kontc_3_Load(object sender, EventArgs e)
         {
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "kontc_3DataSet.productProizvoditeli". При необходимости она может быть перемещена или удалена.
+            this.productProizvoditeliTableAdapter.Fill(this.kontc_3DataSet.productProizvoditeli);
             // TODO: данная строка кода позволяет загрузить данные в таблицу "kontc_3DataSet.zakupki". При необходимости она может быть перемещена или удалена.
             this.zakupkiTableAdapter.Fill(this.kontc_3DataSet.zakupki);
             // TODO: данная строка кода позволяет загрузить данные в таблицу "kontc_3DataSet.prodazhi". При необходимости она может быть перемещена или удалена.

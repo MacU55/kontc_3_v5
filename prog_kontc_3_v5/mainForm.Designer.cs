@@ -35,20 +35,10 @@
             this.razrab = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.grp_productsSearch = new System.Windows.Forms.GroupBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.productsBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.txbx_search_product_name = new System.Windows.Forms.TextBox();
             this.txtbox_ProductName = new System.Windows.Forms.TextBox();
             this.grp_Zakupki = new System.Windows.Forms.GroupBox();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
-            this.idzakupkaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.idproductDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.idpostavshikDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dateZakupkaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.priceProductZakupkaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.kolvoProductZakupkaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.priceSummaZakupkaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.priceProductFactorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fKzakupkiidproductsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.productsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.grp_Products = new System.Windows.Forms.GroupBox();
@@ -72,13 +62,6 @@
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.grp_Prodazhi = new System.Windows.Forms.GroupBox();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.idprodazhaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.idproductDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.idpokupatelDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dateSaleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.priceProductProdazhaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.kolvoProductProdazhaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.priceSummaProdazhaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fKprodazhiidproductsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tabPage3 = new System.Windows.Forms.TabPage();
@@ -92,6 +75,27 @@
             this.zakupkiTableAdapter = new prog_kontc_3_v5.kontc_3DataSetTableAdapters.zakupkiTableAdapter();
             this.tabPage7 = new System.Windows.Forms.TabPage();
             this.button1 = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.idprodazhaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idproductDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idpokupatelDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dateSaleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.priceProductProdazhaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.kolvoProductProdazhaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.priceSummaProdazhaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.productProizvoditeliBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.productProizvoditeliTableAdapter = new prog_kontc_3_v5.kontc_3DataSetTableAdapters.productProizvoditeliTableAdapter();
+            this.idzakupkaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idpostavshikDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idproductDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dateZakupkaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.priceProductZakupkaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.kolvoProductZakupkaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.priceSummaZakupkaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.priceProductFactorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.textBox3 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kontc_3DataSet)).BeginInit();
             this.razrab.SuspendLayout();
@@ -112,6 +116,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.prodazhiBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kontc_3DataSet1)).BeginInit();
             this.tabPage7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.productProizvoditeliBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // bindingSource1
@@ -156,57 +161,40 @@
             // 
             // grp_productsSearch
             // 
+            this.grp_productsSearch.Controls.Add(this.textBox3);
             this.grp_productsSearch.Controls.Add(this.comboBox1);
-            this.grp_productsSearch.Controls.Add(this.txbx_search_product_name);
+            this.grp_productsSearch.Controls.Add(this.textBox2);
+            this.grp_productsSearch.Controls.Add(this.textBox1);
             this.grp_productsSearch.Controls.Add(this.txtbox_ProductName);
+            this.grp_productsSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.grp_productsSearch.Location = new System.Drawing.Point(589, 31);
             this.grp_productsSearch.Name = "grp_productsSearch";
-            this.grp_productsSearch.Size = new System.Drawing.Size(386, 253);
+            this.grp_productsSearch.Size = new System.Drawing.Size(332, 344);
             this.grp_productsSearch.TabIndex = 5;
             this.grp_productsSearch.TabStop = false;
-            this.grp_productsSearch.Text = "Поиск товаров";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.DataSource = this.productsBindingSource1;
-            this.comboBox1.DisplayMember = "nameProduct";
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(226, 78);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 2;
+            this.grp_productsSearch.Text = "Внесение товара в базу";
             // 
             // productsBindingSource1
             // 
             this.productsBindingSource1.DataMember = "products";
             this.productsBindingSource1.DataSource = this.bindingSource1;
             // 
-            // txbx_search_product_name
-            // 
-            this.txbx_search_product_name.BackColor = System.Drawing.Color.LightGray;
-            this.txbx_search_product_name.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txbx_search_product_name.Location = new System.Drawing.Point(148, 28);
-            this.txbx_search_product_name.Multiline = true;
-            this.txbx_search_product_name.Name = "txbx_search_product_name";
-            this.txbx_search_product_name.Size = new System.Drawing.Size(208, 33);
-            this.txbx_search_product_name.TabIndex = 1;
-            // 
             // txtbox_ProductName
             // 
             this.txtbox_ProductName.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtbox_ProductName.Location = new System.Drawing.Point(18, 28);
+            this.txtbox_ProductName.Location = new System.Drawing.Point(15, 32);
             this.txtbox_ProductName.Multiline = true;
             this.txtbox_ProductName.Name = "txtbox_ProductName";
             this.txtbox_ProductName.Size = new System.Drawing.Size(100, 33);
             this.txtbox_ProductName.TabIndex = 0;
-            this.txtbox_ProductName.Text = "Название товара  содержит";
+            this.txtbox_ProductName.Text = "Название товара";
             // 
             // grp_Zakupki
             // 
             this.grp_Zakupki.Controls.Add(this.dataGridView3);
-            this.grp_Zakupki.Location = new System.Drawing.Point(9, 513);
+            this.grp_Zakupki.Location = new System.Drawing.Point(17, 526);
             this.grp_Zakupki.Name = "grp_Zakupki";
-            this.grp_Zakupki.Size = new System.Drawing.Size(868, 155);
+            this.grp_Zakupki.Size = new System.Drawing.Size(890, 120);
             this.grp_Zakupki.TabIndex = 4;
             this.grp_Zakupki.TabStop = false;
             this.grp_Zakupki.Text = "Информация о закупках";
@@ -217,68 +205,19 @@
             this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView3.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idzakupkaDataGridViewTextBoxColumn,
-            this.idproductDataGridViewTextBoxColumn2,
             this.idpostavshikDataGridViewTextBoxColumn,
+            this.idproductDataGridViewTextBoxColumn2,
             this.dateZakupkaDataGridViewTextBoxColumn,
             this.priceProductZakupkaDataGridViewTextBoxColumn,
             this.kolvoProductZakupkaDataGridViewTextBoxColumn,
             this.priceSummaZakupkaDataGridViewTextBoxColumn,
             this.priceProductFactorDataGridViewTextBoxColumn});
             this.dataGridView3.DataSource = this.fKzakupkiidproductsBindingSource;
+            this.dataGridView3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView3.Location = new System.Drawing.Point(3, 16);
             this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.Size = new System.Drawing.Size(847, 136);
+            this.dataGridView3.Size = new System.Drawing.Size(884, 101);
             this.dataGridView3.TabIndex = 0;
-            // 
-            // idzakupkaDataGridViewTextBoxColumn
-            // 
-            this.idzakupkaDataGridViewTextBoxColumn.DataPropertyName = "id_zakupka";
-            this.idzakupkaDataGridViewTextBoxColumn.HeaderText = "id_zakupka";
-            this.idzakupkaDataGridViewTextBoxColumn.Name = "idzakupkaDataGridViewTextBoxColumn";
-            this.idzakupkaDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // idproductDataGridViewTextBoxColumn2
-            // 
-            this.idproductDataGridViewTextBoxColumn2.DataPropertyName = "id_product";
-            this.idproductDataGridViewTextBoxColumn2.HeaderText = "id_product";
-            this.idproductDataGridViewTextBoxColumn2.Name = "idproductDataGridViewTextBoxColumn2";
-            // 
-            // idpostavshikDataGridViewTextBoxColumn
-            // 
-            this.idpostavshikDataGridViewTextBoxColumn.DataPropertyName = "id_postavshik";
-            this.idpostavshikDataGridViewTextBoxColumn.HeaderText = "id_postavshik";
-            this.idpostavshikDataGridViewTextBoxColumn.Name = "idpostavshikDataGridViewTextBoxColumn";
-            // 
-            // dateZakupkaDataGridViewTextBoxColumn
-            // 
-            this.dateZakupkaDataGridViewTextBoxColumn.DataPropertyName = "dateZakupka";
-            this.dateZakupkaDataGridViewTextBoxColumn.HeaderText = "dateZakupka";
-            this.dateZakupkaDataGridViewTextBoxColumn.Name = "dateZakupkaDataGridViewTextBoxColumn";
-            // 
-            // priceProductZakupkaDataGridViewTextBoxColumn
-            // 
-            this.priceProductZakupkaDataGridViewTextBoxColumn.DataPropertyName = "priceProductZakupka";
-            this.priceProductZakupkaDataGridViewTextBoxColumn.HeaderText = "priceProductZakupka";
-            this.priceProductZakupkaDataGridViewTextBoxColumn.Name = "priceProductZakupkaDataGridViewTextBoxColumn";
-            // 
-            // kolvoProductZakupkaDataGridViewTextBoxColumn
-            // 
-            this.kolvoProductZakupkaDataGridViewTextBoxColumn.DataPropertyName = "kol_voProductZakupka";
-            this.kolvoProductZakupkaDataGridViewTextBoxColumn.HeaderText = "kol_voProductZakupka";
-            this.kolvoProductZakupkaDataGridViewTextBoxColumn.Name = "kolvoProductZakupkaDataGridViewTextBoxColumn";
-            // 
-            // priceSummaZakupkaDataGridViewTextBoxColumn
-            // 
-            this.priceSummaZakupkaDataGridViewTextBoxColumn.DataPropertyName = "priceSummaZakupka";
-            this.priceSummaZakupkaDataGridViewTextBoxColumn.HeaderText = "priceSummaZakupka";
-            this.priceSummaZakupkaDataGridViewTextBoxColumn.Name = "priceSummaZakupkaDataGridViewTextBoxColumn";
-            this.priceSummaZakupkaDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // priceProductFactorDataGridViewTextBoxColumn
-            // 
-            this.priceProductFactorDataGridViewTextBoxColumn.DataPropertyName = "priceProductFactor";
-            this.priceProductFactorDataGridViewTextBoxColumn.HeaderText = "priceProductFactor";
-            this.priceProductFactorDataGridViewTextBoxColumn.Name = "priceProductFactorDataGridViewTextBoxColumn";
             // 
             // fKzakupkiidproductsBindingSource
             // 
@@ -295,9 +234,9 @@
             this.grp_Products.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.grp_Products.Controls.Add(this.dataGridView1);
             this.grp_Products.Controls.Add(this.bindingNavigator1);
-            this.grp_Products.Location = new System.Drawing.Point(14, 31);
+            this.grp_Products.Location = new System.Drawing.Point(14, 15);
             this.grp_Products.Name = "grp_Products";
-            this.grp_Products.Size = new System.Drawing.Size(569, 253);
+            this.grp_Products.Size = new System.Drawing.Size(569, 344);
             this.grp_Products.TabIndex = 2;
             this.grp_Products.TabStop = false;
             this.grp_Products.Text = "Товары";
@@ -468,9 +407,9 @@
             // grp_Prodazhi
             // 
             this.grp_Prodazhi.Controls.Add(this.dataGridView2);
-            this.grp_Prodazhi.Location = new System.Drawing.Point(14, 290);
+            this.grp_Prodazhi.Location = new System.Drawing.Point(17, 397);
             this.grp_Prodazhi.Name = "grp_Prodazhi";
-            this.grp_Prodazhi.Size = new System.Drawing.Size(779, 217);
+            this.grp_Prodazhi.Size = new System.Drawing.Size(811, 114);
             this.grp_Prodazhi.TabIndex = 3;
             this.grp_Prodazhi.TabStop = false;
             this.grp_Prodazhi.Text = "Информация о продажах";
@@ -488,54 +427,11 @@
             this.kolvoProductProdazhaDataGridViewTextBoxColumn,
             this.priceSummaProdazhaDataGridViewTextBoxColumn});
             this.dataGridView2.DataSource = this.fKprodazhiidproductsBindingSource;
-            this.dataGridView2.Location = new System.Drawing.Point(15, 28);
+            this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView2.Location = new System.Drawing.Point(3, 16);
             this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(747, 152);
+            this.dataGridView2.Size = new System.Drawing.Size(805, 95);
             this.dataGridView2.TabIndex = 0;
-            // 
-            // idprodazhaDataGridViewTextBoxColumn
-            // 
-            this.idprodazhaDataGridViewTextBoxColumn.DataPropertyName = "id_prodazha";
-            this.idprodazhaDataGridViewTextBoxColumn.HeaderText = "Код продажи";
-            this.idprodazhaDataGridViewTextBoxColumn.Name = "idprodazhaDataGridViewTextBoxColumn";
-            this.idprodazhaDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // idproductDataGridViewTextBoxColumn1
-            // 
-            this.idproductDataGridViewTextBoxColumn1.DataPropertyName = "id_product";
-            this.idproductDataGridViewTextBoxColumn1.HeaderText = "Код товара";
-            this.idproductDataGridViewTextBoxColumn1.Name = "idproductDataGridViewTextBoxColumn1";
-            // 
-            // idpokupatelDataGridViewTextBoxColumn
-            // 
-            this.idpokupatelDataGridViewTextBoxColumn.DataPropertyName = "id_pokupatel";
-            this.idpokupatelDataGridViewTextBoxColumn.HeaderText = "Код покупателя";
-            this.idpokupatelDataGridViewTextBoxColumn.Name = "idpokupatelDataGridViewTextBoxColumn";
-            // 
-            // dateSaleDataGridViewTextBoxColumn
-            // 
-            this.dateSaleDataGridViewTextBoxColumn.DataPropertyName = "dateSale";
-            this.dateSaleDataGridViewTextBoxColumn.HeaderText = "Дата продажи";
-            this.dateSaleDataGridViewTextBoxColumn.Name = "dateSaleDataGridViewTextBoxColumn";
-            // 
-            // priceProductProdazhaDataGridViewTextBoxColumn
-            // 
-            this.priceProductProdazhaDataGridViewTextBoxColumn.DataPropertyName = "priceProductProdazha";
-            this.priceProductProdazhaDataGridViewTextBoxColumn.HeaderText = "Цена продажи";
-            this.priceProductProdazhaDataGridViewTextBoxColumn.Name = "priceProductProdazhaDataGridViewTextBoxColumn";
-            // 
-            // kolvoProductProdazhaDataGridViewTextBoxColumn
-            // 
-            this.kolvoProductProdazhaDataGridViewTextBoxColumn.DataPropertyName = "kol_voProductProdazha";
-            this.kolvoProductProdazhaDataGridViewTextBoxColumn.HeaderText = "Количество проданного товара";
-            this.kolvoProductProdazhaDataGridViewTextBoxColumn.Name = "kolvoProductProdazhaDataGridViewTextBoxColumn";
-            // 
-            // priceSummaProdazhaDataGridViewTextBoxColumn
-            // 
-            this.priceSummaProdazhaDataGridViewTextBoxColumn.DataPropertyName = "priceSummaProdazha";
-            this.priceSummaProdazhaDataGridViewTextBoxColumn.HeaderText = "Сумма продажи";
-            this.priceSummaProdazhaDataGridViewTextBoxColumn.Name = "priceSummaProdazhaDataGridViewTextBoxColumn";
-            this.priceSummaProdazhaDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // fKprodazhiidproductsBindingSource
             // 
@@ -633,6 +529,148 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(161, 32);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(154, 20);
+            this.textBox1.TabIndex = 1;
+            // 
+            // idprodazhaDataGridViewTextBoxColumn
+            // 
+            this.idprodazhaDataGridViewTextBoxColumn.DataPropertyName = "id_prodazha";
+            this.idprodazhaDataGridViewTextBoxColumn.HeaderText = "Код продажи";
+            this.idprodazhaDataGridViewTextBoxColumn.Name = "idprodazhaDataGridViewTextBoxColumn";
+            this.idprodazhaDataGridViewTextBoxColumn.ReadOnly = true;
+            this.idprodazhaDataGridViewTextBoxColumn.Width = 160;
+            // 
+            // idproductDataGridViewTextBoxColumn1
+            // 
+            this.idproductDataGridViewTextBoxColumn1.DataPropertyName = "id_product";
+            this.idproductDataGridViewTextBoxColumn1.HeaderText = "Код товара";
+            this.idproductDataGridViewTextBoxColumn1.Name = "idproductDataGridViewTextBoxColumn1";
+            // 
+            // idpokupatelDataGridViewTextBoxColumn
+            // 
+            this.idpokupatelDataGridViewTextBoxColumn.DataPropertyName = "id_pokupatel";
+            this.idpokupatelDataGridViewTextBoxColumn.HeaderText = "Код покупателя";
+            this.idpokupatelDataGridViewTextBoxColumn.Name = "idpokupatelDataGridViewTextBoxColumn";
+            // 
+            // dateSaleDataGridViewTextBoxColumn
+            // 
+            this.dateSaleDataGridViewTextBoxColumn.DataPropertyName = "dateSale";
+            this.dateSaleDataGridViewTextBoxColumn.HeaderText = "Дата продажи";
+            this.dateSaleDataGridViewTextBoxColumn.Name = "dateSaleDataGridViewTextBoxColumn";
+            // 
+            // priceProductProdazhaDataGridViewTextBoxColumn
+            // 
+            this.priceProductProdazhaDataGridViewTextBoxColumn.DataPropertyName = "priceProductProdazha";
+            this.priceProductProdazhaDataGridViewTextBoxColumn.HeaderText = "Цена продажи";
+            this.priceProductProdazhaDataGridViewTextBoxColumn.Name = "priceProductProdazhaDataGridViewTextBoxColumn";
+            // 
+            // kolvoProductProdazhaDataGridViewTextBoxColumn
+            // 
+            this.kolvoProductProdazhaDataGridViewTextBoxColumn.DataPropertyName = "kol_voProductProdazha";
+            this.kolvoProductProdazhaDataGridViewTextBoxColumn.HeaderText = "Количество проданного товара";
+            this.kolvoProductProdazhaDataGridViewTextBoxColumn.Name = "kolvoProductProdazhaDataGridViewTextBoxColumn";
+            // 
+            // priceSummaProdazhaDataGridViewTextBoxColumn
+            // 
+            this.priceSummaProdazhaDataGridViewTextBoxColumn.DataPropertyName = "priceSummaProdazha";
+            this.priceSummaProdazhaDataGridViewTextBoxColumn.HeaderText = "Сумма продажи";
+            this.priceSummaProdazhaDataGridViewTextBoxColumn.Name = "priceSummaProdazhaDataGridViewTextBoxColumn";
+            this.priceSummaProdazhaDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // textBox2
+            // 
+            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox2.Location = new System.Drawing.Point(15, 71);
+            this.textBox2.Multiline = true;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(141, 33);
+            this.textBox2.TabIndex = 2;
+            this.textBox2.Text = "Название производителя товара";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.DataSource = this.productProizvoditeliBindingSource;
+            this.comboBox1.DisplayMember = "nameProizvoditel";
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(162, 71);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(153, 21);
+            this.comboBox1.TabIndex = 3;
+            // 
+            // productProizvoditeliBindingSource
+            // 
+            this.productProizvoditeliBindingSource.DataMember = "productProizvoditeli";
+            this.productProizvoditeliBindingSource.DataSource = this.bindingSource1;
+            // 
+            // productProizvoditeliTableAdapter
+            // 
+            this.productProizvoditeliTableAdapter.ClearBeforeFill = true;
+            // 
+            // idzakupkaDataGridViewTextBoxColumn
+            // 
+            this.idzakupkaDataGridViewTextBoxColumn.DataPropertyName = "id_zakupka";
+            this.idzakupkaDataGridViewTextBoxColumn.HeaderText = "Код закупки";
+            this.idzakupkaDataGridViewTextBoxColumn.Name = "idzakupkaDataGridViewTextBoxColumn";
+            this.idzakupkaDataGridViewTextBoxColumn.ReadOnly = true;
+            this.idzakupkaDataGridViewTextBoxColumn.Width = 140;
+            // 
+            // idpostavshikDataGridViewTextBoxColumn
+            // 
+            this.idpostavshikDataGridViewTextBoxColumn.DataPropertyName = "id_postavshik";
+            this.idpostavshikDataGridViewTextBoxColumn.HeaderText = "Код поставщика ";
+            this.idpostavshikDataGridViewTextBoxColumn.Name = "idpostavshikDataGridViewTextBoxColumn";
+            // 
+            // idproductDataGridViewTextBoxColumn2
+            // 
+            this.idproductDataGridViewTextBoxColumn2.DataPropertyName = "id_product";
+            this.idproductDataGridViewTextBoxColumn2.HeaderText = "Код продукта";
+            this.idproductDataGridViewTextBoxColumn2.Name = "idproductDataGridViewTextBoxColumn2";
+            // 
+            // dateZakupkaDataGridViewTextBoxColumn
+            // 
+            this.dateZakupkaDataGridViewTextBoxColumn.DataPropertyName = "dateZakupka";
+            this.dateZakupkaDataGridViewTextBoxColumn.HeaderText = "Дата закупки";
+            this.dateZakupkaDataGridViewTextBoxColumn.Name = "dateZakupkaDataGridViewTextBoxColumn";
+            // 
+            // priceProductZakupkaDataGridViewTextBoxColumn
+            // 
+            this.priceProductZakupkaDataGridViewTextBoxColumn.DataPropertyName = "priceProductZakupka";
+            this.priceProductZakupkaDataGridViewTextBoxColumn.HeaderText = "Цена закупки";
+            this.priceProductZakupkaDataGridViewTextBoxColumn.Name = "priceProductZakupkaDataGridViewTextBoxColumn";
+            // 
+            // kolvoProductZakupkaDataGridViewTextBoxColumn
+            // 
+            this.kolvoProductZakupkaDataGridViewTextBoxColumn.DataPropertyName = "kol_voProductZakupka";
+            this.kolvoProductZakupkaDataGridViewTextBoxColumn.HeaderText = "Количество закупки";
+            this.kolvoProductZakupkaDataGridViewTextBoxColumn.Name = "kolvoProductZakupkaDataGridViewTextBoxColumn";
+            // 
+            // priceSummaZakupkaDataGridViewTextBoxColumn
+            // 
+            this.priceSummaZakupkaDataGridViewTextBoxColumn.DataPropertyName = "priceSummaZakupka";
+            this.priceSummaZakupkaDataGridViewTextBoxColumn.HeaderText = "Сумма цены закупки";
+            this.priceSummaZakupkaDataGridViewTextBoxColumn.Name = "priceSummaZakupkaDataGridViewTextBoxColumn";
+            this.priceSummaZakupkaDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // priceProductFactorDataGridViewTextBoxColumn
+            // 
+            this.priceProductFactorDataGridViewTextBoxColumn.DataPropertyName = "priceProductFactor";
+            this.priceProductFactorDataGridViewTextBoxColumn.HeaderText = "Ценовой коэффициент";
+            this.priceProductFactorDataGridViewTextBoxColumn.Name = "priceProductFactorDataGridViewTextBoxColumn";
+            // 
+            // textBox3
+            // 
+            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox3.Location = new System.Drawing.Point(15, 123);
+            this.textBox3.Multiline = true;
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(141, 33);
+            this.textBox3.TabIndex = 4;
+            this.textBox3.Text = "Количество товара на складе";
+            // 
             // Kontc_3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -665,6 +703,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.prodazhiBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kontc_3DataSet1)).EndInit();
             this.tabPage7.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.productProizvoditeliBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -703,12 +742,22 @@
         private kontc_3DataSetTableAdapters.prodazhiTableAdapter prodazhiTableAdapter;
         private System.Windows.Forms.GroupBox grp_productsSearch;
         private System.Windows.Forms.TextBox txtbox_ProductName;
-        private System.Windows.Forms.TextBox txbx_search_product_name;
         private System.Windows.Forms.DataGridViewTextBoxColumn idproductDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nameProductDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn idproizvoditelDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn kolvoProductSkladDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn descriptProductDataGridViewTextBoxColumn;
+        private kontc_3DataSet kontc_3DataSet1;
+        private System.Windows.Forms.BindingSource fKprodazhiidproductsBindingSource;
+        private System.Windows.Forms.DataGridView dataGridView3;
+        private System.Windows.Forms.BindingSource fKzakupkiidproductsBindingSource;
+        private kontc_3DataSetTableAdapters.zakupkiTableAdapter zakupkiTableAdapter;
+        private System.Windows.Forms.BindingSource productsBindingSource1;
+        private System.Windows.Forms.TabPage tabPage7;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.DataGridViewTextBoxColumn idprodazhaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn idproductDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn idpokupatelDataGridViewTextBoxColumn;
@@ -716,23 +765,17 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn priceProductProdazhaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn kolvoProductProdazhaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn priceSummaProdazhaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private kontc_3DataSet kontc_3DataSet1;
-        private System.Windows.Forms.BindingSource fKprodazhiidproductsBindingSource;
-        private System.Windows.Forms.DataGridView dataGridView3;
-        private System.Windows.Forms.BindingSource fKzakupkiidproductsBindingSource;
-        private kontc_3DataSetTableAdapters.zakupkiTableAdapter zakupkiTableAdapter;
+        private System.Windows.Forms.BindingSource productProizvoditeliBindingSource;
+        private kontc_3DataSetTableAdapters.productProizvoditeliTableAdapter productProizvoditeliTableAdapter;
+        private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.DataGridViewTextBoxColumn idzakupkaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idproductDataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn idpostavshikDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idproductDataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dateZakupkaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn priceProductZakupkaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn kolvoProductZakupkaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn priceSummaZakupkaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn priceProductFactorDataGridViewTextBoxColumn;
-        private System.Windows.Forms.BindingSource productsBindingSource1;
-        private System.Windows.Forms.TabPage tabPage7;
-        private System.Windows.Forms.Button button1;
     }
 }
 
