@@ -96,6 +96,14 @@
             this.priceSummaZakupkaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.priceProductFactorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.productsTableAdapter1_1 = new prog_kontc_3_v5.kontc_3DataSetTableAdapters.productsTableAdapter();
+            this.bindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.kontc_3DataSet2 = new prog_kontc_3_v5.kontc_3DataSet();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kontc_3DataSet)).BeginInit();
             this.razrab.SuspendLayout();
@@ -117,6 +125,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.kontc_3DataSet1)).BeginInit();
             this.tabPage7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.productProizvoditeliBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kontc_3DataSet2)).BeginInit();
             this.SuspendLayout();
             // 
             // bindingSource1
@@ -161,18 +171,24 @@
             // 
             // grp_productsSearch
             // 
+            this.grp_productsSearch.Controls.Add(this.button3);
+            this.grp_productsSearch.Controls.Add(this.button2);
+            this.grp_productsSearch.Controls.Add(this.textBox6);
+            this.grp_productsSearch.Controls.Add(this.textBox5);
+            this.grp_productsSearch.Controls.Add(this.textBox4);
             this.grp_productsSearch.Controls.Add(this.textBox3);
             this.grp_productsSearch.Controls.Add(this.comboBox1);
             this.grp_productsSearch.Controls.Add(this.textBox2);
             this.grp_productsSearch.Controls.Add(this.textBox1);
             this.grp_productsSearch.Controls.Add(this.txtbox_ProductName);
             this.grp_productsSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.grp_productsSearch.Location = new System.Drawing.Point(589, 31);
+            this.grp_productsSearch.Location = new System.Drawing.Point(589, 15);
             this.grp_productsSearch.Name = "grp_productsSearch";
-            this.grp_productsSearch.Size = new System.Drawing.Size(332, 344);
+            this.grp_productsSearch.Size = new System.Drawing.Size(332, 360);
             this.grp_productsSearch.TabIndex = 5;
             this.grp_productsSearch.TabStop = false;
             this.grp_productsSearch.Text = "Внесение товара в базу";
+            this.grp_productsSearch.Enter += new System.EventHandler(this.grp_productsSearch_Enter);
             // 
             // productsBindingSource1
             // 
@@ -671,6 +687,63 @@
             this.textBox3.TabIndex = 4;
             this.textBox3.Text = "Количество товара на складе";
             // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(161, 120);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(154, 20);
+            this.textBox4.TabIndex = 5;
+            // 
+            // textBox5
+            // 
+            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox5.Location = new System.Drawing.Point(15, 169);
+            this.textBox5.Multiline = true;
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(141, 33);
+            this.textBox5.TabIndex = 6;
+            this.textBox5.Text = "Описание товара";
+            // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(161, 162);
+            this.textBox6.Multiline = true;
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(157, 54);
+            this.textBox6.TabIndex = 7;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(40, 294);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(100, 34);
+            this.button2.TabIndex = 8;
+            this.button2.Text = "Внести товар в базу";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(179, 294);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(100, 34);
+            this.button3.TabIndex = 9;
+            this.button3.Text = "Отмена";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // productsTableAdapter1_1
+            // 
+            this.productsTableAdapter1_1.ClearBeforeFill = true;
+            // 
+            // bindingSource2
+            // 
+            this.bindingSource2.DataMember = "products";
+            this.bindingSource2.DataSource = this.kontc_3DataSet;
+            // 
+            // kontc_3DataSet2
+            // 
+            this.kontc_3DataSet2.DataSetName = "kontc_3DataSet";
+            this.kontc_3DataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // Kontc_3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -704,6 +777,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.kontc_3DataSet1)).EndInit();
             this.tabPage7.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.productProizvoditeliBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kontc_3DataSet2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -776,6 +851,14 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn kolvoProductZakupkaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn priceSummaZakupkaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn priceProductFactorDataGridViewTextBoxColumn;
+        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button2;
+        private kontc_3DataSetTableAdapters.productsTableAdapter productsTableAdapter1_1;
+        private System.Windows.Forms.BindingSource bindingSource2;
+        private kontc_3DataSet kontc_3DataSet2;
     }
 }
 

@@ -63,5 +63,10 @@ namespace prog_kontc_3_v5
         {
             Application.Exit();
         }
+
+        private void grp_productsSearch_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }
