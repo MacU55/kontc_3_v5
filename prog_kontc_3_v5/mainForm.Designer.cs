@@ -270,6 +270,7 @@
             // 
             // textBox1
             // 
+            this.textBox1.ImeMode = System.Windows.Forms.ImeMode.AlphaFull;
             this.textBox1.Location = new System.Drawing.Point(161, 32);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(154, 20);
@@ -383,7 +384,7 @@
             this.grp_Products.Controls.Add(this.bindingNavigator1);
             this.grp_Products.Location = new System.Drawing.Point(14, 15);
             this.grp_Products.Name = "grp_Products";
-            this.grp_Products.Size = new System.Drawing.Size(569, 344);
+            this.grp_Products.Size = new System.Drawing.Size(569, 360);
             this.grp_Products.TabIndex = 2;
             this.grp_Products.TabStop = false;
             this.grp_Products.Text = "Товары";
