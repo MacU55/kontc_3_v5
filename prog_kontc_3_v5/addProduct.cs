@@ -23,5 +23,22 @@ namespace prog_kontc_3_v5
             this.productProizvoditeliTableAdapter.Fill(this.kontc_3DataSet.productProizvoditeli);
 
         }
+
+
+
+
+
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            private bool edit;
+            if (!edit) return;
+            var edt = new addProduct();
+            edt.ShowDialog();
+            productsTableAdapter1.Fill(kontc_3DataSet.products);
+            kontc_3DataSet.AcceptChanges();
+        }
+
     }
+}
 }
