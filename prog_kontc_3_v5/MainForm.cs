@@ -68,5 +68,11 @@ namespace prog_kontc_3_v5
         {
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form frmAddProduct = new addProduct();
+            frmAddProduct.ShowDialog();
+        }
     }
 }
