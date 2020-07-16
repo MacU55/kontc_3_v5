@@ -29,32 +29,34 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtBoxProductsName = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cmbBoxKodProizvodit = new System.Windows.Forms.ComboBox();
             this.productProizvoditeliBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.kontc_3DataSet = new prog_kontc_3_v5.kontc_3DataSet();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtBoxDescriptProduct = new System.Windows.Forms.TextBox();
             this.productProizvoditeliTableAdapter = new prog_kontc_3_v5.kontc_3DataSetTableAdapters.productProizvoditeliTableAdapter();
             this.productsTableAdapter1 = new prog_kontc_3_v5.kontc_3DataSetTableAdapters.productsTableAdapter();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btn_addNewProduct = new System.Windows.Forms.Button();
+            this.btn_cancel = new System.Windows.Forms.Button();
+            this.numericKolvoProductSklad = new System.Windows.Forms.NumericUpDown();
             ((System.ComponentModel.ISupportInitialize)(this.productProizvoditeliBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kontc_3DataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericKolvoProductSklad)).BeginInit();
             this.SuspendLayout();
             // 
-            // textBox1
+            // txtBoxProductsName
             // 
-            this.textBox1.Location = new System.Drawing.Point(287, 73);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 0;
+            this.txtBoxProductsName.Location = new System.Drawing.Point(287, 73);
+            this.txtBoxProductsName.Multiline = true;
+            this.txtBoxProductsName.Name = "txtBoxProductsName";
+            this.txtBoxProductsName.Size = new System.Drawing.Size(100, 20);
+            this.txtBoxProductsName.TabIndex = 0;
             // 
             // label1
             // 
@@ -92,16 +94,16 @@
             this.label4.TabIndex = 4;
             this.label4.Text = "Описание товара\r\n";
             // 
-            // comboBox1
+            // cmbBoxKodProizvodit
             // 
-            this.comboBox1.DataSource = this.productProizvoditeliBindingSource;
-            this.comboBox1.DisplayMember = "nameProizvoditel";
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(287, 125);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 5;
-            this.comboBox1.ValueMember = "id_proizvoditel";
+            this.cmbBoxKodProizvodit.DataSource = this.productProizvoditeliBindingSource;
+            this.cmbBoxKodProizvodit.DisplayMember = "id_proizvoditel";
+            this.cmbBoxKodProizvodit.FormattingEnabled = true;
+            this.cmbBoxKodProizvodit.Location = new System.Drawing.Point(287, 125);
+            this.cmbBoxKodProizvodit.Name = "cmbBoxKodProizvodit";
+            this.cmbBoxKodProizvodit.Size = new System.Drawing.Size(121, 21);
+            this.cmbBoxKodProizvodit.TabIndex = 5;
+            this.cmbBoxKodProizvodit.ValueMember = "id_proizvoditel";
             // 
             // productProizvoditeliBindingSource
             // 
@@ -118,21 +120,13 @@
             this.kontc_3DataSet.DataSetName = "kontc_3DataSet";
             this.kontc_3DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // textBox2
+            // txtBoxDescriptProduct
             // 
-            this.textBox2.Location = new System.Drawing.Point(287, 193);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 6;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(287, 251);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 7;
+            this.txtBoxDescriptProduct.Location = new System.Drawing.Point(287, 251);
+            this.txtBoxDescriptProduct.Multiline = true;
+            this.txtBoxDescriptProduct.Name = "txtBoxDescriptProduct";
+            this.txtBoxDescriptProduct.Size = new System.Drawing.Size(100, 20);
+            this.txtBoxDescriptProduct.TabIndex = 7;
             // 
             // productProizvoditeliTableAdapter
             // 
@@ -142,36 +136,55 @@
             // 
             this.productsTableAdapter1.ClearBeforeFill = true;
             // 
-            // button1
+            // btn_addNewProduct
             // 
-            this.button1.Location = new System.Drawing.Point(287, 313);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(130, 38);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "Добавить товар в базу";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btn_addNewProduct.Location = new System.Drawing.Point(287, 313);
+            this.btn_addNewProduct.Name = "btn_addNewProduct";
+            this.btn_addNewProduct.Size = new System.Drawing.Size(130, 38);
+            this.btn_addNewProduct.TabIndex = 8;
+            this.btn_addNewProduct.Text = "Добавить товар в базу";
+            this.btn_addNewProduct.UseVisualStyleBackColor = true;
+            this.btn_addNewProduct.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btn_cancel
+            // 
+            this.btn_cancel.Location = new System.Drawing.Point(475, 313);
+            this.btn_cancel.Name = "btn_cancel";
+            this.btn_cancel.Size = new System.Drawing.Size(130, 38);
+            this.btn_cancel.TabIndex = 9;
+            this.btn_cancel.Text = "Закрыть форму\r\n";
+            this.btn_cancel.UseVisualStyleBackColor = true;
+            this.btn_cancel.Click += new System.EventHandler(this.btn_cancel_Click);
+            // 
+            // numericKolvoProductSklad
+            // 
+            this.numericKolvoProductSklad.Location = new System.Drawing.Point(287, 194);
+            this.numericKolvoProductSklad.Name = "numericKolvoProductSklad";
+            this.numericKolvoProductSklad.Size = new System.Drawing.Size(120, 20);
+            this.numericKolvoProductSklad.TabIndex = 10;
             // 
             // addProduct
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.numericKolvoProductSklad);
+            this.Controls.Add(this.btn_cancel);
+            this.Controls.Add(this.btn_addNewProduct);
+            this.Controls.Add(this.txtBoxDescriptProduct);
+            this.Controls.Add(this.cmbBoxKodProizvodit);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtBoxProductsName);
             this.Name = "addProduct";
-            this.Text = "v";
+            this.Text = "addNewProduct";
             this.Load += new System.EventHandler(this.addProduct_Load);
             ((System.ComponentModel.ISupportInitialize)(this.productProizvoditeliBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kontc_3DataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericKolvoProductSklad)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -179,19 +192,20 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtBoxProductsName;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.ComboBox cmbBoxKodProizvodit;
+        private System.Windows.Forms.TextBox txtBoxDescriptProduct;
         private System.Windows.Forms.BindingSource bindingSource1;
         private kontc_3DataSet kontc_3DataSet;
         private System.Windows.Forms.BindingSource productProizvoditeliBindingSource;
         private kontc_3DataSetTableAdapters.productProizvoditeliTableAdapter productProizvoditeliTableAdapter;
         private kontc_3DataSetTableAdapters.productsTableAdapter productsTableAdapter1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_addNewProduct;
+        private System.Windows.Forms.Button btn_cancel;
+        private System.Windows.Forms.NumericUpDown numericKolvoProductSklad;
     }
 }
