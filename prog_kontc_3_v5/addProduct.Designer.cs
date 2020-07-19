@@ -138,12 +138,14 @@
             // 
             // btn_addNewProduct
             // 
+            this.btn_addNewProduct.AutoEllipsis = true;
+            this.btn_addNewProduct.BackColor = System.Drawing.Color.Chocolate;
             this.btn_addNewProduct.Location = new System.Drawing.Point(287, 313);
             this.btn_addNewProduct.Name = "btn_addNewProduct";
             this.btn_addNewProduct.Size = new System.Drawing.Size(130, 38);
             this.btn_addNewProduct.TabIndex = 8;
             this.btn_addNewProduct.Text = "Добавить товар в базу";
-            this.btn_addNewProduct.UseVisualStyleBackColor = true;
+            this.btn_addNewProduct.UseVisualStyleBackColor = false;
             this.btn_addNewProduct.Click += new System.EventHandler(this.button1_Click);
             // 
             // btn_cancel
