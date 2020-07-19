@@ -161,6 +161,11 @@
             // numericKolvoProductSklad
             // 
             this.numericKolvoProductSklad.Location = new System.Drawing.Point(287, 194);
+            this.numericKolvoProductSklad.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
             this.numericKolvoProductSklad.Name = "numericKolvoProductSklad";
             this.numericKolvoProductSklad.Size = new System.Drawing.Size(120, 20);
             this.numericKolvoProductSklad.TabIndex = 10;

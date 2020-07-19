@@ -74,5 +74,22 @@ namespace prog_kontc_3_v5
             Form frmAddProduct = new addProduct();
             frmAddProduct.ShowDialog();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnDeleteProduct_Click(object sender, EventArgs e)
+        {
+           /* int id_product = 0;
+           productsTableAdapter.DeleteProduct
+                (Convert.ToInt32(dataGridView1.SelectedRows[0].Cells[0].Value));
+
+            /*int delet = dataGridView1.SelectedCells[0].RowIndex;
+            dataGridView1.Rows.RemoveAt(delet);
+            productsTableAdapter.Fill(kontc_3DataSet.products);
+            kontc_3DataSet.AcceptChanges();*/
+        }
     }
 }

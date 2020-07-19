@@ -104,6 +104,7 @@
             this.productsTableAdapter1_1 = new prog_kontc_3_v5.kontc_3DataSetTableAdapters.productsTableAdapter();
             this.bindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.kontc_3DataSet2 = new prog_kontc_3_v5.kontc_3DataSet();
+            this.btnDeleteProduct = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kontc_3DataSet)).BeginInit();
             this.razrab.SuspendLayout();
@@ -171,6 +172,7 @@
             // 
             // grp_productsSearch
             // 
+            this.grp_productsSearch.Controls.Add(this.btnDeleteProduct);
             this.grp_productsSearch.Controls.Add(this.button3);
             this.grp_productsSearch.Controls.Add(this.button2);
             this.grp_productsSearch.Controls.Add(this.textBox6);
@@ -192,16 +194,17 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(179, 294);
+            this.button3.Location = new System.Drawing.Point(215, 308);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(100, 34);
             this.button3.TabIndex = 9;
             this.button3.Text = "Отмена";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(40, 294);
+            this.button2.Location = new System.Drawing.Point(30, 308);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(100, 34);
             this.button2.TabIndex = 8;
@@ -746,6 +749,16 @@
             this.kontc_3DataSet2.DataSetName = "kontc_3DataSet";
             this.kontc_3DataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
+            // btnDeleteProduct
+            // 
+            this.btnDeleteProduct.Location = new System.Drawing.Point(30, 247);
+            this.btnDeleteProduct.Name = "btnDeleteProduct";
+            this.btnDeleteProduct.Size = new System.Drawing.Size(100, 34);
+            this.btnDeleteProduct.TabIndex = 10;
+            this.btnDeleteProduct.Text = "Удалить товар из базы";
+            this.btnDeleteProduct.UseVisualStyleBackColor = true;
+            this.btnDeleteProduct.Click += new System.EventHandler(this.btnDeleteProduct_Click);
+            // 
             // Kontc_3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -861,6 +874,7 @@
         private kontc_3DataSetTableAdapters.productsTableAdapter productsTableAdapter1_1;
         private System.Windows.Forms.BindingSource bindingSource2;
         private kontc_3DataSet kontc_3DataSet2;
+        private System.Windows.Forms.Button btnDeleteProduct;
     }
 }
 
