@@ -115,9 +115,12 @@ namespace prog_kontc_3_v5
             {
                 MessageBox.Show("Ошибка обновления");
             }
-        }   
+        }
 
+        private void dataGridView4_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
 
+        }
     }
 }
 
