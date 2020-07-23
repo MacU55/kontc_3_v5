@@ -4920,7 +4920,7 @@ SELECT id_product, nameProduct, id_proizvoditel, kol_voProductSklad, descriptPro
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[4];
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[5];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT id_product, nameProduct, id_proizvoditel, kol_voProductSklad, descriptProd" +
@@ -4928,16 +4928,9 @@ SELECT id_product, nameProduct, id_proizvoditel, kol_voProductSklad, descriptPro
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[1].Connection = this.Connection;
-            this._commandCollection[1].CommandText = @"DELETE FROM [dbo].[products] WHERE (([id_product] = @Original_id_product) AND ([nameProduct] = @Original_nameProduct) AND ((@IsNull_id_proizvoditel = 1 AND [id_proizvoditel] IS NULL) OR ([id_proizvoditel] = @Original_id_proizvoditel)) AND ((@IsNull_kol_voProductSklad = 1 AND [kol_voProductSklad] IS NULL) OR ([kol_voProductSklad] = @Original_kol_voProductSklad)) AND ((@IsNull_descriptProduct = 1 AND [descriptProduct] IS NULL) OR ([descriptProduct] = @Original_descriptProduct)))";
+            this._commandCollection[1].CommandText = "DELETE FROM [dbo].[products] WHERE nameProduct = @nameProduct";
             this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
-            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_id_product", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "id_product", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_nameProduct", global::System.Data.SqlDbType.NVarChar, 30, global::System.Data.ParameterDirection.Input, 0, 0, "nameProduct", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_id_proizvoditel", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id_proizvoditel", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_id_proizvoditel", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "id_proizvoditel", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_kol_voProductSklad", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "kol_voProductSklad", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_kol_voProductSklad", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "kol_voProductSklad", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_descriptProduct", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "descriptProduct", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_descriptProduct", global::System.Data.SqlDbType.NVarChar, 30, global::System.Data.ParameterDirection.Input, 0, 0, "descriptProduct", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@nameProduct", global::System.Data.SqlDbType.NVarChar, 30, global::System.Data.ParameterDirection.Input, 0, 0, "nameProduct", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._commandCollection[2] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[2].Connection = this.Connection;
             this._commandCollection[2].CommandText = @"INSERT INTO [dbo].[products] ([nameProduct], [id_proizvoditel], [kol_voProductSklad], [descriptProduct]) VALUES (@nameProduct, @id_proizvoditel, @kol_voProductSklad, @descriptProduct);
@@ -4949,20 +4942,31 @@ SELECT id_product, nameProduct, id_proizvoditel, kol_voProductSklad, descriptPro
             this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@descriptProduct", global::System.Data.SqlDbType.NVarChar, 30, global::System.Data.ParameterDirection.Input, 0, 0, "descriptProduct", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[3] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[3].Connection = this.Connection;
-            this._commandCollection[3].CommandText = @"UPDATE [dbo].[products] SET [nameProduct] = @nameProduct, [id_proizvoditel] = @id_proizvoditel, [kol_voProductSklad] = @kol_voProductSklad, [descriptProduct] = @descriptProduct WHERE (([id_product] = @Original_id_product) AND ([nameProduct] = @Original_nameProduct) AND ((@IsNull_id_proizvoditel = 1 AND [id_proizvoditel] IS NULL) OR ([id_proizvoditel] = @Original_id_proizvoditel)) AND ((@IsNull_kol_voProductSklad = 1 AND [kol_voProductSklad] IS NULL) OR ([kol_voProductSklad] = @Original_kol_voProductSklad)) AND ((@IsNull_descriptProduct = 1 AND [descriptProduct] IS NULL) OR ([descriptProduct] = @Original_descriptProduct)));
-SELECT id_product, nameProduct, id_proizvoditel, kol_voProductSklad, descriptProduct FROM products WHERE (id_product = @id_product)";
+            this._commandCollection[3].CommandText = "UPDATE [dbo].[products] SET [nameProduct] = @nameProduct, [id_proizvoditel] = @id" +
+                "_proizvoditel, [kol_voProductSklad] = @kol_voProductSklad, [descriptProduct] = @" +
+                "descriptProduct WHERE (id_product = @id_product) \r\n";
             this._commandCollection[3].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@nameProduct", global::System.Data.SqlDbType.NVarChar, 30, global::System.Data.ParameterDirection.Input, 0, 0, "nameProduct", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@id_proizvoditel", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "id_proizvoditel", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@kol_voProductSklad", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "kol_voProductSklad", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@descriptProduct", global::System.Data.SqlDbType.NVarChar, 30, global::System.Data.ParameterDirection.Input, 0, 0, "descriptProduct", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_id_product", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "id_product", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_nameProduct", global::System.Data.SqlDbType.NVarChar, 30, global::System.Data.ParameterDirection.Input, 0, 0, "nameProduct", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_id_proizvoditel", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id_proizvoditel", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_kol_voProductSklad", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "kol_voProductSklad", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_descriptProduct", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "descriptProduct", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_id_proizvoditel", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "id_proizvoditel", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@id_product", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "id_product", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._commandCollection[4] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[4].Connection = this.Connection;
+            this._commandCollection[4].CommandText = @"UPDATE [dbo].[products] SET [nameProduct] = @nameProduct, [id_proizvoditel] = @id_proizvoditel, [kol_voProductSklad] = @kol_voProductSklad, [descriptProduct] = @descriptProduct WHERE (([id_product] = @Original_id_product) AND ([nameProduct] = @Original_nameProduct) AND ((@IsNull_id_proizvoditel = 1 AND [id_proizvoditel] IS NULL) OR ([id_proizvoditel] = @Original_id_proizvoditel)) AND ((@IsNull_kol_voProductSklad = 1 AND [kol_voProductSklad] IS NULL) OR ([kol_voProductSklad] = @Original_kol_voProductSklad)) AND ((@IsNull_descriptProduct = 1 AND [descriptProduct] IS NULL) OR ([descriptProduct] = @Original_descriptProduct)));
+SELECT id_product, nameProduct, id_proizvoditel, kol_voProductSklad, descriptProduct FROM products WHERE (id_product = @id_product)";
+            this._commandCollection[4].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[4].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@nameProduct", global::System.Data.SqlDbType.NVarChar, 30, global::System.Data.ParameterDirection.Input, 0, 0, "nameProduct", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[4].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@id_proizvoditel", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "id_proizvoditel", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[4].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@kol_voProductSklad", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "kol_voProductSklad", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[4].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@descriptProduct", global::System.Data.SqlDbType.NVarChar, 30, global::System.Data.ParameterDirection.Input, 0, 0, "descriptProduct", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[4].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_id_product", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "id_product", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._commandCollection[4].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_nameProduct", global::System.Data.SqlDbType.NVarChar, 30, global::System.Data.ParameterDirection.Input, 0, 0, "nameProduct", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._commandCollection[4].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_id_proizvoditel", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id_proizvoditel", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._commandCollection[4].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_kol_voProductSklad", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "kol_voProductSklad", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._commandCollection[4].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_descriptProduct", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "descriptProduct", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._commandCollection[4].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_id_proizvoditel", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "id_proizvoditel", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._commandCollection[4].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@id_product", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "id_product", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -5204,50 +5208,13 @@ SELECT id_product, nameProduct, id_proizvoditel, kol_voProductSklad, descriptPro
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, false)]
-        public virtual int DeleteProduct(int Original_id_product, string Original_nameProduct, global::System.Nullable<int> IsNull_id_proizvoditel, global::System.Nullable<int> Original_id_proizvoditel, global::System.Nullable<int> IsNull_kol_voProductSklad, global::System.Nullable<int> Original_kol_voProductSklad, global::System.Nullable<int> IsNull_descriptProduct, string Original_descriptProduct) {
+        public virtual int DeleteProduct(string nameProduct) {
             global::System.Data.SqlClient.SqlCommand command = this.CommandCollection[1];
-            command.Parameters[0].Value = ((int)(Original_id_product));
-            if ((Original_nameProduct == null)) {
-                throw new global::System.ArgumentNullException("Original_nameProduct");
+            if ((nameProduct == null)) {
+                throw new global::System.ArgumentNullException("nameProduct");
             }
             else {
-                command.Parameters[1].Value = ((string)(Original_nameProduct));
-            }
-            if ((IsNull_id_proizvoditel.HasValue == true)) {
-                command.Parameters[2].Value = ((int)(IsNull_id_proizvoditel.Value));
-            }
-            else {
-                command.Parameters[2].Value = global::System.DBNull.Value;
-            }
-            if ((Original_id_proizvoditel.HasValue == true)) {
-                command.Parameters[3].Value = ((int)(Original_id_proizvoditel.Value));
-            }
-            else {
-                command.Parameters[3].Value = global::System.DBNull.Value;
-            }
-            if ((IsNull_kol_voProductSklad.HasValue == true)) {
-                command.Parameters[4].Value = ((int)(IsNull_kol_voProductSklad.Value));
-            }
-            else {
-                command.Parameters[4].Value = global::System.DBNull.Value;
-            }
-            if ((Original_kol_voProductSklad.HasValue == true)) {
-                command.Parameters[5].Value = ((int)(Original_kol_voProductSklad.Value));
-            }
-            else {
-                command.Parameters[5].Value = global::System.DBNull.Value;
-            }
-            if ((IsNull_descriptProduct.HasValue == true)) {
-                command.Parameters[6].Value = ((int)(IsNull_descriptProduct.Value));
-            }
-            else {
-                command.Parameters[6].Value = global::System.DBNull.Value;
-            }
-            if ((Original_descriptProduct == null)) {
-                command.Parameters[7].Value = global::System.DBNull.Value;
-            }
-            else {
-                command.Parameters[7].Value = ((string)(Original_descriptProduct));
+                command.Parameters[0].Value = ((string)(nameProduct));
             }
             global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
             if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -5317,8 +5284,56 @@ SELECT id_product, nameProduct, id_proizvoditel, kol_voProductSklad, descriptPro
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, false)]
-        public virtual int UpdateQuery_products1(string nameProduct, global::System.Nullable<int> id_proizvoditel, global::System.Nullable<int> kol_voProductSklad, string descriptProduct, int Original_id_product, string Original_nameProduct, global::System.Nullable<int> IsNull_id_proizvoditel, global::System.Nullable<int> IsNull_kol_voProductSklad, global::System.Nullable<int> IsNull_descriptProduct, global::System.Nullable<int> Original_id_proizvoditel, int id_product) {
+        public virtual int UpdateProduct(string nameProduct, global::System.Nullable<int> id_proizvoditel, global::System.Nullable<int> kol_voProductSklad, string descriptProduct, int id_product) {
             global::System.Data.SqlClient.SqlCommand command = this.CommandCollection[3];
+            if ((nameProduct == null)) {
+                throw new global::System.ArgumentNullException("nameProduct");
+            }
+            else {
+                command.Parameters[0].Value = ((string)(nameProduct));
+            }
+            if ((id_proizvoditel.HasValue == true)) {
+                command.Parameters[1].Value = ((int)(id_proizvoditel.Value));
+            }
+            else {
+                command.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            if ((kol_voProductSklad.HasValue == true)) {
+                command.Parameters[2].Value = ((int)(kol_voProductSklad.Value));
+            }
+            else {
+                command.Parameters[2].Value = global::System.DBNull.Value;
+            }
+            if ((descriptProduct == null)) {
+                command.Parameters[3].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[3].Value = ((string)(descriptProduct));
+            }
+            command.Parameters[4].Value = ((int)(id_product));
+            global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
+            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                command.Connection.Open();
+            }
+            int returnValue;
+            try {
+                returnValue = command.ExecuteNonQuery();
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    command.Connection.Close();
+                }
+            }
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, false)]
+        public virtual int UpdateQuery_products(string nameProduct, global::System.Nullable<int> id_proizvoditel, global::System.Nullable<int> kol_voProductSklad, string descriptProduct, int Original_id_product, string Original_nameProduct, global::System.Nullable<int> IsNull_id_proizvoditel, global::System.Nullable<int> IsNull_kol_voProductSklad, global::System.Nullable<int> IsNull_descriptProduct, global::System.Nullable<int> Original_id_proizvoditel, int id_product) {
+            global::System.Data.SqlClient.SqlCommand command = this.CommandCollection[4];
             if ((nameProduct == null)) {
                 throw new global::System.ArgumentNullException("nameProduct");
             }

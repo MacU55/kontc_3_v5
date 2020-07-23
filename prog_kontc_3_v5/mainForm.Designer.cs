@@ -35,16 +35,17 @@
             this.razrab = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.grp_productsSearch = new System.Windows.Forms.GroupBox();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnUpdateProduct = new System.Windows.Forms.Button();
+            this.cmbBoxProductDescript = new System.Windows.Forms.ComboBox();
+            this.productsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.cmbBoxKolvoProduct = new System.Windows.Forms.ComboBox();
             this.button2 = new System.Windows.Forms.Button();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.cmbBoxProductName = new System.Windows.Forms.ComboBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cmbBoxProizvoditelName = new System.Windows.Forms.ComboBox();
             this.productProizvoditeliBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.txtbox_ProductName = new System.Windows.Forms.TextBox();
             this.grp_Zakupki = new System.Windows.Forms.GroupBox();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
@@ -57,16 +58,14 @@
             this.priceSummaZakupkaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.priceProductFactorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fKzakupkiidproductsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.productsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.grp_Products = new System.Windows.Forms.GroupBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvProduct = new System.Windows.Forms.DataGridView();
             this.idproductDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nameProductDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idproizvoditelDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.kolvoProductSkladDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.descriptProductDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bindingNavigator1 = new System.Windows.Forms.BindingNavigator(this.components);
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
@@ -77,6 +76,7 @@
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.grp_Prodazhi = new System.Windows.Forms.GroupBox();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.idprodazhaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -94,6 +94,7 @@
             this.tabPage6 = new System.Windows.Forms.TabPage();
             this.tabPage7 = new System.Windows.Forms.TabPage();
             this.button1 = new System.Windows.Forms.Button();
+            this.productsBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.productsBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.prodazhiBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.productsTableAdapter = new prog_kontc_3_v5.kontc_3DataSetTableAdapters.productsTableAdapter();
@@ -104,30 +105,36 @@
             this.productsTableAdapter1_1 = new prog_kontc_3_v5.kontc_3DataSetTableAdapters.productsTableAdapter();
             this.bindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.kontc_3DataSet2 = new prog_kontc_3_v5.kontc_3DataSet();
-            this.btnDeleteProduct = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.idproizvoditelDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nameProizvoditelDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kontc_3DataSet)).BeginInit();
             this.razrab.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.grp_productsSearch.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.productsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productProizvoditeliBindingSource)).BeginInit();
             this.grp_Zakupki.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fKzakupkiidproductsBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.productsBindingSource)).BeginInit();
             this.grp_Products.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvProduct)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
             this.bindingNavigator1.SuspendLayout();
             this.grp_Prodazhi.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fKprodazhiidproductsBindingSource)).BeginInit();
             this.tabPage7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.productsBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productsBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.prodazhiBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kontc_3DataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kontc_3DataSet2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // bindingSource1
@@ -149,14 +156,15 @@
             this.razrab.Controls.Add(this.tabPage5);
             this.razrab.Controls.Add(this.tabPage6);
             this.razrab.Controls.Add(this.tabPage7);
-            this.razrab.Location = new System.Drawing.Point(12, 21);
+            this.razrab.Location = new System.Drawing.Point(2, 1);
             this.razrab.Name = "razrab";
             this.razrab.SelectedIndex = 0;
-            this.razrab.Size = new System.Drawing.Size(957, 706);
+            this.razrab.Size = new System.Drawing.Size(1070, 729);
             this.razrab.TabIndex = 0;
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.groupBox1);
             this.tabPage1.Controls.Add(this.grp_productsSearch);
             this.tabPage1.Controls.Add(this.grp_Zakupki);
             this.tabPage1.Controls.Add(this.grp_Products);
@@ -164,7 +172,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(949, 680);
+            this.tabPage1.Size = new System.Drawing.Size(1062, 703);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Товары";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -172,90 +180,107 @@
             // 
             // grp_productsSearch
             // 
-            this.grp_productsSearch.Controls.Add(this.btnDeleteProduct);
-            this.grp_productsSearch.Controls.Add(this.button3);
-            this.grp_productsSearch.Controls.Add(this.button2);
-            this.grp_productsSearch.Controls.Add(this.textBox6);
+            this.grp_productsSearch.Controls.Add(this.cmbBoxProductDescript);
+            this.grp_productsSearch.Controls.Add(this.cmbBoxKolvoProduct);
+            this.grp_productsSearch.Controls.Add(this.cmbBoxProductName);
             this.grp_productsSearch.Controls.Add(this.textBox5);
-            this.grp_productsSearch.Controls.Add(this.textBox4);
             this.grp_productsSearch.Controls.Add(this.textBox3);
-            this.grp_productsSearch.Controls.Add(this.comboBox1);
+            this.grp_productsSearch.Controls.Add(this.cmbBoxProizvoditelName);
             this.grp_productsSearch.Controls.Add(this.textBox2);
-            this.grp_productsSearch.Controls.Add(this.textBox1);
             this.grp_productsSearch.Controls.Add(this.txtbox_ProductName);
-            this.grp_productsSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.grp_productsSearch.Location = new System.Drawing.Point(589, 15);
+            this.grp_productsSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.grp_productsSearch.Location = new System.Drawing.Point(578, 6);
             this.grp_productsSearch.Name = "grp_productsSearch";
-            this.grp_productsSearch.Size = new System.Drawing.Size(332, 360);
+            this.grp_productsSearch.Size = new System.Drawing.Size(481, 216);
             this.grp_productsSearch.TabIndex = 5;
             this.grp_productsSearch.TabStop = false;
-            this.grp_productsSearch.Text = "Внесение товара в базу";
+            this.grp_productsSearch.Text = "Поиск товара на складе";
             this.grp_productsSearch.Enter += new System.EventHandler(this.grp_productsSearch_Enter);
             // 
-            // button3
+            // btnUpdateProduct
             // 
-            this.button3.Location = new System.Drawing.Point(215, 308);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(100, 34);
-            this.button3.TabIndex = 9;
-            this.button3.Text = "Отмена";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.btnUpdateProduct.Location = new System.Drawing.Point(1089, 411);
+            this.btnUpdateProduct.Name = "btnUpdateProduct";
+            this.btnUpdateProduct.Size = new System.Drawing.Size(126, 45);
+            this.btnUpdateProduct.TabIndex = 14;
+            this.btnUpdateProduct.Text = "Подтвердить изменения";
+            this.btnUpdateProduct.UseVisualStyleBackColor = true;
+            // 
+            // cmbBoxProductDescript
+            // 
+            this.cmbBoxProductDescript.DataSource = this.productsBindingSource;
+            this.cmbBoxProductDescript.DisplayMember = "descriptProduct";
+            this.cmbBoxProductDescript.FormattingEnabled = true;
+            this.cmbBoxProductDescript.Location = new System.Drawing.Point(293, 166);
+            this.cmbBoxProductDescript.Name = "cmbBoxProductDescript";
+            this.cmbBoxProductDescript.Size = new System.Drawing.Size(153, 24);
+            this.cmbBoxProductDescript.TabIndex = 13;
+            // 
+            // productsBindingSource
+            // 
+            this.productsBindingSource.DataMember = "products";
+            this.productsBindingSource.DataSource = this.bindingSource1;
+            // 
+            // cmbBoxKolvoProduct
+            // 
+            this.cmbBoxKolvoProduct.DataSource = this.productsBindingSource;
+            this.cmbBoxKolvoProduct.DisplayMember = "kol_voProductSklad";
+            this.cmbBoxKolvoProduct.FormattingEnabled = true;
+            this.cmbBoxKolvoProduct.Location = new System.Drawing.Point(293, 120);
+            this.cmbBoxKolvoProduct.Name = "cmbBoxKolvoProduct";
+            this.cmbBoxKolvoProduct.Size = new System.Drawing.Size(153, 24);
+            this.cmbBoxKolvoProduct.TabIndex = 12;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(30, 308);
+            this.button2.Location = new System.Drawing.Point(1078, 503);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(100, 34);
+            this.button2.Size = new System.Drawing.Size(126, 49);
             this.button2.TabIndex = 8;
             this.button2.Text = "Внести товар в базу";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // textBox6
+            // cmbBoxProductName
             // 
-            this.textBox6.Location = new System.Drawing.Point(161, 162);
-            this.textBox6.Multiline = true;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(157, 54);
-            this.textBox6.TabIndex = 7;
+            this.cmbBoxProductName.DataSource = this.productsBindingSource;
+            this.cmbBoxProductName.DisplayMember = "nameProduct";
+            this.cmbBoxProductName.FormattingEnabled = true;
+            this.cmbBoxProductName.Location = new System.Drawing.Point(293, 21);
+            this.cmbBoxProductName.Name = "cmbBoxProductName";
+            this.cmbBoxProductName.Size = new System.Drawing.Size(153, 24);
+            this.cmbBoxProductName.TabIndex = 11;
             // 
             // textBox5
             // 
             this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox5.Location = new System.Drawing.Point(15, 169);
+            this.textBox5.Location = new System.Drawing.Point(56, 169);
             this.textBox5.Multiline = true;
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(141, 33);
             this.textBox5.TabIndex = 6;
             this.textBox5.Text = "Описание товара";
             // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(161, 120);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(154, 20);
-            this.textBox4.TabIndex = 5;
-            // 
             // textBox3
             // 
             this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Location = new System.Drawing.Point(15, 123);
+            this.textBox3.Location = new System.Drawing.Point(56, 120);
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(141, 33);
             this.textBox3.TabIndex = 4;
             this.textBox3.Text = "Количество товара на складе";
             // 
-            // comboBox1
+            // cmbBoxProizvoditelName
             // 
-            this.comboBox1.DataSource = this.productProizvoditeliBindingSource;
-            this.comboBox1.DisplayMember = "nameProizvoditel";
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(162, 71);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(153, 21);
-            this.comboBox1.TabIndex = 3;
+            this.cmbBoxProizvoditelName.DataSource = this.productsBindingSource;
+            this.cmbBoxProizvoditelName.DisplayMember = "id_proizvoditel";
+            this.cmbBoxProizvoditelName.FormattingEnabled = true;
+            this.cmbBoxProizvoditelName.Location = new System.Drawing.Point(293, 68);
+            this.cmbBoxProizvoditelName.Name = "cmbBoxProizvoditelName";
+            this.cmbBoxProizvoditelName.Size = new System.Drawing.Size(153, 24);
+            this.cmbBoxProizvoditelName.TabIndex = 3;
+            this.cmbBoxProizvoditelName.ValueMember = "id_proizvoditel";
             // 
             // productProizvoditeliBindingSource
             // 
@@ -265,25 +290,17 @@
             // textBox2
             // 
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Location = new System.Drawing.Point(15, 71);
+            this.textBox2.Location = new System.Drawing.Point(56, 71);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(141, 33);
             this.textBox2.TabIndex = 2;
-            this.textBox2.Text = "Название производителя товара";
-            // 
-            // textBox1
-            // 
-            this.textBox1.ImeMode = System.Windows.Forms.ImeMode.AlphaFull;
-            this.textBox1.Location = new System.Drawing.Point(161, 32);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(154, 20);
-            this.textBox1.TabIndex = 1;
+            this.textBox2.Text = "Код производителя товара";
             // 
             // txtbox_ProductName
             // 
             this.txtbox_ProductName.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtbox_ProductName.Location = new System.Drawing.Point(15, 32);
+            this.txtbox_ProductName.Location = new System.Drawing.Point(56, 21);
             this.txtbox_ProductName.Multiline = true;
             this.txtbox_ProductName.Name = "txtbox_ProductName";
             this.txtbox_ProductName.Size = new System.Drawing.Size(100, 33);
@@ -293,7 +310,8 @@
             // grp_Zakupki
             // 
             this.grp_Zakupki.Controls.Add(this.dataGridView3);
-            this.grp_Zakupki.Location = new System.Drawing.Point(17, 526);
+            this.grp_Zakupki.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.grp_Zakupki.Location = new System.Drawing.Point(6, 508);
             this.grp_Zakupki.Name = "grp_Zakupki";
             this.grp_Zakupki.Size = new System.Drawing.Size(890, 120);
             this.grp_Zakupki.TabIndex = 4;
@@ -315,9 +333,9 @@
             this.priceProductFactorDataGridViewTextBoxColumn});
             this.dataGridView3.DataSource = this.fKzakupkiidproductsBindingSource;
             this.dataGridView3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView3.Location = new System.Drawing.Point(3, 16);
+            this.dataGridView3.Location = new System.Drawing.Point(3, 17);
             this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.Size = new System.Drawing.Size(884, 101);
+            this.dataGridView3.Size = new System.Drawing.Size(884, 100);
             this.dataGridView3.TabIndex = 0;
             // 
             // idzakupkaDataGridViewTextBoxColumn
@@ -376,39 +394,34 @@
             this.fKzakupkiidproductsBindingSource.DataMember = "FK_zakupki_id_products";
             this.fKzakupkiidproductsBindingSource.DataSource = this.productsBindingSource;
             // 
-            // productsBindingSource
-            // 
-            this.productsBindingSource.DataMember = "products";
-            this.productsBindingSource.DataSource = this.bindingSource1;
-            // 
             // grp_Products
             // 
             this.grp_Products.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.grp_Products.Controls.Add(this.dataGridView1);
+            this.grp_Products.Controls.Add(this.dgvProduct);
             this.grp_Products.Controls.Add(this.bindingNavigator1);
-            this.grp_Products.Location = new System.Drawing.Point(14, 15);
+            this.grp_Products.Location = new System.Drawing.Point(3, 3);
             this.grp_Products.Name = "grp_Products";
-            this.grp_Products.Size = new System.Drawing.Size(569, 360);
+            this.grp_Products.Size = new System.Drawing.Size(569, 376);
             this.grp_Products.TabIndex = 2;
             this.grp_Products.TabStop = false;
             this.grp_Products.Text = "Товары";
             // 
-            // dataGridView1
+            // dgvProduct
             // 
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvProduct.AutoGenerateColumns = false;
+            this.dgvProduct.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvProduct.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idproductDataGridViewTextBoxColumn,
             this.nameProductDataGridViewTextBoxColumn,
             this.idproizvoditelDataGridViewTextBoxColumn,
             this.kolvoProductSkladDataGridViewTextBoxColumn,
             this.descriptProductDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.productsBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 58);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(550, 160);
-            this.dataGridView1.TabIndex = 0;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.dgvProduct.DataSource = this.productsBindingSource;
+            this.dgvProduct.Location = new System.Drawing.Point(3, 44);
+            this.dgvProduct.Name = "dgvProduct";
+            this.dgvProduct.Size = new System.Drawing.Size(560, 326);
+            this.dgvProduct.TabIndex = 0;
+            this.dgvProduct.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // idproductDataGridViewTextBoxColumn
             // 
@@ -443,7 +456,7 @@
             // 
             // bindingNavigator1
             // 
-            this.bindingNavigator1.AddNewItem = this.bindingNavigatorAddNewItem;
+            this.bindingNavigator1.AddNewItem = null;
             this.bindingNavigator1.BindingSource = this.productsBindingSource;
             this.bindingNavigator1.CountItem = this.bindingNavigatorCountItem;
             this.bindingNavigator1.DeleteItem = this.bindingNavigatorDeleteItem;
@@ -458,8 +471,8 @@
             this.bindingNavigatorMoveNextItem,
             this.bindingNavigatorMoveLastItem,
             this.bindingNavigatorSeparator2,
-            this.bindingNavigatorAddNewItem,
-            this.bindingNavigatorDeleteItem});
+            this.bindingNavigatorDeleteItem,
+            this.toolStripSeparator1});
             this.bindingNavigator1.Location = new System.Drawing.Point(3, 16);
             this.bindingNavigator1.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
             this.bindingNavigator1.MoveLastItem = this.bindingNavigatorMoveLastItem;
@@ -467,18 +480,9 @@
             this.bindingNavigator1.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.bindingNavigator1.Name = "bindingNavigator1";
             this.bindingNavigator1.PositionItem = this.bindingNavigatorPositionItem;
-            this.bindingNavigator1.Size = new System.Drawing.Size(263, 25);
+            this.bindingNavigator1.Size = new System.Drawing.Size(357, 25);
             this.bindingNavigator1.TabIndex = 1;
             this.bindingNavigator1.Text = "bindingNavigator1";
-            // 
-            // bindingNavigatorAddNewItem
-            // 
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorAddNewItem.Text = "Добавить";
             // 
             // bindingNavigatorCountItem
             // 
@@ -489,12 +493,13 @@
             // 
             // bindingNavigatorDeleteItem
             // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
             this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
             this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorDeleteItem.Text = "Удалить";
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(134, 22);
+            this.bindingNavigatorDeleteItem.Text = "Удалить товар из базы";
+            this.bindingNavigatorDeleteItem.Click += new System.EventHandler(this.bindingNavigatorDeleteItem_Click);
             // 
             // bindingNavigatorMoveFirstItem
             // 
@@ -556,10 +561,16 @@
             this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
             this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
             // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 25);
+            // 
             // grp_Prodazhi
             // 
             this.grp_Prodazhi.Controls.Add(this.dataGridView2);
-            this.grp_Prodazhi.Location = new System.Drawing.Point(17, 397);
+            this.grp_Prodazhi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.grp_Prodazhi.Location = new System.Drawing.Point(6, 388);
             this.grp_Prodazhi.Name = "grp_Prodazhi";
             this.grp_Prodazhi.Size = new System.Drawing.Size(811, 114);
             this.grp_Prodazhi.TabIndex = 3;
@@ -580,9 +591,9 @@
             this.priceSummaProdazhaDataGridViewTextBoxColumn});
             this.dataGridView2.DataSource = this.fKprodazhiidproductsBindingSource;
             this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView2.Location = new System.Drawing.Point(3, 16);
+            this.dataGridView2.Location = new System.Drawing.Point(3, 17);
             this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(805, 95);
+            this.dataGridView2.Size = new System.Drawing.Size(805, 94);
             this.dataGridView2.TabIndex = 0;
             // 
             // idprodazhaDataGridViewTextBoxColumn
@@ -704,6 +715,11 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // productsBindingSource2
+            // 
+            this.productsBindingSource2.DataMember = "products";
+            this.productsBindingSource2.DataSource = this.bindingSource1;
+            // 
             // productsBindingSource1
             // 
             this.productsBindingSource1.DataMember = "products";
@@ -749,21 +765,52 @@
             this.kontc_3DataSet2.DataSetName = "kontc_3DataSet";
             this.kontc_3DataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // btnDeleteProduct
+            // dataGridView1
             // 
-            this.btnDeleteProduct.Location = new System.Drawing.Point(30, 247);
-            this.btnDeleteProduct.Name = "btnDeleteProduct";
-            this.btnDeleteProduct.Size = new System.Drawing.Size(100, 34);
-            this.btnDeleteProduct.TabIndex = 10;
-            this.btnDeleteProduct.Text = "Удалить товар из базы";
-            this.btnDeleteProduct.UseVisualStyleBackColor = true;
-            this.btnDeleteProduct.Click += new System.EventHandler(this.btnDeleteProduct_Click);
+            this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idproizvoditelDataGridViewTextBoxColumn1,
+            this.nameProizvoditelDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.productProizvoditeliBindingSource;
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.Location = new System.Drawing.Point(3, 17);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(426, 110);
+            this.dataGridView1.TabIndex = 15;
+            // 
+            // idproizvoditelDataGridViewTextBoxColumn1
+            // 
+            this.idproizvoditelDataGridViewTextBoxColumn1.DataPropertyName = "id_proizvoditel";
+            this.idproizvoditelDataGridViewTextBoxColumn1.HeaderText = "Код производителя";
+            this.idproizvoditelDataGridViewTextBoxColumn1.Name = "idproizvoditelDataGridViewTextBoxColumn1";
+            this.idproizvoditelDataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // nameProizvoditelDataGridViewTextBoxColumn
+            // 
+            this.nameProizvoditelDataGridViewTextBoxColumn.DataPropertyName = "nameProizvoditel";
+            this.nameProizvoditelDataGridViewTextBoxColumn.HeaderText = "Название производителя";
+            this.nameProizvoditelDataGridViewTextBoxColumn.Name = "nameProizvoditelDataGridViewTextBoxColumn";
+            this.nameProizvoditelDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.dataGridView1);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.groupBox1.Location = new System.Drawing.Point(592, 249);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(432, 130);
+            this.groupBox1.TabIndex = 16;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Информация о производителях";
             // 
             // Kontc_3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1020, 774);
+            this.ClientSize = new System.Drawing.Size(1298, 861);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnUpdateProduct);
             this.Controls.Add(this.razrab);
             this.Name = "Kontc_3";
             this.Text = "Kontc_3";
@@ -774,14 +821,14 @@
             this.tabPage1.ResumeLayout(false);
             this.grp_productsSearch.ResumeLayout(false);
             this.grp_productsSearch.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.productsBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.productProizvoditeliBindingSource)).EndInit();
             this.grp_Zakupki.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fKzakupkiidproductsBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.productsBindingSource)).EndInit();
             this.grp_Products.ResumeLayout(false);
             this.grp_Products.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvProduct)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).EndInit();
             this.bindingNavigator1.ResumeLayout(false);
             this.bindingNavigator1.PerformLayout();
@@ -789,11 +836,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fKprodazhiidproductsBindingSource)).EndInit();
             this.tabPage7.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.productsBindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.productsBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.prodazhiBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kontc_3DataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kontc_3DataSet2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -809,11 +859,10 @@
         private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.TabPage tabPage5;
         private System.Windows.Forms.TabPage tabPage6;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvProduct;
         private System.Windows.Forms.BindingSource productsBindingSource;
         private kontc_3DataSetTableAdapters.productsTableAdapter productsTableAdapter;
         private System.Windows.Forms.BindingNavigator bindingNavigator1;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
         private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
         private System.Windows.Forms.ToolStripButton bindingNavigatorDeleteItem;
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveFirstItem;
@@ -845,9 +894,8 @@
         private System.Windows.Forms.BindingSource productsBindingSource1;
         private System.Windows.Forms.TabPage tabPage7;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmbBoxProizvoditelName;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.DataGridViewTextBoxColumn idprodazhaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn idproductDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn idpokupatelDataGridViewTextBoxColumn;
@@ -866,15 +914,21 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn kolvoProductZakupkaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn priceSummaZakupkaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn priceProductFactorDataGridViewTextBoxColumn;
-        private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private kontc_3DataSetTableAdapters.productsTableAdapter productsTableAdapter1_1;
         private System.Windows.Forms.BindingSource bindingSource2;
         private kontc_3DataSet kontc_3DataSet2;
-        private System.Windows.Forms.Button btnDeleteProduct;
+        private System.Windows.Forms.ComboBox cmbBoxProductName;
+        private System.Windows.Forms.ComboBox cmbBoxProductDescript;
+        private System.Windows.Forms.ComboBox cmbBoxKolvoProduct;
+        private System.Windows.Forms.BindingSource productsBindingSource2;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.Button btnUpdateProduct;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idproizvoditelDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nameProizvoditelDataGridViewTextBoxColumn;
     }
 }
 

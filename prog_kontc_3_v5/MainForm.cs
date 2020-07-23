@@ -61,6 +61,12 @@ namespace prog_kontc_3_v5
 
         private void button1_Click(object sender, EventArgs e)
         {
+            productsTableAdapter.Update(kontc_3DataSet);
+            prodazhiTableAdapter.Update(kontc_3DataSet);
+            zakupkiTableAdapter.Update(kontc_3DataSet);
+            productProizvoditeliTableAdapter.Update(kontc_3DataSet);
+            //pokupateliTableAdapter.Update(kontc_3DataSet);
+            //postavshikiTableAdapter.Update(kontc_3DataSet);
             Application.Exit();
         }
 
@@ -75,21 +81,43 @@ namespace prog_kontc_3_v5
             frmAddProduct.ShowDialog();
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-
-        }
+       
 
         private void btnDeleteProduct_Click(object sender, EventArgs e)
         {
-           /* int id_product = 0;
-           productsTableAdapter.DeleteProduct
-                (Convert.ToInt32(dataGridView1.SelectedRows[0].Cells[0].Value));
+            /* int id_product = 0;*/
+            productsTableAdapter.Fill(kontc_3DataSet.products);
+            kontc_3DataSet.AcceptChanges();
+            productsTableAdapter.DeleteProduct(Convert.ToString(cmbBoxProductName.SelectedValue));
+                /*(Convert.ToString(dataGridView1.SelectedRows[0].Cells[1]));*/
 
             /*int delet = dataGridView1.SelectedCells[0].RowIndex;
-            dataGridView1.Rows.RemoveAt(delet);
+            dataGridView1.Rows.RemoveAt(delet);*/
             productsTableAdapter.Fill(kontc_3DataSet.products);
-            kontc_3DataSet.AcceptChanges();*/
+            kontc_3DataSet.AcceptChanges();
         }
+
+        private void bindingNavigatorDeleteItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnUpdateProduct_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                this.Validate();
+                this.productsBindingSource.EndEdit();
+                this.productsTableAdapter.Update(this.kontc_3DataSet.products);
+                MessageBox.Show("Данные обновлены");
+            }
+            catch (System.Exception ex)
+            {
+                MessageBox.Show("Ошибка обновления");
+            }
+        }   
+
+
     }
 }
+
