@@ -25,6 +25,8 @@ namespace prog_kontc_3_v5
 
         private void Kontc_3_Load(object sender, EventArgs e)
         {
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "kontc_3DataSet.postavshiki". При необходимости она может быть перемещена или удалена.
+            this.postavshikiTableAdapter.Fill(this.kontc_3DataSet.postavshiki);
             // TODO: данная строка кода позволяет загрузить данные в таблицу "kontc_3DataSet.productProizvoditeli". При необходимости она может быть перемещена или удалена.
             this.productProizvoditeliTableAdapter.Fill(this.kontc_3DataSet.productProizvoditeli);
             // TODO: данная строка кода позволяет загрузить данные в таблицу "kontc_3DataSet.zakupki". При необходимости она может быть перемещена или удалена.
@@ -118,6 +120,16 @@ namespace prog_kontc_3_v5
         }
 
         private void dataGridView4_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void btnUpdateProduct_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
         }
