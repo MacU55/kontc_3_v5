@@ -5595,12 +5595,23 @@ SELECT id_zakupka, id_product, id_postavshik, dateZakupka, priceProductZakupka, 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[2];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT id_zakupka, id_product, id_postavshik, dateZakupka, priceProductZakupka, k" +
                 "ol_voProductZakupka, priceSummaZakupka, priceProductFactor FROM dbo.zakupki";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[1].Connection = this.Connection;
+            this._commandCollection[1].CommandText = @"INSERT INTO [dbo].[zakupki] ([id_product], [id_postavshik], [dateZakupka], [priceProductZakupka], [kol_voProductZakupka], [priceProductFactor]) VALUES (@id_product, @id_postavshik, @dateZakupka, @priceProductZakupka, @kol_voProductZakupka, @priceProductFactor);
+SELECT id_zakupka, id_product, id_postavshik, dateZakupka, priceProductZakupka, kol_voProductZakupka, priceSummaZakupka, priceProductFactor FROM zakupki WHERE (id_zakupka = SCOPE_IDENTITY())";
+            this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@id_product", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "id_product", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@id_postavshik", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "id_postavshik", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@dateZakupka", global::System.Data.SqlDbType.Date, 3, global::System.Data.ParameterDirection.Input, 0, 0, "dateZakupka", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@priceProductZakupka", global::System.Data.SqlDbType.Decimal, 5, global::System.Data.ParameterDirection.Input, 5, 2, "priceProductZakupka", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@kol_voProductZakupka", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "kol_voProductZakupka", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@priceProductFactor", global::System.Data.SqlDbType.Decimal, 5, global::System.Data.ParameterDirection.Input, 5, 2, "priceProductFactor", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -5768,6 +5779,40 @@ SELECT id_zakupka, id_product, id_postavshik, dateZakupka, priceProductZakupka, 
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
         public virtual int Update(int id_product, int id_postavshik, System.DateTime dateZakupka, decimal priceProductZakupka, int kol_voProductZakupka, decimal priceProductFactor, int Original_id_zakupka, int Original_id_product, int Original_id_postavshik, System.DateTime Original_dateZakupka, decimal Original_priceProductZakupka, int Original_kol_voProductZakupka, global::System.Nullable<decimal> Original_priceSummaZakupka, decimal Original_priceProductFactor) {
             return this.Update(id_product, id_postavshik, dateZakupka, priceProductZakupka, kol_voProductZakupka, priceProductFactor, Original_id_zakupka, Original_id_product, Original_id_postavshik, Original_dateZakupka, Original_priceProductZakupka, Original_kol_voProductZakupka, Original_priceSummaZakupka, Original_priceProductFactor, Original_id_zakupka);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, false)]
+        public virtual int InsertZakupka(int id_product, int id_postavshik, string dateZakupka, decimal priceProductZakupka, int kol_voProductZakupka, decimal priceProductFactor) {
+            global::System.Data.SqlClient.SqlCommand command = this.CommandCollection[1];
+            command.Parameters[0].Value = ((int)(id_product));
+            command.Parameters[1].Value = ((int)(id_postavshik));
+            if ((dateZakupka == null)) {
+                throw new global::System.ArgumentNullException("dateZakupka");
+            }
+            else {
+                command.Parameters[2].Value = ((string)(dateZakupka));
+            }
+            command.Parameters[3].Value = ((decimal)(priceProductZakupka));
+            command.Parameters[4].Value = ((int)(kol_voProductZakupka));
+            command.Parameters[5].Value = ((decimal)(priceProductFactor));
+            global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
+            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                command.Connection.Open();
+            }
+            int returnValue;
+            try {
+                returnValue = command.ExecuteNonQuery();
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    command.Connection.Close();
+                }
+            }
+            return returnValue;
         }
     }
     
