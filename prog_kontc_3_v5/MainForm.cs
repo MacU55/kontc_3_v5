@@ -115,30 +115,15 @@ namespace prog_kontc_3_v5
                 this.productsTableAdapter.Update(this.kontc_3DataSet.products);
                 MessageBox.Show("Данные обновлены");
             }
-            catch (System.Exception ex)
+            catch (System.Exception)
             {
                 MessageBox.Show("Ошибка обновления");
             }
         }
-
-        private void dataGridView4_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void btnAddZakupka_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void btnUpdateProduct_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox14_TextChanged(object sender, EventArgs e)
-        {
-
+            Form frmAddZakupka = new addZakupka();
+            frmAddZakupka.ShowDialog();
         }
     }
 }
