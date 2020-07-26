@@ -7,9 +7,12 @@
     }
 }
 
-namespace prog_kontc_3_v5.kontc_3DataSetTableAdapters {
-    
-    
+namespace prog_kontc_3_v5.kontc_3DataSetTableAdapters
+{
+    partial class zakupkiTableAdapter
+    {
+    }
+
     public partial class productsTableAdapter {
     }
 }

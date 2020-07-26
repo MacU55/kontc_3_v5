@@ -18,10 +18,7 @@ namespace prog_kontc_3_v5
             InitializeComponent();
         }
 
-        private void tabPage3_Click(object sender, EventArgs e)
-        {
-
-        }
+       
 
         private void Kontc_3_Load(object sender, EventArgs e)
         {
@@ -40,15 +37,9 @@ namespace prog_kontc_3_v5
 
         }
 
-        private void tabPage1_Click(object sender, EventArgs e)
-        {
+        
 
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
+        
 
         private void fillByToolStripButton_Click(object sender, EventArgs e)
         {
@@ -101,10 +92,7 @@ namespace prog_kontc_3_v5
             kontc_3DataSet.AcceptChanges();
         }
 
-        private void bindingNavigatorDeleteItem_Click(object sender, EventArgs e)
-        {
-
-        }
+       
 
         private void btnUpdateProduct_Click(object sender, EventArgs e)
         {
@@ -121,24 +109,10 @@ namespace prog_kontc_3_v5
             }
         }
 
-        private void dataGridView4_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void btnAddZakupka_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void btnUpdateProduct_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox14_TextChanged(object sender, EventArgs e)
-        {
-
+            Form frmAddZakupka = new addZakupka();
+            frmAddZakupka.ShowDialog();
         }
     }
 }

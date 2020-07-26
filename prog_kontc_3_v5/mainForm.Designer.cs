@@ -91,16 +91,35 @@
             this.priceSummaProdazhaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fKprodazhiidproductsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.grpZakupkaSearch = new System.Windows.Forms.GroupBox();
+            this.comboBox6 = new System.Windows.Forms.ComboBox();
+            this.zakupkiBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.comboBox5 = new System.Windows.Forms.ComboBox();
+            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.textBox8 = new System.Windows.Forms.TextBox();
             this.grpUpdateZakupka = new System.Windows.Forms.GroupBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.btnUpdateZakupka = new System.Windows.Forms.Button();
             this.grpCreateZakupka = new System.Windows.Forms.GroupBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.btnAddZakupka = new System.Windows.Forms.Button();
-            this.postavshikiBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.grpZakupki = new System.Windows.Forms.GroupBox();
             this.dgvZakupki = new System.Windows.Forms.DataGridView();
-            this.zakupkiBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.idzakupkaDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idproductDataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idpostavshikDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dateZakupkaDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.priceProductZakupkaDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.kolvoProductZakupkaDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.priceSummaZakupkaDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.priceProductFactorDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bdnavZakupki = new System.Windows.Forms.BindingNavigator(this.components);
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
@@ -114,62 +133,20 @@
             this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.tabPage6 = new System.Windows.Forms.TabPage();
-            this.tabPage7 = new System.Windows.Forms.TabPage();
-            this.button1 = new System.Windows.Forms.Button();
-            this.fKidProizvoditeliBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.productProizvoditeliBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.productsBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
-            this.productsBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.prodazhiBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.productsTableAdapter = new prog_kontc_3_v5.kontc_3DataSetTableAdapters.productsTableAdapter();
-            this.prodazhiTableAdapter = new prog_kontc_3_v5.kontc_3DataSetTableAdapters.prodazhiTableAdapter();
-            this.kontc_3DataSet1 = new prog_kontc_3_v5.kontc_3DataSet();
-            this.zakupkiTableAdapter = new prog_kontc_3_v5.kontc_3DataSetTableAdapters.zakupkiTableAdapter();
-            this.productProizvoditeliTableAdapter = new prog_kontc_3_v5.kontc_3DataSetTableAdapters.productProizvoditeliTableAdapter();
-            this.productsTableAdapter1_1 = new prog_kontc_3_v5.kontc_3DataSetTableAdapters.productsTableAdapter();
-            this.bindingSource2 = new System.Windows.Forms.BindingSource(this.components);
-            this.kontc_3DataSet2 = new prog_kontc_3_v5.kontc_3DataSet();
-            this.postavshikiTableAdapter = new prog_kontc_3_v5.kontc_3DataSetTableAdapters.postavshikiTableAdapter();
-            this.grpZakupkaSearch = new System.Windows.Forms.GroupBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
-            this.comboBox6 = new System.Windows.Forms.ComboBox();
-            this.grpSearchProdazha = new System.Windows.Forms.GroupBox();
-            this.grpUpdateProdazha = new System.Windows.Forms.GroupBox();
             this.grpCreateProdazha = new System.Windows.Forms.GroupBox();
-            this.grpPostavshiki = new System.Windows.Forms.GroupBox();
-            this.grpPokupateli = new System.Windows.Forms.GroupBox();
-            this.grpProizvoditeli = new System.Windows.Forms.GroupBox();
-            this.grpSearchPostavshik = new System.Windows.Forms.GroupBox();
-            this.grpSearchPokupatel = new System.Windows.Forms.GroupBox();
-            this.grpSearchProizvoditel = new System.Windows.Forms.GroupBox();
-            this.groupBox7 = new System.Windows.Forms.GroupBox();
-            this.groupBox8 = new System.Windows.Forms.GroupBox();
-            this.groupBox9 = new System.Windows.Forms.GroupBox();
-            this.groupBox10 = new System.Windows.Forms.GroupBox();
-            this.groupBox11 = new System.Windows.Forms.GroupBox();
-            this.groupBox12 = new System.Windows.Forms.GroupBox();
-            this.idzakupkaDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.idproductDataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.idpostavshikDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dateZakupkaDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.priceProductZakupkaDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.kolvoProductZakupkaDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.priceSummaZakupkaDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.priceProductFactorDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.prodazhiBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.dgvProdazhi = new System.Windows.Forms.DataGridView();
+            this.grpUpdateProdazha = new System.Windows.Forms.GroupBox();
+            this.grpSearchProdazha = new System.Windows.Forms.GroupBox();
+            this.comboBox11 = new System.Windows.Forms.ComboBox();
+            this.prodazhiBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.comboBox10 = new System.Windows.Forms.ComboBox();
+            this.comboBox9 = new System.Windows.Forms.ComboBox();
+            this.comboBox8 = new System.Windows.Forms.ComboBox();
+            this.comboBox7 = new System.Windows.Forms.ComboBox();
+            this.textBox17 = new System.Windows.Forms.TextBox();
+            this.textBox16 = new System.Windows.Forms.TextBox();
+            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.textBox14 = new System.Windows.Forms.TextBox();
             this.grpProdazhi = new System.Windows.Forms.GroupBox();
             this.bndNavProdazhi = new System.Windows.Forms.BindingNavigator(this.components);
             this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
@@ -183,6 +160,7 @@
             this.toolStripButton10 = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator8 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripSeparator9 = new System.Windows.Forms.ToolStripSeparator();
+            this.dgvProdazhi = new System.Windows.Forms.DataGridView();
             this.idprodazhaDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idproductDataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idpokupatelDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -190,17 +168,12 @@
             this.priceProductProdazhaDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.kolvoProductProdazhaDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.priceSummaProdazhaDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.textBox16 = new System.Windows.Forms.TextBox();
-            this.textBox17 = new System.Windows.Forms.TextBox();
-            this.comboBox7 = new System.Windows.Forms.ComboBox();
-            this.comboBox8 = new System.Windows.Forms.ComboBox();
-            this.comboBox9 = new System.Windows.Forms.ComboBox();
-            this.comboBox10 = new System.Windows.Forms.ComboBox();
-            this.comboBox11 = new System.Windows.Forms.ComboBox();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.groupBox10 = new System.Windows.Forms.GroupBox();
+            this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.grpSearchPostavshik = new System.Windows.Forms.GroupBox();
             this.comboBox13 = new System.Windows.Forms.ComboBox();
+            this.postavshikiBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.comboBox14 = new System.Windows.Forms.ComboBox();
             this.comboBox15 = new System.Windows.Forms.ComboBox();
             this.comboBox16 = new System.Windows.Forms.ComboBox();
@@ -208,7 +181,7 @@
             this.textBox20 = new System.Windows.Forms.TextBox();
             this.textBox21 = new System.Windows.Forms.TextBox();
             this.textBox22 = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.grpPostavshiki = new System.Windows.Forms.GroupBox();
             this.bndNavPostavshiki = new System.Windows.Forms.BindingNavigator(this.components);
             this.toolStripLabel3 = new System.Windows.Forms.ToolStripLabel();
             this.toolStripButton11 = new System.Windows.Forms.ToolStripButton();
@@ -221,10 +194,30 @@
             this.toolStripButton15 = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator12 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripSeparator13 = new System.Windows.Forms.ToolStripSeparator();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.idpostavshikDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.namePostavshikDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.phonePostavshikDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.emailPostavshikDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.groupBox11 = new System.Windows.Forms.GroupBox();
+            this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.grpSearchPokupatel = new System.Windows.Forms.GroupBox();
+            this.comboBox12 = new System.Windows.Forms.ComboBox();
+            this.pokupateliBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.comboBox17 = new System.Windows.Forms.ComboBox();
+            this.comboBox18 = new System.Windows.Forms.ComboBox();
+            this.comboBox19 = new System.Windows.Forms.ComboBox();
+            this.textBox18 = new System.Windows.Forms.TextBox();
+            this.textBox23 = new System.Windows.Forms.TextBox();
+            this.textBox24 = new System.Windows.Forms.TextBox();
+            this.textBox25 = new System.Windows.Forms.TextBox();
+            this.grpPokupateli = new System.Windows.Forms.GroupBox();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.idpokupatelDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.namePokupatelDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.phonePokupatelDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.emailPokupatelDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bndNavPokupateli = new System.Windows.Forms.BindingNavigator(this.components);
             this.toolStripLabel4 = new System.Windows.Forms.ToolStripLabel();
             this.toolStripButton16 = new System.Windows.Forms.ToolStripButton();
@@ -237,7 +230,20 @@
             this.toolStripButton20 = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator16 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripSeparator17 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigator2 = new System.Windows.Forms.BindingNavigator(this.components);
+            this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.groupBox12 = new System.Windows.Forms.GroupBox();
+            this.groupBox9 = new System.Windows.Forms.GroupBox();
+            this.grpSearchProizvoditel = new System.Windows.Forms.GroupBox();
+            this.comboBox21 = new System.Windows.Forms.ComboBox();
+            this.productProizvoditeliBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.comboBox20 = new System.Windows.Forms.ComboBox();
+            this.textBox27 = new System.Windows.Forms.TextBox();
+            this.textBox26 = new System.Windows.Forms.TextBox();
+            this.grpProizvoditeli = new System.Windows.Forms.GroupBox();
+            this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.idproizvoditelDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nameProizvoditelDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bndNavProizvoditeli = new System.Windows.Forms.BindingNavigator(this.components);
             this.toolStripLabel5 = new System.Windows.Forms.ToolStripLabel();
             this.toolStripButton21 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton22 = new System.Windows.Forms.ToolStripButton();
@@ -249,13 +255,23 @@
             this.toolStripButton25 = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator20 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripSeparator21 = new System.Windows.Forms.ToolStripSeparator();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.pokupateliBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tabPage7 = new System.Windows.Forms.TabPage();
+            this.button1 = new System.Windows.Forms.Button();
+            this.fKidProizvoditeliBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.productProizvoditeliBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.productsBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.productsBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.productsTableAdapter = new prog_kontc_3_v5.kontc_3DataSetTableAdapters.productsTableAdapter();
+            this.prodazhiTableAdapter = new prog_kontc_3_v5.kontc_3DataSetTableAdapters.prodazhiTableAdapter();
+            this.kontc_3DataSet1 = new prog_kontc_3_v5.kontc_3DataSet();
+            this.zakupkiTableAdapter = new prog_kontc_3_v5.kontc_3DataSetTableAdapters.zakupkiTableAdapter();
+            this.productProizvoditeliTableAdapter = new prog_kontc_3_v5.kontc_3DataSetTableAdapters.productProizvoditeliTableAdapter();
+            this.productsTableAdapter1_1 = new prog_kontc_3_v5.kontc_3DataSetTableAdapters.productsTableAdapter();
+            this.bindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.kontc_3DataSet2 = new prog_kontc_3_v5.kontc_3DataSet();
+            this.postavshikiTableAdapter = new prog_kontc_3_v5.kontc_3DataSetTableAdapters.postavshikiTableAdapter();
+            this.prodazhiBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.pokupateliTableAdapter = new prog_kontc_3_v5.kontc_3DataSetTableAdapters.pokupateliTableAdapter();
-            this.idpokupatelDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.namePokupatelDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.phonePokupatelDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.emailPokupatelDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kontc_3DataSet)).BeginInit();
             this.razrab.SuspendLayout();
@@ -275,47 +291,51 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvProducts_Prodazhi)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fKprodazhiidproductsBindingSource)).BeginInit();
             this.tabPage2.SuspendLayout();
+            this.grpZakupkaSearch.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.zakupkiBindingSource)).BeginInit();
             this.grpUpdateZakupka.SuspendLayout();
             this.grpCreateZakupka.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.postavshikiBindingSource)).BeginInit();
             this.grpZakupki.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvZakupki)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.zakupkiBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bdnavZakupki)).BeginInit();
             this.bdnavZakupki.SuspendLayout();
             this.tabPage3.SuspendLayout();
+            this.grpSearchProdazha.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.prodazhiBindingSource)).BeginInit();
+            this.grpProdazhi.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bndNavProdazhi)).BeginInit();
+            this.bndNavProdazhi.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvProdazhi)).BeginInit();
             this.tabPage4.SuspendLayout();
+            this.grpSearchPostavshik.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.postavshikiBindingSource)).BeginInit();
+            this.grpPostavshiki.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bndNavPostavshiki)).BeginInit();
+            this.bndNavPostavshiki.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tabPage5.SuspendLayout();
+            this.grpSearchPokupatel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pokupateliBindingSource)).BeginInit();
+            this.grpPokupateli.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bndNavPokupateli)).BeginInit();
+            this.bndNavPokupateli.SuspendLayout();
             this.tabPage6.SuspendLayout();
+            this.grpSearchProizvoditel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.productProizvoditeliBindingSource1)).BeginInit();
+            this.grpProizvoditeli.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bndNavProizvoditeli)).BeginInit();
+            this.bndNavProizvoditeli.SuspendLayout();
             this.tabPage7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.fKidProizvoditeliBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productProizvoditeliBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productsBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productsBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.prodazhiBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kontc_3DataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kontc_3DataSet2)).BeginInit();
-            this.grpZakupkaSearch.SuspendLayout();
-            this.grpSearchProdazha.SuspendLayout();
-            this.grpPostavshiki.SuspendLayout();
-            this.grpPokupateli.SuspendLayout();
-            this.grpProizvoditeli.SuspendLayout();
-            this.grpSearchPostavshik.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.prodazhiBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvProdazhi)).BeginInit();
-            this.grpProdazhi.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bndNavProdazhi)).BeginInit();
-            this.bndNavProdazhi.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bndNavPostavshiki)).BeginInit();
-            this.bndNavPostavshiki.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bndNavPokupateli)).BeginInit();
-            this.bndNavPokupateli.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator2)).BeginInit();
-            this.bindingNavigator2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pokupateliBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // bindingSource1
@@ -361,7 +381,7 @@
             this.tabPage1.Size = new System.Drawing.Size(1072, 836);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Товары";
-            this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
+            
             // 
             // grpUpdateProduct
             // 
@@ -380,15 +400,15 @@
             // 
             this.textBox1.BackColor = System.Drawing.Color.LightSteelBlue;
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Location = new System.Drawing.Point(17, 22);
+            this.textBox1.Location = new System.Drawing.Point(21, 28);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(310, 108);
+            this.textBox1.Size = new System.Drawing.Size(310, 102);
             this.textBox1.TabIndex = 15;
-            this.textBox1.Text = "Редактирование данных о товаре производится в поле \r\nтовара после двойного клика " +
-    "мыши или нажатия F2.\r\nПосле редактирования данных товара\r\nнажмите \"Подтвердить и" +
-    "зменения\".";
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.textBox1.Text = "Редактирование данных о товаре \r\nпроизводится в поле товара после\r\nдвойного клика" +
+    " мыши или нажатия F2.\r\nПосле редактирования данных товара\r\nнажмите \"Подтвердить " +
+    "изменения\".";
+            
             // 
             // btnUpdateProduct
             // 
@@ -401,7 +421,7 @@
             this.btnUpdateProduct.TabIndex = 14;
             this.btnUpdateProduct.Text = "Подтвердить изменения";
             this.btnUpdateProduct.UseVisualStyleBackColor = false;
-            this.btnUpdateProduct.Click += new System.EventHandler(this.btnUpdateProduct_Click_1);
+            
             // 
             // grp_Products_Zakupki
             // 
@@ -516,22 +536,23 @@
             // 
             this.textBox4.BackColor = System.Drawing.Color.LightSteelBlue;
             this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox4.Location = new System.Drawing.Point(24, 63);
+            this.textBox4.Location = new System.Drawing.Point(47, 35);
             this.textBox4.Multiline = true;
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(191, 96);
+            this.textBox4.Size = new System.Drawing.Size(355, 96);
             this.textBox4.TabIndex = 16;
-            this.textBox4.Text = "Для создания нового товара и добавления его в базу данных\r\nнажмите \"Внести товар " +
+            this.textBox4.Text = "Для создания нового товара и добавления его\r\nв базу данных нажмите \"Внести товар " +
     "в базу\".";
+            
             // 
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.OldLace;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button2.Location = new System.Drawing.Point(284, 84);
+            this.button2.Location = new System.Drawing.Point(136, 137);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(126, 49);
+            this.button2.Size = new System.Drawing.Size(166, 59);
             this.button2.TabIndex = 8;
             this.button2.Text = "Внести товар в базу";
             this.button2.UseVisualStyleBackColor = false;
@@ -672,7 +693,7 @@
             this.dgvProduct.Name = "dgvProduct";
             this.dgvProduct.Size = new System.Drawing.Size(560, 316);
             this.dgvProduct.TabIndex = 0;
-            this.dgvProduct.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+           
             // 
             // idproductDataGridViewTextBoxColumn
             // 
@@ -752,7 +773,7 @@
             this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
             this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(172, 23);
             this.bindingNavigatorDeleteItem.Text = "Удалить товар из базы";
-            this.bindingNavigatorDeleteItem.Click += new System.EventHandler(this.bindingNavigatorDeleteItem_Click);
+            
             // 
             // bindingNavigatorMoveFirstItem
             // 
@@ -916,6 +937,145 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Закупки";
             // 
+            // grpZakupkaSearch
+            // 
+            this.grpZakupkaSearch.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.grpZakupkaSearch.Controls.Add(this.comboBox6);
+            this.grpZakupkaSearch.Controls.Add(this.comboBox5);
+            this.grpZakupkaSearch.Controls.Add(this.comboBox4);
+            this.grpZakupkaSearch.Controls.Add(this.comboBox3);
+            this.grpZakupkaSearch.Controls.Add(this.comboBox2);
+            this.grpZakupkaSearch.Controls.Add(this.comboBox1);
+            this.grpZakupkaSearch.Controls.Add(this.textBox12);
+            this.grpZakupkaSearch.Controls.Add(this.textBox11);
+            this.grpZakupkaSearch.Controls.Add(this.textBox10);
+            this.grpZakupkaSearch.Controls.Add(this.textBox9);
+            this.grpZakupkaSearch.Controls.Add(this.textBox8);
+            this.grpZakupkaSearch.Location = new System.Drawing.Point(9, 463);
+            this.grpZakupkaSearch.Name = "grpZakupkaSearch";
+            this.grpZakupkaSearch.Size = new System.Drawing.Size(577, 297);
+            this.grpZakupkaSearch.TabIndex = 21;
+            this.grpZakupkaSearch.TabStop = false;
+            this.grpZakupkaSearch.Text = "Поиск закупки";
+            // 
+            // comboBox6
+            // 
+            this.comboBox6.DataSource = this.zakupkiBindingSource;
+            this.comboBox6.DisplayMember = "priceSummaZakupka";
+            this.comboBox6.FormattingEnabled = true;
+            this.comboBox6.Location = new System.Drawing.Point(227, 244);
+            this.comboBox6.Name = "comboBox6";
+            this.comboBox6.Size = new System.Drawing.Size(141, 26);
+            this.comboBox6.TabIndex = 10;
+            this.comboBox6.ValueMember = "priceSummaZakupka";
+            // 
+            // zakupkiBindingSource
+            // 
+            this.zakupkiBindingSource.DataMember = "zakupki";
+            this.zakupkiBindingSource.DataSource = this.bindingSource1;
+            // 
+            // comboBox5
+            // 
+            this.comboBox5.DataSource = this.zakupkiBindingSource;
+            this.comboBox5.DisplayMember = "kol_voProductZakupka";
+            this.comboBox5.FormattingEnabled = true;
+            this.comboBox5.Location = new System.Drawing.Point(227, 196);
+            this.comboBox5.Name = "comboBox5";
+            this.comboBox5.Size = new System.Drawing.Size(141, 26);
+            this.comboBox5.TabIndex = 9;
+            this.comboBox5.ValueMember = "kol_voProductZakupka";
+            // 
+            // comboBox4
+            // 
+            this.comboBox4.DataSource = this.zakupkiBindingSource;
+            this.comboBox4.DisplayMember = "dateZakupka";
+            this.comboBox4.FormattingEnabled = true;
+            this.comboBox4.Location = new System.Drawing.Point(227, 143);
+            this.comboBox4.Name = "comboBox4";
+            this.comboBox4.Size = new System.Drawing.Size(141, 26);
+            this.comboBox4.TabIndex = 8;
+            this.comboBox4.ValueMember = "dateZakupka";
+            // 
+            // comboBox3
+            // 
+            this.comboBox3.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.productsBindingSource, "nameProduct", true));
+            this.comboBox3.DataSource = this.productsBindingSource;
+            this.comboBox3.DisplayMember = "nameProduct";
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Location = new System.Drawing.Point(430, 48);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(141, 26);
+            this.comboBox3.TabIndex = 7;
+            this.comboBox3.ValueMember = "nameProduct";
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.DataSource = this.zakupkiBindingSource;
+            this.comboBox2.DisplayMember = "id_postavshik";
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(227, 93);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(141, 26);
+            this.comboBox2.TabIndex = 6;
+            this.comboBox2.ValueMember = "id_postavshik";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.productsBindingSource, "nameProduct", true));
+            this.comboBox1.DataSource = this.zakupkiBindingSource;
+            this.comboBox1.DisplayMember = "id_product";
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(227, 48);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(141, 26);
+            this.comboBox1.TabIndex = 5;
+            this.comboBox1.ValueMember = "id_product";
+            // 
+            // textBox12
+            // 
+            this.textBox12.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.textBox12.Location = new System.Drawing.Point(16, 246);
+            this.textBox12.Name = "textBox12";
+            this.textBox12.Size = new System.Drawing.Size(175, 24);
+            this.textBox12.TabIndex = 4;
+            this.textBox12.Text = "Сумма закупки";
+            // 
+            // textBox11
+            // 
+            this.textBox11.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.textBox11.Location = new System.Drawing.Point(16, 196);
+            this.textBox11.Name = "textBox11";
+            this.textBox11.Size = new System.Drawing.Size(175, 24);
+            this.textBox11.TabIndex = 3;
+            this.textBox11.Text = "Количество закупки";
+            // 
+            // textBox10
+            // 
+            this.textBox10.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.textBox10.Location = new System.Drawing.Point(16, 145);
+            this.textBox10.Name = "textBox10";
+            this.textBox10.Size = new System.Drawing.Size(175, 24);
+            this.textBox10.TabIndex = 2;
+            this.textBox10.Text = "Дата закупки";
+            // 
+            // textBox9
+            // 
+            this.textBox9.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.textBox9.Location = new System.Drawing.Point(16, 93);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(175, 24);
+            this.textBox9.TabIndex = 1;
+            this.textBox9.Text = "Код поставщика";
+            // 
+            // textBox8
+            // 
+            this.textBox8.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.textBox8.Location = new System.Drawing.Point(16, 48);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(175, 24);
+            this.textBox8.TabIndex = 0;
+            this.textBox8.Text = "Код товара";
+            // 
             // grpUpdateZakupka
             // 
             this.grpUpdateZakupka.BackColor = System.Drawing.Color.LightSteelBlue;
@@ -986,11 +1146,7 @@
             this.btnAddZakupka.TabIndex = 8;
             this.btnAddZakupka.Text = "Создать закупку";
             this.btnAddZakupka.UseVisualStyleBackColor = false;
-            // 
-            // postavshikiBindingSource
-            // 
-            this.postavshikiBindingSource.DataMember = "postavshiki";
-            this.postavshikiBindingSource.DataSource = this.bindingSource1;
+            this.btnAddZakupka.Click += new System.EventHandler(this.btnAddZakupka_Click);
             // 
             // grpZakupki
             // 
@@ -1025,10 +1181,63 @@
             this.dgvZakupki.Size = new System.Drawing.Size(1031, 365);
             this.dgvZakupki.TabIndex = 2;
             // 
-            // zakupkiBindingSource
+            // idzakupkaDataGridViewTextBoxColumn1
             // 
-            this.zakupkiBindingSource.DataMember = "zakupki";
-            this.zakupkiBindingSource.DataSource = this.bindingSource1;
+            this.idzakupkaDataGridViewTextBoxColumn1.DataPropertyName = "id_zakupka";
+            this.idzakupkaDataGridViewTextBoxColumn1.HeaderText = "Код закупки";
+            this.idzakupkaDataGridViewTextBoxColumn1.Name = "idzakupkaDataGridViewTextBoxColumn1";
+            this.idzakupkaDataGridViewTextBoxColumn1.ReadOnly = true;
+            this.idzakupkaDataGridViewTextBoxColumn1.Width = 110;
+            // 
+            // idproductDataGridViewTextBoxColumn3
+            // 
+            this.idproductDataGridViewTextBoxColumn3.DataPropertyName = "id_product";
+            this.idproductDataGridViewTextBoxColumn3.HeaderText = "Код товара";
+            this.idproductDataGridViewTextBoxColumn3.Name = "idproductDataGridViewTextBoxColumn3";
+            this.idproductDataGridViewTextBoxColumn3.Width = 110;
+            // 
+            // idpostavshikDataGridViewTextBoxColumn1
+            // 
+            this.idpostavshikDataGridViewTextBoxColumn1.DataPropertyName = "id_postavshik";
+            this.idpostavshikDataGridViewTextBoxColumn1.HeaderText = "Код поставщика";
+            this.idpostavshikDataGridViewTextBoxColumn1.Name = "idpostavshikDataGridViewTextBoxColumn1";
+            this.idpostavshikDataGridViewTextBoxColumn1.Width = 110;
+            // 
+            // dateZakupkaDataGridViewTextBoxColumn1
+            // 
+            this.dateZakupkaDataGridViewTextBoxColumn1.DataPropertyName = "dateZakupka";
+            this.dateZakupkaDataGridViewTextBoxColumn1.HeaderText = "Дата закупки";
+            this.dateZakupkaDataGridViewTextBoxColumn1.Name = "dateZakupkaDataGridViewTextBoxColumn1";
+            this.dateZakupkaDataGridViewTextBoxColumn1.Width = 120;
+            // 
+            // priceProductZakupkaDataGridViewTextBoxColumn1
+            // 
+            this.priceProductZakupkaDataGridViewTextBoxColumn1.DataPropertyName = "priceProductZakupka";
+            this.priceProductZakupkaDataGridViewTextBoxColumn1.HeaderText = "Цена закупки";
+            this.priceProductZakupkaDataGridViewTextBoxColumn1.Name = "priceProductZakupkaDataGridViewTextBoxColumn1";
+            this.priceProductZakupkaDataGridViewTextBoxColumn1.Width = 120;
+            // 
+            // kolvoProductZakupkaDataGridViewTextBoxColumn1
+            // 
+            this.kolvoProductZakupkaDataGridViewTextBoxColumn1.DataPropertyName = "kol_voProductZakupka";
+            this.kolvoProductZakupkaDataGridViewTextBoxColumn1.HeaderText = "Количество закупки";
+            this.kolvoProductZakupkaDataGridViewTextBoxColumn1.Name = "kolvoProductZakupkaDataGridViewTextBoxColumn1";
+            this.kolvoProductZakupkaDataGridViewTextBoxColumn1.Width = 120;
+            // 
+            // priceSummaZakupkaDataGridViewTextBoxColumn1
+            // 
+            this.priceSummaZakupkaDataGridViewTextBoxColumn1.DataPropertyName = "priceSummaZakupka";
+            this.priceSummaZakupkaDataGridViewTextBoxColumn1.HeaderText = "Сумма закупки";
+            this.priceSummaZakupkaDataGridViewTextBoxColumn1.Name = "priceSummaZakupkaDataGridViewTextBoxColumn1";
+            this.priceSummaZakupkaDataGridViewTextBoxColumn1.ReadOnly = true;
+            this.priceSummaZakupkaDataGridViewTextBoxColumn1.Width = 130;
+            // 
+            // priceProductFactorDataGridViewTextBoxColumn1
+            // 
+            this.priceProductFactorDataGridViewTextBoxColumn1.DataPropertyName = "priceProductFactor";
+            this.priceProductFactorDataGridViewTextBoxColumn1.HeaderText = "Ценовой коэффициент";
+            this.priceProductFactorDataGridViewTextBoxColumn1.Name = "priceProductFactorDataGridViewTextBoxColumn1";
+            this.priceProductFactorDataGridViewTextBoxColumn1.Width = 130;
             // 
             // bdnavZakupki
             // 
@@ -1156,265 +1365,27 @@
             this.tabPage3.Size = new System.Drawing.Size(1072, 836);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Продажи";
-            this.tabPage3.Click += new System.EventHandler(this.tabPage3_Click);
+            
             // 
-            // tabPage4
+            // grpCreateProdazha
             // 
-            this.tabPage4.Controls.Add(this.groupBox10);
-            this.tabPage4.Controls.Add(this.groupBox7);
-            this.tabPage4.Controls.Add(this.grpSearchPostavshik);
-            this.tabPage4.Controls.Add(this.grpPostavshiki);
-            this.tabPage4.Location = new System.Drawing.Point(4, 27);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(1072, 836);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "Поставщики";
-            this.tabPage4.UseVisualStyleBackColor = true;
+            this.grpCreateProdazha.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.grpCreateProdazha.Location = new System.Drawing.Point(597, 637);
+            this.grpCreateProdazha.Name = "grpCreateProdazha";
+            this.grpCreateProdazha.Size = new System.Drawing.Size(462, 184);
+            this.grpCreateProdazha.TabIndex = 3;
+            this.grpCreateProdazha.TabStop = false;
+            this.grpCreateProdazha.Text = "Создание продажи";
             // 
-            // tabPage5
+            // grpUpdateProdazha
             // 
-            this.tabPage5.Controls.Add(this.groupBox11);
-            this.tabPage5.Controls.Add(this.groupBox8);
-            this.tabPage5.Controls.Add(this.grpSearchPokupatel);
-            this.tabPage5.Controls.Add(this.grpPokupateli);
-            this.tabPage5.Location = new System.Drawing.Point(4, 27);
-            this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(1072, 836);
-            this.tabPage5.TabIndex = 4;
-            this.tabPage5.Text = "Покупатели";
-            this.tabPage5.UseVisualStyleBackColor = true;
-            // 
-            // tabPage6
-            // 
-            this.tabPage6.Controls.Add(this.groupBox12);
-            this.tabPage6.Controls.Add(this.groupBox9);
-            this.tabPage6.Controls.Add(this.grpSearchProizvoditel);
-            this.tabPage6.Controls.Add(this.grpProizvoditeli);
-            this.tabPage6.Location = new System.Drawing.Point(4, 27);
-            this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Size = new System.Drawing.Size(1072, 836);
-            this.tabPage6.TabIndex = 5;
-            this.tabPage6.Text = "Производители";
-            this.tabPage6.UseVisualStyleBackColor = true;
-            // 
-            // tabPage7
-            // 
-            this.tabPage7.Controls.Add(this.button1);
-            this.tabPage7.Location = new System.Drawing.Point(4, 27);
-            this.tabPage7.Name = "tabPage7";
-            this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage7.Size = new System.Drawing.Size(1062, 836);
-            this.tabPage7.TabIndex = 6;
-            this.tabPage7.Text = "Выход";
-            this.tabPage7.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(425, 317);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(183, 88);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Выход из приложения";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // fKidProizvoditeliBindingSource
-            // 
-            this.fKidProizvoditeliBindingSource.DataMember = "FK_id_Proizvoditeli";
-            this.fKidProizvoditeliBindingSource.DataSource = this.productProizvoditeliBindingSource;
-            // 
-            // productProizvoditeliBindingSource
-            // 
-            this.productProizvoditeliBindingSource.DataMember = "productProizvoditeli";
-            this.productProizvoditeliBindingSource.DataSource = this.bindingSource1;
-            // 
-            // productsBindingSource2
-            // 
-            this.productsBindingSource2.DataMember = "products";
-            this.productsBindingSource2.DataSource = this.bindingSource1;
-            // 
-            // productsBindingSource1
-            // 
-            this.productsBindingSource1.DataMember = "products";
-            this.productsBindingSource1.DataSource = this.bindingSource1;
-            // 
-            // prodazhiBindingSource
-            // 
-            this.prodazhiBindingSource.DataMember = "prodazhi";
-            this.prodazhiBindingSource.DataSource = this.bindingSource1;
-            // 
-            // productsTableAdapter
-            // 
-            this.productsTableAdapter.ClearBeforeFill = true;
-            // 
-            // prodazhiTableAdapter
-            // 
-            this.prodazhiTableAdapter.ClearBeforeFill = true;
-            // 
-            // kontc_3DataSet1
-            // 
-            this.kontc_3DataSet1.DataSetName = "kontc_3DataSet";
-            this.kontc_3DataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // zakupkiTableAdapter
-            // 
-            this.zakupkiTableAdapter.ClearBeforeFill = true;
-            // 
-            // productProizvoditeliTableAdapter
-            // 
-            this.productProizvoditeliTableAdapter.ClearBeforeFill = true;
-            // 
-            // productsTableAdapter1_1
-            // 
-            this.productsTableAdapter1_1.ClearBeforeFill = true;
-            // 
-            // bindingSource2
-            // 
-            this.bindingSource2.DataMember = "products";
-            this.bindingSource2.DataSource = this.kontc_3DataSet;
-            // 
-            // kontc_3DataSet2
-            // 
-            this.kontc_3DataSet2.DataSetName = "kontc_3DataSet";
-            this.kontc_3DataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // postavshikiTableAdapter
-            // 
-            this.postavshikiTableAdapter.ClearBeforeFill = true;
-            // 
-            // grpZakupkaSearch
-            // 
-            this.grpZakupkaSearch.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.grpZakupkaSearch.Controls.Add(this.comboBox6);
-            this.grpZakupkaSearch.Controls.Add(this.comboBox5);
-            this.grpZakupkaSearch.Controls.Add(this.comboBox4);
-            this.grpZakupkaSearch.Controls.Add(this.comboBox3);
-            this.grpZakupkaSearch.Controls.Add(this.comboBox2);
-            this.grpZakupkaSearch.Controls.Add(this.comboBox1);
-            this.grpZakupkaSearch.Controls.Add(this.textBox12);
-            this.grpZakupkaSearch.Controls.Add(this.textBox11);
-            this.grpZakupkaSearch.Controls.Add(this.textBox10);
-            this.grpZakupkaSearch.Controls.Add(this.textBox9);
-            this.grpZakupkaSearch.Controls.Add(this.textBox8);
-            this.grpZakupkaSearch.Location = new System.Drawing.Point(9, 463);
-            this.grpZakupkaSearch.Name = "grpZakupkaSearch";
-            this.grpZakupkaSearch.Size = new System.Drawing.Size(577, 297);
-            this.grpZakupkaSearch.TabIndex = 21;
-            this.grpZakupkaSearch.TabStop = false;
-            this.grpZakupkaSearch.Text = "Поиск закупки";
-            // 
-            // textBox8
-            // 
-            this.textBox8.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.textBox8.Location = new System.Drawing.Point(16, 48);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(175, 24);
-            this.textBox8.TabIndex = 0;
-            this.textBox8.Text = "Код товара";
-            // 
-            // textBox9
-            // 
-            this.textBox9.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.textBox9.Location = new System.Drawing.Point(16, 93);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(175, 24);
-            this.textBox9.TabIndex = 1;
-            this.textBox9.Text = "Код поставщика";
-            // 
-            // textBox10
-            // 
-            this.textBox10.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.textBox10.Location = new System.Drawing.Point(16, 145);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(175, 24);
-            this.textBox10.TabIndex = 2;
-            this.textBox10.Text = "Дата закупки";
-            // 
-            // textBox11
-            // 
-            this.textBox11.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.textBox11.Location = new System.Drawing.Point(16, 196);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(175, 24);
-            this.textBox11.TabIndex = 3;
-            this.textBox11.Text = "Количество закупки";
-            // 
-            // textBox12
-            // 
-            this.textBox12.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.textBox12.Location = new System.Drawing.Point(16, 246);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(175, 24);
-            this.textBox12.TabIndex = 4;
-            this.textBox12.Text = "Сумма закупки";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.productsBindingSource, "nameProduct", true));
-            this.comboBox1.DataSource = this.zakupkiBindingSource;
-            this.comboBox1.DisplayMember = "id_product";
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(227, 48);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(141, 26);
-            this.comboBox1.TabIndex = 5;
-            this.comboBox1.ValueMember = "id_product";
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.DataSource = this.zakupkiBindingSource;
-            this.comboBox2.DisplayMember = "id_postavshik";
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(227, 93);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(141, 26);
-            this.comboBox2.TabIndex = 6;
-            this.comboBox2.ValueMember = "id_postavshik";
-            // 
-            // comboBox3
-            // 
-            this.comboBox3.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.productsBindingSource, "nameProduct", true));
-            this.comboBox3.DataSource = this.productsBindingSource;
-            this.comboBox3.DisplayMember = "nameProduct";
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(430, 48);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(141, 26);
-            this.comboBox3.TabIndex = 7;
-            this.comboBox3.ValueMember = "nameProduct";
-            // 
-            // comboBox4
-            // 
-            this.comboBox4.DataSource = this.zakupkiBindingSource;
-            this.comboBox4.DisplayMember = "dateZakupka";
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(227, 143);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(141, 26);
-            this.comboBox4.TabIndex = 8;
-            this.comboBox4.ValueMember = "dateZakupka";
-            // 
-            // comboBox5
-            // 
-            this.comboBox5.DataSource = this.zakupkiBindingSource;
-            this.comboBox5.DisplayMember = "kol_voProductZakupka";
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Location = new System.Drawing.Point(227, 196);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(141, 26);
-            this.comboBox5.TabIndex = 9;
-            this.comboBox5.ValueMember = "kol_voProductZakupka";
-            // 
-            // comboBox6
-            // 
-            this.comboBox6.DataSource = this.zakupkiBindingSource;
-            this.comboBox6.DisplayMember = "priceSummaZakupka";
-            this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Location = new System.Drawing.Point(227, 244);
-            this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(141, 26);
-            this.comboBox6.TabIndex = 10;
-            this.comboBox6.ValueMember = "priceSummaZakupka";
+            this.grpUpdateProdazha.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.grpUpdateProdazha.Location = new System.Drawing.Point(597, 440);
+            this.grpUpdateProdazha.Name = "grpUpdateProdazha";
+            this.grpUpdateProdazha.Size = new System.Drawing.Size(462, 176);
+            this.grpUpdateProdazha.TabIndex = 2;
+            this.grpUpdateProdazha.TabStop = false;
+            this.grpUpdateProdazha.Text = "Изменение данных о продаже";
             // 
             // grpSearchProdazha
             // 
@@ -1436,239 +1407,126 @@
             this.grpSearchProdazha.TabStop = false;
             this.grpSearchProdazha.Text = "Поиск продажи";
             // 
-            // grpUpdateProdazha
+            // comboBox11
             // 
-            this.grpUpdateProdazha.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.grpUpdateProdazha.Location = new System.Drawing.Point(597, 440);
-            this.grpUpdateProdazha.Name = "grpUpdateProdazha";
-            this.grpUpdateProdazha.Size = new System.Drawing.Size(462, 176);
-            this.grpUpdateProdazha.TabIndex = 2;
-            this.grpUpdateProdazha.TabStop = false;
-            this.grpUpdateProdazha.Text = "Изменение данных о продаже";
+            this.comboBox11.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.productsBindingSource, "nameProduct", true));
+            this.comboBox11.DataSource = this.prodazhiBindingSource;
+            this.comboBox11.DisplayMember = "kol_voProductProdazha";
+            this.comboBox11.FormattingEnabled = true;
+            this.comboBox11.Location = new System.Drawing.Point(213, 255);
+            this.comboBox11.Name = "comboBox11";
+            this.comboBox11.Size = new System.Drawing.Size(141, 26);
+            this.comboBox11.TabIndex = 16;
+            this.comboBox11.ValueMember = "kol_voProductProdazha";
             // 
-            // grpCreateProdazha
+            // prodazhiBindingSource
             // 
-            this.grpCreateProdazha.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.grpCreateProdazha.Location = new System.Drawing.Point(597, 637);
-            this.grpCreateProdazha.Name = "grpCreateProdazha";
-            this.grpCreateProdazha.Size = new System.Drawing.Size(462, 184);
-            this.grpCreateProdazha.TabIndex = 3;
-            this.grpCreateProdazha.TabStop = false;
-            this.grpCreateProdazha.Text = "Создание продажи";
+            this.prodazhiBindingSource.DataMember = "prodazhi";
+            this.prodazhiBindingSource.DataSource = this.bindingSource1;
             // 
-            // grpPostavshiki
+            // comboBox10
             // 
-            this.grpPostavshiki.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.grpPostavshiki.Controls.Add(this.bndNavPostavshiki);
-            this.grpPostavshiki.Controls.Add(this.dataGridView1);
-            this.grpPostavshiki.Location = new System.Drawing.Point(10, 15);
-            this.grpPostavshiki.Name = "grpPostavshiki";
-            this.grpPostavshiki.Size = new System.Drawing.Size(663, 417);
-            this.grpPostavshiki.TabIndex = 1;
-            this.grpPostavshiki.TabStop = false;
-            this.grpPostavshiki.Text = "Поставщики";
+            this.comboBox10.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.productsBindingSource, "nameProduct", true));
+            this.comboBox10.DataSource = this.prodazhiBindingSource;
+            this.comboBox10.DisplayMember = "priceProductProdazha";
+            this.comboBox10.FormattingEnabled = true;
+            this.comboBox10.Location = new System.Drawing.Point(213, 202);
+            this.comboBox10.Name = "comboBox10";
+            this.comboBox10.Size = new System.Drawing.Size(141, 26);
+            this.comboBox10.TabIndex = 15;
+            this.comboBox10.ValueMember = "priceProductProdazha";
             // 
-            // grpPokupateli
+            // comboBox9
             // 
-            this.grpPokupateli.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.grpPokupateli.Controls.Add(this.dataGridView2);
-            this.grpPokupateli.Controls.Add(this.bndNavPokupateli);
-            this.grpPokupateli.Location = new System.Drawing.Point(6, 17);
-            this.grpPokupateli.Name = "grpPokupateli";
-            this.grpPokupateli.Size = new System.Drawing.Size(716, 417);
-            this.grpPokupateli.TabIndex = 1;
-            this.grpPokupateli.TabStop = false;
-            this.grpPokupateli.Text = "Покупатели";
+            this.comboBox9.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.productsBindingSource, "nameProduct", true));
+            this.comboBox9.DataSource = this.prodazhiBindingSource;
+            this.comboBox9.DisplayMember = "dateSale";
+            this.comboBox9.FormattingEnabled = true;
+            this.comboBox9.Location = new System.Drawing.Point(213, 148);
+            this.comboBox9.Name = "comboBox9";
+            this.comboBox9.Size = new System.Drawing.Size(141, 26);
+            this.comboBox9.TabIndex = 14;
+            this.comboBox9.ValueMember = "dateSale";
             // 
-            // grpProizvoditeli
+            // comboBox8
             // 
-            this.grpProizvoditeli.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.grpProizvoditeli.Controls.Add(this.bindingNavigator2);
-            this.grpProizvoditeli.Location = new System.Drawing.Point(10, 13);
-            this.grpProizvoditeli.Name = "grpProizvoditeli";
-            this.grpProizvoditeli.Size = new System.Drawing.Size(1056, 417);
-            this.grpProizvoditeli.TabIndex = 1;
-            this.grpProizvoditeli.TabStop = false;
-            this.grpProizvoditeli.Text = "Производители";
+            this.comboBox8.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.productsBindingSource, "nameProduct", true));
+            this.comboBox8.DataSource = this.prodazhiBindingSource;
+            this.comboBox8.DisplayMember = "id_pokupatel";
+            this.comboBox8.FormattingEnabled = true;
+            this.comboBox8.Location = new System.Drawing.Point(213, 96);
+            this.comboBox8.Name = "comboBox8";
+            this.comboBox8.Size = new System.Drawing.Size(141, 26);
+            this.comboBox8.TabIndex = 13;
+            this.comboBox8.ValueMember = "id_pokupatel";
             // 
-            // grpSearchPostavshik
+            // comboBox7
             // 
-            this.grpSearchPostavshik.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.grpSearchPostavshik.Controls.Add(this.comboBox13);
-            this.grpSearchPostavshik.Controls.Add(this.comboBox14);
-            this.grpSearchPostavshik.Controls.Add(this.comboBox15);
-            this.grpSearchPostavshik.Controls.Add(this.comboBox16);
-            this.grpSearchPostavshik.Controls.Add(this.textBox19);
-            this.grpSearchPostavshik.Controls.Add(this.textBox20);
-            this.grpSearchPostavshik.Controls.Add(this.textBox21);
-            this.grpSearchPostavshik.Controls.Add(this.textBox22);
-            this.grpSearchPostavshik.Location = new System.Drawing.Point(10, 452);
-            this.grpSearchPostavshik.Name = "grpSearchPostavshik";
-            this.grpSearchPostavshik.Size = new System.Drawing.Size(565, 369);
-            this.grpSearchPostavshik.TabIndex = 2;
-            this.grpSearchPostavshik.TabStop = false;
-            this.grpSearchPostavshik.Text = "Поиск поставщиков";
+            this.comboBox7.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.productsBindingSource, "nameProduct", true));
+            this.comboBox7.DataSource = this.prodazhiBindingSource;
+            this.comboBox7.DisplayMember = "id_product";
+            this.comboBox7.FormattingEnabled = true;
+            this.comboBox7.Location = new System.Drawing.Point(213, 46);
+            this.comboBox7.Name = "comboBox7";
+            this.comboBox7.Size = new System.Drawing.Size(141, 26);
+            this.comboBox7.TabIndex = 12;
+            this.comboBox7.ValueMember = "id_product";
             // 
-            // grpSearchPokupatel
+            // textBox17
             // 
-            this.grpSearchPokupatel.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.grpSearchPokupatel.Location = new System.Drawing.Point(6, 452);
-            this.grpSearchPokupatel.Name = "grpSearchPokupatel";
-            this.grpSearchPokupatel.Size = new System.Drawing.Size(565, 369);
-            this.grpSearchPokupatel.TabIndex = 3;
-            this.grpSearchPokupatel.TabStop = false;
-            this.grpSearchPokupatel.Text = "Поиск покупателя";
+            this.textBox17.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.textBox17.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox17.Location = new System.Drawing.Point(30, 255);
+            this.textBox17.Multiline = true;
+            this.textBox17.Name = "textBox17";
+            this.textBox17.Size = new System.Drawing.Size(141, 43);
+            this.textBox17.TabIndex = 11;
+            this.textBox17.Text = "Количество продажи";
             // 
-            // grpSearchProizvoditel
+            // textBox16
             // 
-            this.grpSearchProizvoditel.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.grpSearchProizvoditel.Location = new System.Drawing.Point(10, 452);
-            this.grpSearchProizvoditel.Name = "grpSearchProizvoditel";
-            this.grpSearchProizvoditel.Size = new System.Drawing.Size(565, 369);
-            this.grpSearchProizvoditel.TabIndex = 4;
-            this.grpSearchProizvoditel.TabStop = false;
-            this.grpSearchProizvoditel.Text = "Поиск производителя";
+            this.textBox16.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.textBox16.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox16.Location = new System.Drawing.Point(30, 202);
+            this.textBox16.Multiline = true;
+            this.textBox16.Name = "textBox16";
+            this.textBox16.Size = new System.Drawing.Size(141, 33);
+            this.textBox16.TabIndex = 10;
+            this.textBox16.Text = "Цена продажи";
             // 
-            // groupBox7
+            // textBox15
             // 
-            this.groupBox7.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.groupBox7.Location = new System.Drawing.Point(597, 452);
-            this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(462, 176);
-            this.groupBox7.TabIndex = 3;
-            this.groupBox7.TabStop = false;
-            this.groupBox7.Text = "Изменение данных о поставщике";
+            this.textBox15.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.textBox15.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox15.Location = new System.Drawing.Point(30, 96);
+            this.textBox15.Multiline = true;
+            this.textBox15.Name = "textBox15";
+            this.textBox15.Size = new System.Drawing.Size(141, 33);
+            this.textBox15.TabIndex = 9;
+            this.textBox15.Text = "Код покупателя";
             // 
-            // groupBox8
+            // textBox13
             // 
-            this.groupBox8.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.groupBox8.Location = new System.Drawing.Point(597, 452);
-            this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Size = new System.Drawing.Size(462, 176);
-            this.groupBox8.TabIndex = 4;
-            this.groupBox8.TabStop = false;
-            this.groupBox8.Text = "Изменение данных о покупателе";
+            this.textBox13.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.textBox13.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox13.Location = new System.Drawing.Point(30, 148);
+            this.textBox13.Multiline = true;
+            this.textBox13.Name = "textBox13";
+            this.textBox13.Size = new System.Drawing.Size(141, 33);
+            this.textBox13.TabIndex = 8;
+            this.textBox13.Text = "Дата продажи";
             // 
-            // groupBox9
+            // textBox14
             // 
-            this.groupBox9.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.groupBox9.Location = new System.Drawing.Point(604, 452);
-            this.groupBox9.Name = "groupBox9";
-            this.groupBox9.Size = new System.Drawing.Size(462, 176);
-            this.groupBox9.TabIndex = 5;
-            this.groupBox9.TabStop = false;
-            this.groupBox9.Text = "Изменение данных о производителе";
-            // 
-            // groupBox10
-            // 
-            this.groupBox10.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.groupBox10.Location = new System.Drawing.Point(597, 649);
-            this.groupBox10.Name = "groupBox10";
-            this.groupBox10.Size = new System.Drawing.Size(462, 184);
-            this.groupBox10.TabIndex = 4;
-            this.groupBox10.TabStop = false;
-            this.groupBox10.Text = "Внесение нового поставщика в базу данных";
-            // 
-            // groupBox11
-            // 
-            this.groupBox11.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.groupBox11.Location = new System.Drawing.Point(597, 649);
-            this.groupBox11.Name = "groupBox11";
-            this.groupBox11.Size = new System.Drawing.Size(462, 184);
-            this.groupBox11.TabIndex = 5;
-            this.groupBox11.TabStop = false;
-            this.groupBox11.Text = "Внесение нового покупателя в базу данных";
-            // 
-            // groupBox12
-            // 
-            this.groupBox12.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.groupBox12.Location = new System.Drawing.Point(604, 656);
-            this.groupBox12.Name = "groupBox12";
-            this.groupBox12.Size = new System.Drawing.Size(462, 165);
-            this.groupBox12.TabIndex = 6;
-            this.groupBox12.TabStop = false;
-            this.groupBox12.Text = "Внесение нового производителя в базу данных";
-            // 
-            // idzakupkaDataGridViewTextBoxColumn1
-            // 
-            this.idzakupkaDataGridViewTextBoxColumn1.DataPropertyName = "id_zakupka";
-            this.idzakupkaDataGridViewTextBoxColumn1.HeaderText = "Код закупки";
-            this.idzakupkaDataGridViewTextBoxColumn1.Name = "idzakupkaDataGridViewTextBoxColumn1";
-            this.idzakupkaDataGridViewTextBoxColumn1.ReadOnly = true;
-            this.idzakupkaDataGridViewTextBoxColumn1.Width = 110;
-            // 
-            // idproductDataGridViewTextBoxColumn3
-            // 
-            this.idproductDataGridViewTextBoxColumn3.DataPropertyName = "id_product";
-            this.idproductDataGridViewTextBoxColumn3.HeaderText = "Код товара";
-            this.idproductDataGridViewTextBoxColumn3.Name = "idproductDataGridViewTextBoxColumn3";
-            this.idproductDataGridViewTextBoxColumn3.Width = 110;
-            // 
-            // idpostavshikDataGridViewTextBoxColumn1
-            // 
-            this.idpostavshikDataGridViewTextBoxColumn1.DataPropertyName = "id_postavshik";
-            this.idpostavshikDataGridViewTextBoxColumn1.HeaderText = "Код поставщика";
-            this.idpostavshikDataGridViewTextBoxColumn1.Name = "idpostavshikDataGridViewTextBoxColumn1";
-            this.idpostavshikDataGridViewTextBoxColumn1.Width = 110;
-            // 
-            // dateZakupkaDataGridViewTextBoxColumn1
-            // 
-            this.dateZakupkaDataGridViewTextBoxColumn1.DataPropertyName = "dateZakupka";
-            this.dateZakupkaDataGridViewTextBoxColumn1.HeaderText = "Дата закупки";
-            this.dateZakupkaDataGridViewTextBoxColumn1.Name = "dateZakupkaDataGridViewTextBoxColumn1";
-            this.dateZakupkaDataGridViewTextBoxColumn1.Width = 120;
-            // 
-            // priceProductZakupkaDataGridViewTextBoxColumn1
-            // 
-            this.priceProductZakupkaDataGridViewTextBoxColumn1.DataPropertyName = "priceProductZakupka";
-            this.priceProductZakupkaDataGridViewTextBoxColumn1.HeaderText = "Цена закупки";
-            this.priceProductZakupkaDataGridViewTextBoxColumn1.Name = "priceProductZakupkaDataGridViewTextBoxColumn1";
-            this.priceProductZakupkaDataGridViewTextBoxColumn1.Width = 120;
-            // 
-            // kolvoProductZakupkaDataGridViewTextBoxColumn1
-            // 
-            this.kolvoProductZakupkaDataGridViewTextBoxColumn1.DataPropertyName = "kol_voProductZakupka";
-            this.kolvoProductZakupkaDataGridViewTextBoxColumn1.HeaderText = "Количество закупки";
-            this.kolvoProductZakupkaDataGridViewTextBoxColumn1.Name = "kolvoProductZakupkaDataGridViewTextBoxColumn1";
-            this.kolvoProductZakupkaDataGridViewTextBoxColumn1.Width = 120;
-            // 
-            // priceSummaZakupkaDataGridViewTextBoxColumn1
-            // 
-            this.priceSummaZakupkaDataGridViewTextBoxColumn1.DataPropertyName = "priceSummaZakupka";
-            this.priceSummaZakupkaDataGridViewTextBoxColumn1.HeaderText = "Сумма закупки";
-            this.priceSummaZakupkaDataGridViewTextBoxColumn1.Name = "priceSummaZakupkaDataGridViewTextBoxColumn1";
-            this.priceSummaZakupkaDataGridViewTextBoxColumn1.ReadOnly = true;
-            this.priceSummaZakupkaDataGridViewTextBoxColumn1.Width = 130;
-            // 
-            // priceProductFactorDataGridViewTextBoxColumn1
-            // 
-            this.priceProductFactorDataGridViewTextBoxColumn1.DataPropertyName = "priceProductFactor";
-            this.priceProductFactorDataGridViewTextBoxColumn1.HeaderText = "Ценовой коэффициент";
-            this.priceProductFactorDataGridViewTextBoxColumn1.Name = "priceProductFactorDataGridViewTextBoxColumn1";
-            this.priceProductFactorDataGridViewTextBoxColumn1.Width = 130;
-            // 
-            // prodazhiBindingSource1
-            // 
-            this.prodazhiBindingSource1.DataMember = "prodazhi";
-            this.prodazhiBindingSource1.DataSource = this.bindingSource1;
-            // 
-            // dgvProdazhi
-            // 
-            this.dgvProdazhi.AutoGenerateColumns = false;
-            this.dgvProdazhi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvProdazhi.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.idprodazhaDataGridViewTextBoxColumn1,
-            this.idproductDataGridViewTextBoxColumn4,
-            this.idpokupatelDataGridViewTextBoxColumn1,
-            this.dateSaleDataGridViewTextBoxColumn1,
-            this.priceProductProdazhaDataGridViewTextBoxColumn1,
-            this.kolvoProductProdazhaDataGridViewTextBoxColumn1,
-            this.priceSummaProdazhaDataGridViewTextBoxColumn1});
-            this.dgvProdazhi.DataSource = this.prodazhiBindingSource;
-            this.dgvProdazhi.Location = new System.Drawing.Point(15, 75);
-            this.dgvProdazhi.Name = "dgvProdazhi";
-            this.dgvProdazhi.Size = new System.Drawing.Size(1025, 150);
-            this.dgvProdazhi.TabIndex = 0;
+            this.textBox14.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.textBox14.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox14.Location = new System.Drawing.Point(30, 46);
+            this.textBox14.Multiline = true;
+            this.textBox14.Name = "textBox14";
+            this.textBox14.Size = new System.Drawing.Size(141, 33);
+            this.textBox14.TabIndex = 7;
+            this.textBox14.Text = "Код товара";
+            
             // 
             // grpProdazhi
             // 
@@ -1795,6 +1653,24 @@
             this.toolStripSeparator9.Name = "toolStripSeparator9";
             this.toolStripSeparator9.Size = new System.Drawing.Size(6, 26);
             // 
+            // dgvProdazhi
+            // 
+            this.dgvProdazhi.AutoGenerateColumns = false;
+            this.dgvProdazhi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvProdazhi.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idprodazhaDataGridViewTextBoxColumn1,
+            this.idproductDataGridViewTextBoxColumn4,
+            this.idpokupatelDataGridViewTextBoxColumn1,
+            this.dateSaleDataGridViewTextBoxColumn1,
+            this.priceProductProdazhaDataGridViewTextBoxColumn1,
+            this.kolvoProductProdazhaDataGridViewTextBoxColumn1,
+            this.priceSummaProdazhaDataGridViewTextBoxColumn1});
+            this.dgvProdazhi.DataSource = this.prodazhiBindingSource;
+            this.dgvProdazhi.Location = new System.Drawing.Point(15, 75);
+            this.dgvProdazhi.Name = "dgvProdazhi";
+            this.dgvProdazhi.Size = new System.Drawing.Size(1025, 150);
+            this.dgvProdazhi.TabIndex = 0;
+            // 
             // idprodazhaDataGridViewTextBoxColumn1
             // 
             this.idprodazhaDataGridViewTextBoxColumn1.DataPropertyName = "id_prodazha";
@@ -1846,121 +1722,56 @@
             this.priceSummaProdazhaDataGridViewTextBoxColumn1.ReadOnly = true;
             this.priceSummaProdazhaDataGridViewTextBoxColumn1.Width = 130;
             // 
-            // textBox14
+            // tabPage4
             // 
-            this.textBox14.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.textBox14.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox14.Location = new System.Drawing.Point(30, 46);
-            this.textBox14.Multiline = true;
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(141, 33);
-            this.textBox14.TabIndex = 7;
-            this.textBox14.Text = "Код товара";
-            this.textBox14.TextChanged += new System.EventHandler(this.textBox14_TextChanged);
+            this.tabPage4.Controls.Add(this.groupBox10);
+            this.tabPage4.Controls.Add(this.groupBox7);
+            this.tabPage4.Controls.Add(this.grpSearchPostavshik);
+            this.tabPage4.Controls.Add(this.grpPostavshiki);
+            this.tabPage4.Location = new System.Drawing.Point(4, 27);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Size = new System.Drawing.Size(1072, 836);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "Поставщики";
+            this.tabPage4.UseVisualStyleBackColor = true;
             // 
-            // textBox13
+            // groupBox10
             // 
-            this.textBox13.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.textBox13.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox13.Location = new System.Drawing.Point(30, 148);
-            this.textBox13.Multiline = true;
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(141, 33);
-            this.textBox13.TabIndex = 8;
-            this.textBox13.Text = "Дата продажи";
+            this.groupBox10.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.groupBox10.Location = new System.Drawing.Point(597, 649);
+            this.groupBox10.Name = "groupBox10";
+            this.groupBox10.Size = new System.Drawing.Size(462, 184);
+            this.groupBox10.TabIndex = 4;
+            this.groupBox10.TabStop = false;
+            this.groupBox10.Text = "Внесение нового поставщика в базу данных";
             // 
-            // textBox15
+            // groupBox7
             // 
-            this.textBox15.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.textBox15.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox15.Location = new System.Drawing.Point(30, 96);
-            this.textBox15.Multiline = true;
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(141, 33);
-            this.textBox15.TabIndex = 9;
-            this.textBox15.Text = "Код покупателя";
+            this.groupBox7.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.groupBox7.Location = new System.Drawing.Point(597, 452);
+            this.groupBox7.Name = "groupBox7";
+            this.groupBox7.Size = new System.Drawing.Size(462, 176);
+            this.groupBox7.TabIndex = 3;
+            this.groupBox7.TabStop = false;
+            this.groupBox7.Text = "Изменение данных о поставщике";
             // 
-            // textBox16
+            // grpSearchPostavshik
             // 
-            this.textBox16.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.textBox16.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox16.Location = new System.Drawing.Point(30, 202);
-            this.textBox16.Multiline = true;
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(141, 33);
-            this.textBox16.TabIndex = 10;
-            this.textBox16.Text = "Цена продажи";
-            // 
-            // textBox17
-            // 
-            this.textBox17.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.textBox17.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox17.Location = new System.Drawing.Point(30, 255);
-            this.textBox17.Multiline = true;
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(141, 43);
-            this.textBox17.TabIndex = 11;
-            this.textBox17.Text = "Количество продажи";
-            // 
-            // comboBox7
-            // 
-            this.comboBox7.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.productsBindingSource, "nameProduct", true));
-            this.comboBox7.DataSource = this.prodazhiBindingSource;
-            this.comboBox7.DisplayMember = "id_product";
-            this.comboBox7.FormattingEnabled = true;
-            this.comboBox7.Location = new System.Drawing.Point(213, 46);
-            this.comboBox7.Name = "comboBox7";
-            this.comboBox7.Size = new System.Drawing.Size(141, 26);
-            this.comboBox7.TabIndex = 12;
-            this.comboBox7.ValueMember = "id_product";
-            // 
-            // comboBox8
-            // 
-            this.comboBox8.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.productsBindingSource, "nameProduct", true));
-            this.comboBox8.DataSource = this.prodazhiBindingSource;
-            this.comboBox8.DisplayMember = "id_pokupatel";
-            this.comboBox8.FormattingEnabled = true;
-            this.comboBox8.Location = new System.Drawing.Point(213, 96);
-            this.comboBox8.Name = "comboBox8";
-            this.comboBox8.Size = new System.Drawing.Size(141, 26);
-            this.comboBox8.TabIndex = 13;
-            this.comboBox8.ValueMember = "id_pokupatel";
-            // 
-            // comboBox9
-            // 
-            this.comboBox9.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.productsBindingSource, "nameProduct", true));
-            this.comboBox9.DataSource = this.prodazhiBindingSource;
-            this.comboBox9.DisplayMember = "dateSale";
-            this.comboBox9.FormattingEnabled = true;
-            this.comboBox9.Location = new System.Drawing.Point(213, 148);
-            this.comboBox9.Name = "comboBox9";
-            this.comboBox9.Size = new System.Drawing.Size(141, 26);
-            this.comboBox9.TabIndex = 14;
-            this.comboBox9.ValueMember = "dateSale";
-            // 
-            // comboBox10
-            // 
-            this.comboBox10.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.productsBindingSource, "nameProduct", true));
-            this.comboBox10.DataSource = this.prodazhiBindingSource;
-            this.comboBox10.DisplayMember = "priceProductProdazha";
-            this.comboBox10.FormattingEnabled = true;
-            this.comboBox10.Location = new System.Drawing.Point(213, 202);
-            this.comboBox10.Name = "comboBox10";
-            this.comboBox10.Size = new System.Drawing.Size(141, 26);
-            this.comboBox10.TabIndex = 15;
-            this.comboBox10.ValueMember = "priceProductProdazha";
-            // 
-            // comboBox11
-            // 
-            this.comboBox11.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.productsBindingSource, "nameProduct", true));
-            this.comboBox11.DataSource = this.prodazhiBindingSource;
-            this.comboBox11.DisplayMember = "kol_voProductProdazha";
-            this.comboBox11.FormattingEnabled = true;
-            this.comboBox11.Location = new System.Drawing.Point(213, 255);
-            this.comboBox11.Name = "comboBox11";
-            this.comboBox11.Size = new System.Drawing.Size(141, 26);
-            this.comboBox11.TabIndex = 16;
-            this.comboBox11.ValueMember = "kol_voProductProdazha";
+            this.grpSearchPostavshik.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.grpSearchPostavshik.Controls.Add(this.comboBox13);
+            this.grpSearchPostavshik.Controls.Add(this.comboBox14);
+            this.grpSearchPostavshik.Controls.Add(this.comboBox15);
+            this.grpSearchPostavshik.Controls.Add(this.comboBox16);
+            this.grpSearchPostavshik.Controls.Add(this.textBox19);
+            this.grpSearchPostavshik.Controls.Add(this.textBox20);
+            this.grpSearchPostavshik.Controls.Add(this.textBox21);
+            this.grpSearchPostavshik.Controls.Add(this.textBox22);
+            this.grpSearchPostavshik.Location = new System.Drawing.Point(10, 452);
+            this.grpSearchPostavshik.Name = "grpSearchPostavshik";
+            this.grpSearchPostavshik.Size = new System.Drawing.Size(565, 369);
+            this.grpSearchPostavshik.TabIndex = 2;
+            this.grpSearchPostavshik.TabStop = false;
+            this.grpSearchPostavshik.Text = "Поиск поставщиков";
             // 
             // comboBox13
             // 
@@ -1973,6 +1784,11 @@
             this.comboBox13.Size = new System.Drawing.Size(141, 26);
             this.comboBox13.TabIndex = 25;
             this.comboBox13.ValueMember = "emailPostavshik";
+            // 
+            // postavshikiBindingSource
+            // 
+            this.postavshikiBindingSource.DataMember = "postavshiki";
+            this.postavshikiBindingSource.DataSource = this.bindingSource1;
             // 
             // comboBox14
             // 
@@ -2054,20 +1870,17 @@
             this.textBox22.TabIndex = 17;
             this.textBox22.Text = "Код поставщика";
             // 
-            // dataGridView1
+            // grpPostavshiki
             // 
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.idpostavshikDataGridViewTextBoxColumn2,
-            this.namePostavshikDataGridViewTextBoxColumn,
-            this.phonePostavshikDataGridViewTextBoxColumn,
-            this.emailPostavshikDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.postavshikiBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(6, 77);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(651, 150);
-            this.dataGridView1.TabIndex = 0;
+            this.grpPostavshiki.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.grpPostavshiki.Controls.Add(this.bndNavPostavshiki);
+            this.grpPostavshiki.Controls.Add(this.dataGridView1);
+            this.grpPostavshiki.Location = new System.Drawing.Point(10, 15);
+            this.grpPostavshiki.Name = "grpPostavshiki";
+            this.grpPostavshiki.Size = new System.Drawing.Size(702, 417);
+            this.grpPostavshiki.TabIndex = 1;
+            this.grpPostavshiki.TabStop = false;
+            this.grpPostavshiki.Text = "Поставщики";
             // 
             // bndNavPostavshiki
             // 
@@ -2182,6 +1995,21 @@
             this.toolStripSeparator13.Name = "toolStripSeparator13";
             this.toolStripSeparator13.Size = new System.Drawing.Size(6, 26);
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idpostavshikDataGridViewTextBoxColumn2,
+            this.namePostavshikDataGridViewTextBoxColumn,
+            this.phonePostavshikDataGridViewTextBoxColumn,
+            this.emailPostavshikDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.postavshikiBindingSource;
+            this.dataGridView1.Location = new System.Drawing.Point(0, 77);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(696, 334);
+            this.dataGridView1.TabIndex = 0;
+            // 
             // idpostavshikDataGridViewTextBoxColumn2
             // 
             this.idpostavshikDataGridViewTextBoxColumn2.DataPropertyName = "id_postavshik";
@@ -2209,7 +2037,211 @@
             this.emailPostavshikDataGridViewTextBoxColumn.DataPropertyName = "emailPostavshik";
             this.emailPostavshikDataGridViewTextBoxColumn.HeaderText = "Эл. почта поставщика";
             this.emailPostavshikDataGridViewTextBoxColumn.Name = "emailPostavshikDataGridViewTextBoxColumn";
-            this.emailPostavshikDataGridViewTextBoxColumn.Width = 150;
+            this.emailPostavshikDataGridViewTextBoxColumn.Width = 200;
+            // 
+            // tabPage5
+            // 
+            this.tabPage5.Controls.Add(this.groupBox11);
+            this.tabPage5.Controls.Add(this.groupBox8);
+            this.tabPage5.Controls.Add(this.grpSearchPokupatel);
+            this.tabPage5.Controls.Add(this.grpPokupateli);
+            this.tabPage5.Location = new System.Drawing.Point(4, 27);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Size = new System.Drawing.Size(1072, 836);
+            this.tabPage5.TabIndex = 4;
+            this.tabPage5.Text = "Покупатели";
+            this.tabPage5.UseVisualStyleBackColor = true;
+            // 
+            // groupBox11
+            // 
+            this.groupBox11.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.groupBox11.Location = new System.Drawing.Point(597, 649);
+            this.groupBox11.Name = "groupBox11";
+            this.groupBox11.Size = new System.Drawing.Size(462, 184);
+            this.groupBox11.TabIndex = 5;
+            this.groupBox11.TabStop = false;
+            this.groupBox11.Text = "Внесение нового покупателя в базу данных";
+            // 
+            // groupBox8
+            // 
+            this.groupBox8.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.groupBox8.Location = new System.Drawing.Point(597, 452);
+            this.groupBox8.Name = "groupBox8";
+            this.groupBox8.Size = new System.Drawing.Size(462, 176);
+            this.groupBox8.TabIndex = 4;
+            this.groupBox8.TabStop = false;
+            this.groupBox8.Text = "Изменение данных о покупателе";
+            // 
+            // grpSearchPokupatel
+            // 
+            this.grpSearchPokupatel.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.grpSearchPokupatel.Controls.Add(this.comboBox12);
+            this.grpSearchPokupatel.Controls.Add(this.comboBox17);
+            this.grpSearchPokupatel.Controls.Add(this.comboBox18);
+            this.grpSearchPokupatel.Controls.Add(this.comboBox19);
+            this.grpSearchPokupatel.Controls.Add(this.textBox18);
+            this.grpSearchPokupatel.Controls.Add(this.textBox23);
+            this.grpSearchPokupatel.Controls.Add(this.textBox24);
+            this.grpSearchPokupatel.Controls.Add(this.textBox25);
+            this.grpSearchPokupatel.Location = new System.Drawing.Point(6, 452);
+            this.grpSearchPokupatel.Name = "grpSearchPokupatel";
+            this.grpSearchPokupatel.Size = new System.Drawing.Size(565, 369);
+            this.grpSearchPokupatel.TabIndex = 3;
+            this.grpSearchPokupatel.TabStop = false;
+            this.grpSearchPokupatel.Text = "Поиск покупателя";
+            // 
+            // comboBox12
+            // 
+            this.comboBox12.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.productsBindingSource, "nameProduct", true));
+            this.comboBox12.DataSource = this.pokupateliBindingSource;
+            this.comboBox12.DisplayMember = "emailPokupatel";
+            this.comboBox12.FormattingEnabled = true;
+            this.comboBox12.Location = new System.Drawing.Point(219, 210);
+            this.comboBox12.Name = "comboBox12";
+            this.comboBox12.Size = new System.Drawing.Size(141, 26);
+            this.comboBox12.TabIndex = 33;
+            this.comboBox12.ValueMember = "emailPokupatel";
+            // 
+            // pokupateliBindingSource
+            // 
+            this.pokupateliBindingSource.DataMember = "pokupateli";
+            this.pokupateliBindingSource.DataSource = this.bindingSource1;
+            // 
+            // comboBox17
+            // 
+            this.comboBox17.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.productsBindingSource, "nameProduct", true));
+            this.comboBox17.DataSource = this.pokupateliBindingSource;
+            this.comboBox17.DisplayMember = "phonePokupatel";
+            this.comboBox17.FormattingEnabled = true;
+            this.comboBox17.Location = new System.Drawing.Point(219, 149);
+            this.comboBox17.Name = "comboBox17";
+            this.comboBox17.Size = new System.Drawing.Size(141, 26);
+            this.comboBox17.TabIndex = 32;
+            this.comboBox17.ValueMember = "phonePokupatel";
+            // 
+            // comboBox18
+            // 
+            this.comboBox18.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.productsBindingSource, "nameProduct", true));
+            this.comboBox18.DataSource = this.pokupateliBindingSource;
+            this.comboBox18.DisplayMember = "namePokupatel";
+            this.comboBox18.FormattingEnabled = true;
+            this.comboBox18.Location = new System.Drawing.Point(219, 97);
+            this.comboBox18.Name = "comboBox18";
+            this.comboBox18.Size = new System.Drawing.Size(141, 26);
+            this.comboBox18.TabIndex = 31;
+            this.comboBox18.ValueMember = "namePokupatel";
+            // 
+            // comboBox19
+            // 
+            this.comboBox19.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.productsBindingSource, "nameProduct", true));
+            this.comboBox19.DataSource = this.pokupateliBindingSource;
+            this.comboBox19.DisplayMember = "id_pokupatel";
+            this.comboBox19.FormattingEnabled = true;
+            this.comboBox19.Location = new System.Drawing.Point(219, 47);
+            this.comboBox19.Name = "comboBox19";
+            this.comboBox19.Size = new System.Drawing.Size(141, 26);
+            this.comboBox19.TabIndex = 30;
+            this.comboBox19.ValueMember = "id_pokupatel";
+            // 
+            // textBox18
+            // 
+            this.textBox18.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.textBox18.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox18.Location = new System.Drawing.Point(36, 203);
+            this.textBox18.Multiline = true;
+            this.textBox18.Name = "textBox18";
+            this.textBox18.Size = new System.Drawing.Size(141, 33);
+            this.textBox18.TabIndex = 29;
+            this.textBox18.Text = "Эл. почта покупателя";
+            // 
+            // textBox23
+            // 
+            this.textBox23.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.textBox23.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox23.Location = new System.Drawing.Point(36, 97);
+            this.textBox23.Multiline = true;
+            this.textBox23.Name = "textBox23";
+            this.textBox23.Size = new System.Drawing.Size(141, 33);
+            this.textBox23.TabIndex = 28;
+            this.textBox23.Text = "ФИО покупателя";
+            // 
+            // textBox24
+            // 
+            this.textBox24.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.textBox24.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox24.Location = new System.Drawing.Point(36, 149);
+            this.textBox24.Multiline = true;
+            this.textBox24.Name = "textBox24";
+            this.textBox24.Size = new System.Drawing.Size(141, 33);
+            this.textBox24.TabIndex = 27;
+            this.textBox24.Text = "Телефон покупателя";
+            // 
+            // textBox25
+            // 
+            this.textBox25.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.textBox25.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox25.Location = new System.Drawing.Point(36, 47);
+            this.textBox25.Multiline = true;
+            this.textBox25.Name = "textBox25";
+            this.textBox25.Size = new System.Drawing.Size(141, 33);
+            this.textBox25.TabIndex = 26;
+            this.textBox25.Text = "Код покупателя";
+            // 
+            // grpPokupateli
+            // 
+            this.grpPokupateli.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.grpPokupateli.Controls.Add(this.dataGridView2);
+            this.grpPokupateli.Controls.Add(this.bndNavPokupateli);
+            this.grpPokupateli.Location = new System.Drawing.Point(6, 17);
+            this.grpPokupateli.Name = "grpPokupateli";
+            this.grpPokupateli.Size = new System.Drawing.Size(713, 417);
+            this.grpPokupateli.TabIndex = 1;
+            this.grpPokupateli.TabStop = false;
+            this.grpPokupateli.Text = "Покупатели";
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.AutoGenerateColumns = false;
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idpokupatelDataGridViewTextBoxColumn2,
+            this.namePokupatelDataGridViewTextBoxColumn,
+            this.phonePokupatelDataGridViewTextBoxColumn,
+            this.emailPokupatelDataGridViewTextBoxColumn});
+            this.dataGridView2.DataSource = this.pokupateliBindingSource;
+            this.dataGridView2.Location = new System.Drawing.Point(12, 73);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.Size = new System.Drawing.Size(698, 338);
+            this.dataGridView2.TabIndex = 5;
+            // 
+            // idpokupatelDataGridViewTextBoxColumn2
+            // 
+            this.idpokupatelDataGridViewTextBoxColumn2.DataPropertyName = "id_pokupatel";
+            this.idpokupatelDataGridViewTextBoxColumn2.HeaderText = "Код покупателя";
+            this.idpokupatelDataGridViewTextBoxColumn2.Name = "idpokupatelDataGridViewTextBoxColumn2";
+            this.idpokupatelDataGridViewTextBoxColumn2.ReadOnly = true;
+            this.idpokupatelDataGridViewTextBoxColumn2.Width = 150;
+            // 
+            // namePokupatelDataGridViewTextBoxColumn
+            // 
+            this.namePokupatelDataGridViewTextBoxColumn.DataPropertyName = "namePokupatel";
+            this.namePokupatelDataGridViewTextBoxColumn.HeaderText = "ФИО покупателя";
+            this.namePokupatelDataGridViewTextBoxColumn.Name = "namePokupatelDataGridViewTextBoxColumn";
+            this.namePokupatelDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // phonePokupatelDataGridViewTextBoxColumn
+            // 
+            this.phonePokupatelDataGridViewTextBoxColumn.DataPropertyName = "phonePokupatel";
+            this.phonePokupatelDataGridViewTextBoxColumn.HeaderText = "Телефон покупателя";
+            this.phonePokupatelDataGridViewTextBoxColumn.Name = "phonePokupatelDataGridViewTextBoxColumn";
+            this.phonePokupatelDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // emailPokupatelDataGridViewTextBoxColumn
+            // 
+            this.emailPokupatelDataGridViewTextBoxColumn.DataPropertyName = "emailPokupatel";
+            this.emailPokupatelDataGridViewTextBoxColumn.HeaderText = "Эл. почта покупателя";
+            this.emailPokupatelDataGridViewTextBoxColumn.Name = "emailPokupatelDataGridViewTextBoxColumn";
+            this.emailPokupatelDataGridViewTextBoxColumn.Width = 200;
             // 
             // bndNavPokupateli
             // 
@@ -2324,15 +2356,154 @@
             this.toolStripSeparator17.Name = "toolStripSeparator17";
             this.toolStripSeparator17.Size = new System.Drawing.Size(6, 26);
             // 
-            // bindingNavigator2
+            // tabPage6
             // 
-            this.bindingNavigator2.AddNewItem = null;
-            this.bindingNavigator2.BindingSource = this.prodazhiBindingSource;
-            this.bindingNavigator2.CountItem = this.toolStripLabel5;
-            this.bindingNavigator2.DeleteItem = this.toolStripButton21;
-            this.bindingNavigator2.Dock = System.Windows.Forms.DockStyle.None;
-            this.bindingNavigator2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.bindingNavigator2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tabPage6.Controls.Add(this.groupBox12);
+            this.tabPage6.Controls.Add(this.groupBox9);
+            this.tabPage6.Controls.Add(this.grpSearchProizvoditel);
+            this.tabPage6.Controls.Add(this.grpProizvoditeli);
+            this.tabPage6.Location = new System.Drawing.Point(4, 27);
+            this.tabPage6.Name = "tabPage6";
+            this.tabPage6.Size = new System.Drawing.Size(1072, 836);
+            this.tabPage6.TabIndex = 5;
+            this.tabPage6.Text = "Производители";
+            this.tabPage6.UseVisualStyleBackColor = true;
+            // 
+            // groupBox12
+            // 
+            this.groupBox12.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.groupBox12.Location = new System.Drawing.Point(604, 656);
+            this.groupBox12.Name = "groupBox12";
+            this.groupBox12.Size = new System.Drawing.Size(462, 165);
+            this.groupBox12.TabIndex = 6;
+            this.groupBox12.TabStop = false;
+            this.groupBox12.Text = "Внесение нового производителя в базу данных";
+            // 
+            // groupBox9
+            // 
+            this.groupBox9.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.groupBox9.Location = new System.Drawing.Point(604, 452);
+            this.groupBox9.Name = "groupBox9";
+            this.groupBox9.Size = new System.Drawing.Size(462, 176);
+            this.groupBox9.TabIndex = 5;
+            this.groupBox9.TabStop = false;
+            this.groupBox9.Text = "Изменение данных о производителе";
+            // 
+            // grpSearchProizvoditel
+            // 
+            this.grpSearchProizvoditel.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.grpSearchProizvoditel.Controls.Add(this.comboBox21);
+            this.grpSearchProizvoditel.Controls.Add(this.comboBox20);
+            this.grpSearchProizvoditel.Controls.Add(this.textBox27);
+            this.grpSearchProizvoditel.Controls.Add(this.textBox26);
+            this.grpSearchProizvoditel.Location = new System.Drawing.Point(10, 452);
+            this.grpSearchProizvoditel.Name = "grpSearchProizvoditel";
+            this.grpSearchProizvoditel.Size = new System.Drawing.Size(565, 369);
+            this.grpSearchProizvoditel.TabIndex = 4;
+            this.grpSearchProizvoditel.TabStop = false;
+            this.grpSearchProizvoditel.Text = "Поиск производителя";
+            // 
+            // comboBox21
+            // 
+            this.comboBox21.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.productsBindingSource, "nameProduct", true));
+            this.comboBox21.DataSource = this.productProizvoditeliBindingSource1;
+            this.comboBox21.DisplayMember = "nameProizvoditel";
+            this.comboBox21.FormattingEnabled = true;
+            this.comboBox21.Location = new System.Drawing.Point(240, 115);
+            this.comboBox21.Name = "comboBox21";
+            this.comboBox21.Size = new System.Drawing.Size(197, 26);
+            this.comboBox21.TabIndex = 32;
+            this.comboBox21.ValueMember = "nameProizvoditel";
+            // 
+            // productProizvoditeliBindingSource1
+            // 
+            this.productProizvoditeliBindingSource1.DataMember = "productProizvoditeli";
+            this.productProizvoditeliBindingSource1.DataSource = this.bindingSource1;
+            // 
+            // comboBox20
+            // 
+            this.comboBox20.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.productsBindingSource, "nameProduct", true));
+            this.comboBox20.DataSource = this.productProizvoditeliBindingSource1;
+            this.comboBox20.DisplayMember = "id_proizvoditel";
+            this.comboBox20.FormattingEnabled = true;
+            this.comboBox20.Location = new System.Drawing.Point(240, 62);
+            this.comboBox20.Name = "comboBox20";
+            this.comboBox20.Size = new System.Drawing.Size(197, 26);
+            this.comboBox20.TabIndex = 31;
+            this.comboBox20.ValueMember = "id_proizvoditel";
+            
+            // 
+            // textBox27
+            // 
+            this.textBox27.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.textBox27.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox27.Location = new System.Drawing.Point(22, 108);
+            this.textBox27.Multiline = true;
+            this.textBox27.Name = "textBox27";
+            this.textBox27.Size = new System.Drawing.Size(141, 33);
+            this.textBox27.TabIndex = 28;
+            this.textBox27.Text = "Название производителя";
+            // 
+            // textBox26
+            // 
+            this.textBox26.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.textBox26.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox26.Location = new System.Drawing.Point(22, 55);
+            this.textBox26.Multiline = true;
+            this.textBox26.Name = "textBox26";
+            this.textBox26.Size = new System.Drawing.Size(141, 33);
+            this.textBox26.TabIndex = 27;
+            this.textBox26.Text = "Код производителя";
+            // 
+            // grpProizvoditeli
+            // 
+            this.grpProizvoditeli.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.grpProizvoditeli.Controls.Add(this.dataGridView3);
+            this.grpProizvoditeli.Controls.Add(this.bndNavProizvoditeli);
+            this.grpProizvoditeli.Location = new System.Drawing.Point(10, 13);
+            this.grpProizvoditeli.Name = "grpProizvoditeli";
+            this.grpProizvoditeli.Size = new System.Drawing.Size(483, 417);
+            this.grpProizvoditeli.TabIndex = 1;
+            this.grpProizvoditeli.TabStop = false;
+            this.grpProizvoditeli.Text = "Производители";
+            // 
+            // dataGridView3
+            // 
+            this.dataGridView3.AutoGenerateColumns = false;
+            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView3.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idproizvoditelDataGridViewTextBoxColumn1,
+            this.nameProizvoditelDataGridViewTextBoxColumn});
+            this.dataGridView3.DataSource = this.productProizvoditeliBindingSource1;
+            this.dataGridView3.Location = new System.Drawing.Point(0, 73);
+            this.dataGridView3.Name = "dataGridView3";
+            this.dataGridView3.Size = new System.Drawing.Size(450, 338);
+            this.dataGridView3.TabIndex = 5;
+            // 
+            // idproizvoditelDataGridViewTextBoxColumn1
+            // 
+            this.idproizvoditelDataGridViewTextBoxColumn1.DataPropertyName = "id_proizvoditel";
+            this.idproizvoditelDataGridViewTextBoxColumn1.HeaderText = "Код производителя";
+            this.idproizvoditelDataGridViewTextBoxColumn1.Name = "idproizvoditelDataGridViewTextBoxColumn1";
+            this.idproizvoditelDataGridViewTextBoxColumn1.ReadOnly = true;
+            this.idproizvoditelDataGridViewTextBoxColumn1.Width = 150;
+            // 
+            // nameProizvoditelDataGridViewTextBoxColumn
+            // 
+            this.nameProizvoditelDataGridViewTextBoxColumn.DataPropertyName = "nameProizvoditel";
+            this.nameProizvoditelDataGridViewTextBoxColumn.HeaderText = "Название производителя";
+            this.nameProizvoditelDataGridViewTextBoxColumn.Name = "nameProizvoditelDataGridViewTextBoxColumn";
+            this.nameProizvoditelDataGridViewTextBoxColumn.Width = 250;
+            // 
+            // bndNavProizvoditeli
+            // 
+            this.bndNavProizvoditeli.AddNewItem = null;
+            this.bndNavProizvoditeli.BindingSource = this.prodazhiBindingSource;
+            this.bndNavProizvoditeli.CountItem = this.toolStripLabel5;
+            this.bndNavProizvoditeli.DeleteItem = this.toolStripButton21;
+            this.bndNavProizvoditeli.Dock = System.Windows.Forms.DockStyle.None;
+            this.bndNavProizvoditeli.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.bndNavProizvoditeli.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripButton22,
             this.toolStripButton23,
             this.toolStripSeparator18,
@@ -2344,16 +2515,16 @@
             this.toolStripSeparator20,
             this.toolStripButton21,
             this.toolStripSeparator21});
-            this.bindingNavigator2.Location = new System.Drawing.Point(307, 195);
-            this.bindingNavigator2.MoveFirstItem = this.toolStripButton22;
-            this.bindingNavigator2.MoveLastItem = this.toolStripButton25;
-            this.bindingNavigator2.MoveNextItem = this.toolStripButton24;
-            this.bindingNavigator2.MovePreviousItem = this.toolStripButton23;
-            this.bindingNavigator2.Name = "bindingNavigator2";
-            this.bindingNavigator2.PositionItem = this.toolStripTextBox5;
-            this.bindingNavigator2.Size = new System.Drawing.Size(443, 26);
-            this.bindingNavigator2.TabIndex = 4;
-            this.bindingNavigator2.Text = "bindingNavigator3";
+            this.bndNavProizvoditeli.Location = new System.Drawing.Point(3, 32);
+            this.bndNavProizvoditeli.MoveFirstItem = this.toolStripButton22;
+            this.bndNavProizvoditeli.MoveLastItem = this.toolStripButton25;
+            this.bndNavProizvoditeli.MoveNextItem = this.toolStripButton24;
+            this.bndNavProizvoditeli.MovePreviousItem = this.toolStripButton23;
+            this.bndNavProizvoditeli.Name = "bndNavProizvoditeli";
+            this.bndNavProizvoditeli.PositionItem = this.toolStripTextBox5;
+            this.bndNavProizvoditeli.Size = new System.Drawing.Size(466, 26);
+            this.bndNavProizvoditeli.TabIndex = 4;
+            this.bndNavProizvoditeli.Text = "bindingNavigator3";
             // 
             // toolStripLabel5
             // 
@@ -2369,8 +2540,9 @@
             this.toolStripButton21.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton21.Image")));
             this.toolStripButton21.Name = "toolStripButton21";
             this.toolStripButton21.RightToLeftAutoMirrorImage = true;
-            this.toolStripButton21.Size = new System.Drawing.Size(217, 23);
-            this.toolStripButton21.Text = "Удалить поставщика из базы";
+            this.toolStripButton21.Size = new System.Drawing.Size(240, 23);
+            this.toolStripButton21.Text = "Удалить производителя из базы";
+            this.toolStripButton21.ToolTipText = "Удалить производителя из базы";
             // 
             // toolStripButton22
             // 
@@ -2437,58 +2609,94 @@
             this.toolStripSeparator21.Name = "toolStripSeparator21";
             this.toolStripSeparator21.Size = new System.Drawing.Size(6, 26);
             // 
-            // dataGridView2
+            // tabPage7
             // 
-            this.dataGridView2.AutoGenerateColumns = false;
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.idpokupatelDataGridViewTextBoxColumn2,
-            this.namePokupatelDataGridViewTextBoxColumn,
-            this.phonePokupatelDataGridViewTextBoxColumn,
-            this.emailPokupatelDataGridViewTextBoxColumn});
-            this.dataGridView2.DataSource = this.pokupateliBindingSource;
-            this.dataGridView2.Location = new System.Drawing.Point(12, 73);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(690, 338);
-            this.dataGridView2.TabIndex = 5;
+            this.tabPage7.Controls.Add(this.button1);
+            this.tabPage7.Location = new System.Drawing.Point(4, 27);
+            this.tabPage7.Name = "tabPage7";
+            this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage7.Size = new System.Drawing.Size(1072, 836);
+            this.tabPage7.TabIndex = 6;
+            this.tabPage7.Text = "Выход";
+            this.tabPage7.UseVisualStyleBackColor = true;
             // 
-            // pokupateliBindingSource
+            // button1
             // 
-            this.pokupateliBindingSource.DataMember = "pokupateli";
-            this.pokupateliBindingSource.DataSource = this.bindingSource1;
+            this.button1.Location = new System.Drawing.Point(425, 317);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(183, 88);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "Выход из приложения";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // fKidProizvoditeliBindingSource
+            // 
+            this.fKidProizvoditeliBindingSource.DataMember = "FK_id_Proizvoditeli";
+            this.fKidProizvoditeliBindingSource.DataSource = this.productProizvoditeliBindingSource;
+            // 
+            // productProizvoditeliBindingSource
+            // 
+            this.productProizvoditeliBindingSource.DataMember = "productProizvoditeli";
+            this.productProizvoditeliBindingSource.DataSource = this.bindingSource1;
+            // 
+            // productsBindingSource2
+            // 
+            this.productsBindingSource2.DataMember = "products";
+            this.productsBindingSource2.DataSource = this.bindingSource1;
+            // 
+            // productsBindingSource1
+            // 
+            this.productsBindingSource1.DataMember = "products";
+            this.productsBindingSource1.DataSource = this.bindingSource1;
+            // 
+            // productsTableAdapter
+            // 
+            this.productsTableAdapter.ClearBeforeFill = true;
+            // 
+            // prodazhiTableAdapter
+            // 
+            this.prodazhiTableAdapter.ClearBeforeFill = true;
+            // 
+            // kontc_3DataSet1
+            // 
+            this.kontc_3DataSet1.DataSetName = "kontc_3DataSet";
+            this.kontc_3DataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // zakupkiTableAdapter
+            // 
+            this.zakupkiTableAdapter.ClearBeforeFill = true;
+            // 
+            // productProizvoditeliTableAdapter
+            // 
+            this.productProizvoditeliTableAdapter.ClearBeforeFill = true;
+            // 
+            // productsTableAdapter1_1
+            // 
+            this.productsTableAdapter1_1.ClearBeforeFill = true;
+            // 
+            // bindingSource2
+            // 
+            this.bindingSource2.DataMember = "products";
+            this.bindingSource2.DataSource = this.kontc_3DataSet;
+            // 
+            // kontc_3DataSet2
+            // 
+            this.kontc_3DataSet2.DataSetName = "kontc_3DataSet";
+            this.kontc_3DataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // postavshikiTableAdapter
+            // 
+            this.postavshikiTableAdapter.ClearBeforeFill = true;
+            // 
+            // prodazhiBindingSource1
+            // 
+            this.prodazhiBindingSource1.DataMember = "prodazhi";
+            this.prodazhiBindingSource1.DataSource = this.bindingSource1;
             // 
             // pokupateliTableAdapter
             // 
             this.pokupateliTableAdapter.ClearBeforeFill = true;
-            // 
-            // idpokupatelDataGridViewTextBoxColumn2
-            // 
-            this.idpokupatelDataGridViewTextBoxColumn2.DataPropertyName = "id_pokupatel";
-            this.idpokupatelDataGridViewTextBoxColumn2.HeaderText = "Код покупателя";
-            this.idpokupatelDataGridViewTextBoxColumn2.Name = "idpokupatelDataGridViewTextBoxColumn2";
-            this.idpokupatelDataGridViewTextBoxColumn2.ReadOnly = true;
-            this.idpokupatelDataGridViewTextBoxColumn2.Width = 150;
-            // 
-            // namePokupatelDataGridViewTextBoxColumn
-            // 
-            this.namePokupatelDataGridViewTextBoxColumn.DataPropertyName = "namePokupatel";
-            this.namePokupatelDataGridViewTextBoxColumn.HeaderText = "ФИО покупателя";
-            this.namePokupatelDataGridViewTextBoxColumn.Name = "namePokupatelDataGridViewTextBoxColumn";
-            this.namePokupatelDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // phonePokupatelDataGridViewTextBoxColumn
-            // 
-            this.phonePokupatelDataGridViewTextBoxColumn.DataPropertyName = "phonePokupatel";
-            this.phonePokupatelDataGridViewTextBoxColumn.HeaderText = "Телефон покупателя";
-            this.phonePokupatelDataGridViewTextBoxColumn.Name = "phonePokupatelDataGridViewTextBoxColumn";
-            this.phonePokupatelDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // emailPokupatelDataGridViewTextBoxColumn
-            // 
-            this.emailPokupatelDataGridViewTextBoxColumn.DataPropertyName = "emailPokupatel";
-            this.emailPokupatelDataGridViewTextBoxColumn.HeaderText = "Эл. почтв покупателя";
-            this.emailPokupatelDataGridViewTextBoxColumn.Name = "emailPokupatelDataGridViewTextBoxColumn";
-            this.emailPokupatelDataGridViewTextBoxColumn.Width = 150;
             // 
             // Kontc_3
             // 
@@ -2523,62 +2731,68 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvProducts_Prodazhi)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fKprodazhiidproductsBindingSource)).EndInit();
             this.tabPage2.ResumeLayout(false);
+            this.grpZakupkaSearch.ResumeLayout(false);
+            this.grpZakupkaSearch.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.zakupkiBindingSource)).EndInit();
             this.grpUpdateZakupka.ResumeLayout(false);
             this.grpUpdateZakupka.PerformLayout();
             this.grpCreateZakupka.ResumeLayout(false);
             this.grpCreateZakupka.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.postavshikiBindingSource)).EndInit();
             this.grpZakupki.ResumeLayout(false);
             this.grpZakupki.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvZakupki)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.zakupkiBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bdnavZakupki)).EndInit();
             this.bdnavZakupki.ResumeLayout(false);
             this.bdnavZakupki.PerformLayout();
             this.tabPage3.ResumeLayout(false);
-            this.tabPage4.ResumeLayout(false);
-            this.tabPage5.ResumeLayout(false);
-            this.tabPage6.ResumeLayout(false);
-            this.tabPage7.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.fKidProizvoditeliBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.productProizvoditeliBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.productsBindingSource2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.productsBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.prodazhiBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kontc_3DataSet1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kontc_3DataSet2)).EndInit();
-            this.grpZakupkaSearch.ResumeLayout(false);
-            this.grpZakupkaSearch.PerformLayout();
             this.grpSearchProdazha.ResumeLayout(false);
             this.grpSearchProdazha.PerformLayout();
-            this.grpPostavshiki.ResumeLayout(false);
-            this.grpPostavshiki.PerformLayout();
-            this.grpPokupateli.ResumeLayout(false);
-            this.grpPokupateli.PerformLayout();
-            this.grpProizvoditeli.ResumeLayout(false);
-            this.grpProizvoditeli.PerformLayout();
-            this.grpSearchPostavshik.ResumeLayout(false);
-            this.grpSearchPostavshik.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.prodazhiBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvProdazhi)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.prodazhiBindingSource)).EndInit();
             this.grpProdazhi.ResumeLayout(false);
             this.grpProdazhi.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bndNavProdazhi)).EndInit();
             this.bndNavProdazhi.ResumeLayout(false);
             this.bndNavProdazhi.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvProdazhi)).EndInit();
+            this.tabPage4.ResumeLayout(false);
+            this.grpSearchPostavshik.ResumeLayout(false);
+            this.grpSearchPostavshik.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.postavshikiBindingSource)).EndInit();
+            this.grpPostavshiki.ResumeLayout(false);
+            this.grpPostavshiki.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bndNavPostavshiki)).EndInit();
             this.bndNavPostavshiki.ResumeLayout(false);
             this.bndNavPostavshiki.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.tabPage5.ResumeLayout(false);
+            this.grpSearchPokupatel.ResumeLayout(false);
+            this.grpSearchPokupatel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pokupateliBindingSource)).EndInit();
+            this.grpPokupateli.ResumeLayout(false);
+            this.grpPokupateli.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bndNavPokupateli)).EndInit();
             this.bndNavPokupateli.ResumeLayout(false);
             this.bndNavPokupateli.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator2)).EndInit();
-            this.bindingNavigator2.ResumeLayout(false);
-            this.bindingNavigator2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pokupateliBindingSource)).EndInit();
+            this.tabPage6.ResumeLayout(false);
+            this.grpSearchProizvoditel.ResumeLayout(false);
+            this.grpSearchProizvoditel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.productProizvoditeliBindingSource1)).EndInit();
+            this.grpProizvoditeli.ResumeLayout(false);
+            this.grpProizvoditeli.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bndNavProizvoditeli)).EndInit();
+            this.bndNavProizvoditeli.ResumeLayout(false);
+            this.bndNavProizvoditeli.PerformLayout();
+            this.tabPage7.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.fKidProizvoditeliBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productProizvoditeliBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productsBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productsBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kontc_3DataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kontc_3DataSet2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.prodazhiBindingSource1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2776,10 +2990,6 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator12;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator13;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idpostavshikDataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn namePostavshikDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn phonePostavshikDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn emailPostavshikDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.BindingNavigator bndNavPokupateli;
         private System.Windows.Forms.ToolStripLabel toolStripLabel4;
@@ -2793,7 +3003,7 @@
         private System.Windows.Forms.ToolStripButton toolStripButton20;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator16;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator17;
-        private System.Windows.Forms.BindingNavigator bindingNavigator2;
+        private System.Windows.Forms.BindingNavigator bndNavProizvoditeli;
         private System.Windows.Forms.ToolStripLabel toolStripLabel5;
         private System.Windows.Forms.ToolStripButton toolStripButton21;
         private System.Windows.Forms.ToolStripButton toolStripButton22;
@@ -2807,10 +3017,30 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator21;
         private System.Windows.Forms.BindingSource pokupateliBindingSource;
         private kontc_3DataSetTableAdapters.pokupateliTableAdapter pokupateliTableAdapter;
+        private System.Windows.Forms.ComboBox comboBox12;
+        private System.Windows.Forms.ComboBox comboBox17;
+        private System.Windows.Forms.ComboBox comboBox18;
+        private System.Windows.Forms.ComboBox comboBox19;
+        private System.Windows.Forms.TextBox textBox18;
+        private System.Windows.Forms.TextBox textBox23;
+        private System.Windows.Forms.TextBox textBox24;
+        private System.Windows.Forms.TextBox textBox25;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idpostavshikDataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn namePostavshikDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn phonePostavshikDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn emailPostavshikDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn idpokupatelDataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn namePokupatelDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn phonePokupatelDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn emailPokupatelDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridView dataGridView3;
+        private System.Windows.Forms.BindingSource productProizvoditeliBindingSource1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idproizvoditelDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nameProizvoditelDataGridViewTextBoxColumn;
+        private System.Windows.Forms.ComboBox comboBox20;
+        private System.Windows.Forms.TextBox textBox27;
+        private System.Windows.Forms.TextBox textBox26;
+        private System.Windows.Forms.ComboBox comboBox21;
     }
 }
 

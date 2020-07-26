@@ -52,6 +52,12 @@
     <Compile Include="addProduct.Designer.cs">
       <DependentUpon>addProduct.cs</DependentUpon>
     </Compile>
+    <Compile Include="addZakupka.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addZakupka.Designer.cs">
+      <DependentUpon>addZakupka.cs</DependentUpon>
+    </Compile>
     <Compile Include="kontc_3DataSet.cs">
       <DependentUpon>kontc_3DataSet.xsd</DependentUpon>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -73,6 +79,9 @@
     <EmbeddedResource Include="addProduct.resx">
       <DependentUpon>addProduct.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="addZakupka.resx">
+      <DependentUpon>addZakupka.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -91,7 +100,6 @@
     </None>
     <None Include="kontc_3DataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>kontc_3DataSet.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
