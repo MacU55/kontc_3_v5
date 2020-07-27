@@ -141,9 +141,10 @@ namespace prog_kontc_3_v5
             }
         }
 
-        private void textBox18_TextChanged(object sender, EventArgs e)
+        private void button4_Click(object sender, EventArgs e)
         {
-
+            Form frmAddProdazh = new addProdazh();
+            frmAddProdazh.ShowDialog();
         }
     }
 }

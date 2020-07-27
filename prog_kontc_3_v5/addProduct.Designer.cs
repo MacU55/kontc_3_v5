@@ -53,7 +53,7 @@
             // txtBoxProductsName
             // 
             this.txtBoxProductsName.Location = new System.Drawing.Point(305, 79);
-            this.txtBoxProductsName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtBoxProductsName.Margin = new System.Windows.Forms.Padding(4);
             this.txtBoxProductsName.Multiline = true;
             this.txtBoxProductsName.Name = "txtBoxProductsName";
             this.txtBoxProductsName.Size = new System.Drawing.Size(132, 24);
@@ -106,7 +106,7 @@
             this.cmbBoxKodProizvodit.DisplayMember = "id_proizvoditel";
             this.cmbBoxKodProizvodit.FormattingEnabled = true;
             this.cmbBoxKodProizvodit.Location = new System.Drawing.Point(305, 139);
-            this.cmbBoxKodProizvodit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbBoxKodProizvodit.Margin = new System.Windows.Forms.Padding(4);
             this.cmbBoxKodProizvodit.Name = "cmbBoxKodProizvodit";
             this.cmbBoxKodProizvodit.Size = new System.Drawing.Size(160, 24);
             this.cmbBoxKodProizvodit.TabIndex = 5;
@@ -131,7 +131,7 @@
             // txtBoxDescriptProduct
             // 
             this.txtBoxDescriptProduct.Location = new System.Drawing.Point(305, 293);
-            this.txtBoxDescriptProduct.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtBoxDescriptProduct.Margin = new System.Windows.Forms.Padding(4);
             this.txtBoxDescriptProduct.Multiline = true;
             this.txtBoxDescriptProduct.Name = "txtBoxDescriptProduct";
             this.txtBoxDescriptProduct.Size = new System.Drawing.Size(132, 24);
@@ -150,7 +150,7 @@
             this.btn_addNewProduct.AutoEllipsis = true;
             this.btn_addNewProduct.BackColor = System.Drawing.Color.Lavender;
             this.btn_addNewProduct.Location = new System.Drawing.Point(305, 371);
-            this.btn_addNewProduct.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_addNewProduct.Margin = new System.Windows.Forms.Padding(4);
             this.btn_addNewProduct.Name = "btn_addNewProduct";
             this.btn_addNewProduct.Size = new System.Drawing.Size(173, 47);
             this.btn_addNewProduct.TabIndex = 8;
@@ -162,18 +162,18 @@
             // 
             this.btn_cancel.BackColor = System.Drawing.Color.Lavender;
             this.btn_cancel.Location = new System.Drawing.Point(305, 468);
-            this.btn_cancel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_cancel.Margin = new System.Windows.Forms.Padding(4);
             this.btn_cancel.Name = "btn_cancel";
             this.btn_cancel.Size = new System.Drawing.Size(173, 47);
             this.btn_cancel.TabIndex = 9;
-            this.btn_cancel.Text = "Закрыть форму\r\n";
+            this.btn_cancel.Text = "Выйти";
             this.btn_cancel.UseVisualStyleBackColor = false;
             this.btn_cancel.Click += new System.EventHandler(this.btn_cancel_Click);
             // 
             // numericKolvoProductSklad
             // 
             this.numericKolvoProductSklad.Location = new System.Drawing.Point(305, 209);
-            this.numericKolvoProductSklad.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.numericKolvoProductSklad.Margin = new System.Windows.Forms.Padding(4);
             this.numericKolvoProductSklad.Maximum = new decimal(new int[] {
             1000,
             0,
@@ -200,7 +200,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtBoxProductsName);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "addProduct";
             this.Text = "Добавление товара в базу";
             this.Load += new System.EventHandler(this.addProduct_Load);

@@ -43,11 +43,11 @@
             this.numPriceFactor = new System.Windows.Forms.NumericUpDown();
             this.dateTimeZakupka = new System.Windows.Forms.DateTimePicker();
             this.cmbIdProduct = new System.Windows.Forms.ComboBox();
-            this.cmbIdPostavshik = new System.Windows.Forms.ComboBox();
-            this.numKolvoZakupka = new System.Windows.Forms.NumericUpDown();
             this.productsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.productsTableAdapter = new prog_kontc_3_v5.kontc_3DataSetTableAdapters.productsTableAdapter();
+            this.cmbIdPostavshik = new System.Windows.Forms.ComboBox();
             this.postavshikiBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.numKolvoZakupka = new System.Windows.Forms.NumericUpDown();
+            this.productsTableAdapter = new prog_kontc_3_v5.kontc_3DataSetTableAdapters.productsTableAdapter();
             this.postavshikiTableAdapter = new prog_kontc_3_v5.kontc_3DataSetTableAdapters.postavshikiTableAdapter();
             this.btnCreateZakupka = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -55,9 +55,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.zakupkiBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numPriceZakupka)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numPriceFactor)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numKolvoZakupka)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.postavshikiBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numKolvoZakupka)).BeginInit();
             this.SuspendLayout();
             // 
             // textBox1
@@ -199,6 +199,11 @@
             this.cmbIdProduct.TabIndex = 9;
             this.cmbIdProduct.ValueMember = "id_product";
             // 
+            // productsBindingSource
+            // 
+            this.productsBindingSource.DataMember = "products";
+            this.productsBindingSource.DataSource = this.kontc_3DataSet;
+            // 
             // cmbIdPostavshik
             // 
             this.cmbIdPostavshik.DataSource = this.postavshikiBindingSource;
@@ -210,6 +215,11 @@
             this.cmbIdPostavshik.TabIndex = 10;
             this.cmbIdPostavshik.ValueMember = "id_postavshik";
             // 
+            // postavshikiBindingSource
+            // 
+            this.postavshikiBindingSource.DataMember = "postavshiki";
+            this.postavshikiBindingSource.DataSource = this.kontc_3DataSet;
+            // 
             // numKolvoZakupka
             // 
             this.numKolvoZakupka.Location = new System.Drawing.Point(287, 327);
@@ -217,19 +227,9 @@
             this.numKolvoZakupka.Size = new System.Drawing.Size(120, 20);
             this.numKolvoZakupka.TabIndex = 11;
             // 
-            // productsBindingSource
-            // 
-            this.productsBindingSource.DataMember = "products";
-            this.productsBindingSource.DataSource = this.kontc_3DataSet;
-            // 
             // productsTableAdapter
             // 
             this.productsTableAdapter.ClearBeforeFill = true;
-            // 
-            // postavshikiBindingSource
-            // 
-            this.postavshikiBindingSource.DataMember = "postavshiki";
-            this.postavshikiBindingSource.DataSource = this.kontc_3DataSet;
             // 
             // postavshikiTableAdapter
             // 
@@ -251,7 +251,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(102, 43);
             this.button2.TabIndex = 13;
-            this.button2.Text = "Закрыть окно";
+            this.button2.Text = "Выйти";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -281,9 +281,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.zakupkiBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numPriceZakupka)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numPriceFactor)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numKolvoZakupka)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.productsBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.postavshikiBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numKolvoZakupka)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

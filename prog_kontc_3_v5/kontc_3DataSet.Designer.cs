@@ -4234,7 +4234,7 @@ SELECT id_prodazha, id_product, id_pokupatel, dateSale, priceProductProdazha, ko
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[2];
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[3];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT id_prodazha, id_product, id_pokupatel, dateSale, priceProductProdazha, kol" +
@@ -4245,6 +4245,16 @@ SELECT id_prodazha, id_product, id_pokupatel, dateSale, priceProductProdazha, ko
             this._commandCollection[1].CommandText = "SELECT id_prodazha, id_product, id_pokupatel, dateSale, priceProductProdazha, kol" +
                 "_voProductProdazha, priceSummaProdazha FROM dbo.prodazhi";
             this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[2] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[2].Connection = this.Connection;
+            this._commandCollection[2].CommandText = @"INSERT INTO [dbo].[prodazhi] ([id_product], [id_pokupatel], [dateSale], [priceProductProdazha], [kol_voProductProdazha]) VALUES (@id_product, @id_pokupatel, @dateSale, @priceProductProdazha, @kol_voProductProdazha);
+SELECT id_prodazha, id_product, id_pokupatel, dateSale, priceProductProdazha, kol_voProductProdazha, priceSummaProdazha FROM prodazhi WHERE (id_prodazha = SCOPE_IDENTITY())";
+            this._commandCollection[2].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@id_product", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "id_product", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@id_pokupatel", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "id_pokupatel", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@dateSale", global::System.Data.SqlDbType.Date, 3, global::System.Data.ParameterDirection.Input, 0, 0, "dateSale", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@priceProductProdazha", global::System.Data.SqlDbType.Decimal, 5, global::System.Data.ParameterDirection.Input, 5, 2, "priceProductProdazha", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@kol_voProductProdazha", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "kol_voProductProdazha", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -4421,6 +4431,39 @@ SELECT id_prodazha, id_product, id_pokupatel, dateSale, priceProductProdazha, ko
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
         public virtual int Update(int id_product, int id_pokupatel, System.DateTime dateSale, decimal priceProductProdazha, int kol_voProductProdazha, int Original_id_prodazha, int Original_id_product, int Original_id_pokupatel, System.DateTime Original_dateSale, decimal Original_priceProductProdazha, int Original_kol_voProductProdazha, global::System.Nullable<decimal> Original_priceSummaProdazha) {
             return this.Update(id_product, id_pokupatel, dateSale, priceProductProdazha, kol_voProductProdazha, Original_id_prodazha, Original_id_product, Original_id_pokupatel, Original_dateSale, Original_priceProductProdazha, Original_kol_voProductProdazha, Original_priceSummaProdazha, Original_id_prodazha);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, false)]
+        public virtual int InsertNewProdazha(int id_product, int id_pokupatel, string dateSale, decimal priceProductProdazha, int kol_voProductProdazha) {
+            global::System.Data.SqlClient.SqlCommand command = this.CommandCollection[2];
+            command.Parameters[0].Value = ((int)(id_product));
+            command.Parameters[1].Value = ((int)(id_pokupatel));
+            if ((dateSale == null)) {
+                throw new global::System.ArgumentNullException("dateSale");
+            }
+            else {
+                command.Parameters[2].Value = ((string)(dateSale));
+            }
+            command.Parameters[3].Value = ((decimal)(priceProductProdazha));
+            command.Parameters[4].Value = ((int)(kol_voProductProdazha));
+            global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
+            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                command.Connection.Open();
+            }
+            int returnValue;
+            try {
+                returnValue = command.ExecuteNonQuery();
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    command.Connection.Close();
+                }
+            }
+            return returnValue;
         }
     }
     
