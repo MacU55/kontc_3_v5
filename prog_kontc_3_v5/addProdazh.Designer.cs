@@ -222,6 +222,7 @@
             this.btnCancelProdazha.TabIndex = 11;
             this.btnCancelProdazha.Text = "Выйти";
             this.btnCancelProdazha.UseVisualStyleBackColor = true;
+            this.btnCancelProdazha.Click += new System.EventHandler(this.btnCancelProdazha_Click);
             // 
             // addProdazh
             // 

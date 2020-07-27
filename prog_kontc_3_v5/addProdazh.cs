@@ -54,5 +54,10 @@ namespace prog_kontc_3_v5
             numKolvoProdazha.Value = 0;
             
         }
+
+        private void btnCancelProdazha_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

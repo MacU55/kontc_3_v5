@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="addPokupatel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addPokupatel.Designer.cs">
+      <DependentUpon>addPokupatel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addPostavshik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addPostavshik.Designer.cs">
+      <DependentUpon>addPostavshik.cs</DependentUpon>
+    </Compile>
     <Compile Include="addProdazh.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -82,6 +94,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="addPokupatel.resx">
+      <DependentUpon>addPokupatel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addPostavshik.resx">
+      <DependentUpon>addPostavshik.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="addProdazh.resx">
       <DependentUpon>addProdazh.cs</DependentUpon>
     </EmbeddedResource>

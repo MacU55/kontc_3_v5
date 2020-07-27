@@ -146,6 +146,63 @@ namespace prog_kontc_3_v5
             Form frmAddProdazh = new addProdazh();
             frmAddProdazh.ShowDialog();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                this.Validate();
+                this.prodazhiBindingSource.EndEdit();
+                this.prodazhiTableAdapter.Update(this.kontc_3DataSet.prodazhi);
+                MessageBox.Show("Данные обновлены");
+            }
+            catch (System.Exception)
+            {
+                MessageBox.Show("Ошибка обновления");
+            }
+        }
+
+        private void btnNewPostavshik_Click(object sender, EventArgs e)
+        {
+            Form frmAddPostavshik = new addPostavshik();
+            frmAddPostavshik.ShowDialog();
+        }
+
+        private void btnUpdatePostavshik_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                this.Validate();
+                this.postavshikiBindingSource.EndEdit();
+                this.postavshikiTableAdapter.Update(this.kontc_3DataSet.postavshiki);
+                MessageBox.Show("Данные обновлены");
+            }
+            catch (System.Exception)
+            {
+                MessageBox.Show("Ошибка обновления");
+            }
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Form frmAddPokupatel = new addPokupatel();
+            frmAddPokupatel.ShowDialog();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                this.Validate();
+                this.pokupateliBindingSource.EndEdit();
+                this.pokupateliTableAdapter.Update(this.kontc_3DataSet.pokupateli);
+                MessageBox.Show("Данные обновлены");
+            }
+            catch (System.Exception)
+            {
+                MessageBox.Show("Ошибка обновления");
+            }
+        }
     }
 }
 
