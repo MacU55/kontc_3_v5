@@ -133,7 +133,9 @@
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.grpCreateProdazha = new System.Windows.Forms.GroupBox();
+            this.textBox23 = new System.Windows.Forms.TextBox();
             this.grpUpdateProdazha = new System.Windows.Forms.GroupBox();
+            this.textBox18 = new System.Windows.Forms.TextBox();
             this.grpSearchProdazha = new System.Windows.Forms.GroupBox();
             this.comboBox11 = new System.Windows.Forms.ComboBox();
             this.prodazhiBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -255,6 +257,8 @@
             this.postavshikiTableAdapter = new prog_kontc_3_v5.kontc_3DataSetTableAdapters.postavshikiTableAdapter();
             this.prodazhiBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.pokupateliTableAdapter = new prog_kontc_3_v5.kontc_3DataSetTableAdapters.pokupateliTableAdapter();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kontc_3DataSet)).BeginInit();
             this.razrab.SuspendLayout();
@@ -283,6 +287,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.bdnavZakupki)).BeginInit();
             this.bdnavZakupki.SuspendLayout();
             this.tabPage3.SuspendLayout();
+            this.grpCreateProdazha.SuspendLayout();
+            this.grpUpdateProdazha.SuspendLayout();
             this.grpSearchProdazha.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.prodazhiBindingSource)).BeginInit();
             this.grpProdazhi.SuspendLayout();
@@ -399,7 +405,6 @@
             this.btnUpdateProduct.TabIndex = 14;
             this.btnUpdateProduct.Text = "Подтвердить изменения";
             this.btnUpdateProduct.UseVisualStyleBackColor = false;
-            
             // 
             // grp_Products_Zakupki
             // 
@@ -1098,8 +1103,8 @@
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(191, 96);
             this.textBox7.TabIndex = 17;
-            this.textBox7.Text = "Для создания новой закупки и добавления ее в базу данных\r\nнажмите \"Внести закупку" +
-    " в базу\".";
+            this.textBox7.Text = "Для создания новой закупки и добавления ее в базу данных\r\nнажмите \"Создать закупк" +
+    "у\".\r\n";
             // 
             // btnAddZakupka
             // 
@@ -1335,6 +1340,8 @@
             // grpCreateProdazha
             // 
             this.grpCreateProdazha.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.grpCreateProdazha.Controls.Add(this.button4);
+            this.grpCreateProdazha.Controls.Add(this.textBox23);
             this.grpCreateProdazha.Location = new System.Drawing.Point(597, 637);
             this.grpCreateProdazha.Name = "grpCreateProdazha";
             this.grpCreateProdazha.Size = new System.Drawing.Size(462, 184);
@@ -1342,15 +1349,37 @@
             this.grpCreateProdazha.TabStop = false;
             this.grpCreateProdazha.Text = "Создание продажи";
             // 
+            // textBox23
+            // 
+            this.textBox23.Location = new System.Drawing.Point(30, 35);
+            this.textBox23.Multiline = true;
+            this.textBox23.Name = "textBox23";
+            this.textBox23.Size = new System.Drawing.Size(204, 114);
+            this.textBox23.TabIndex = 1;
+            this.textBox23.Text = "Для создания новой продажи\r\nи внесения ее в базу данных,\r\nнажмите \"Создать продаж" +
+    "у\"";
+            // 
             // grpUpdateProdazha
             // 
             this.grpUpdateProdazha.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.grpUpdateProdazha.Controls.Add(this.button3);
+            this.grpUpdateProdazha.Controls.Add(this.textBox18);
             this.grpUpdateProdazha.Location = new System.Drawing.Point(597, 440);
             this.grpUpdateProdazha.Name = "grpUpdateProdazha";
             this.grpUpdateProdazha.Size = new System.Drawing.Size(462, 176);
             this.grpUpdateProdazha.TabIndex = 2;
             this.grpUpdateProdazha.TabStop = false;
             this.grpUpdateProdazha.Text = "Изменение данных о продаже";
+            // 
+            // textBox18
+            // 
+            this.textBox18.Location = new System.Drawing.Point(30, 46);
+            this.textBox18.Multiline = true;
+            this.textBox18.Name = "textBox18";
+            this.textBox18.Size = new System.Drawing.Size(204, 94);
+            this.textBox18.TabIndex = 0;
+            this.textBox18.Text = "После редактирования данных о продаже\r\nнажмите \"Подтвердить изменения\"\r\n\r\n";
+            this.textBox18.TextChanged += new System.EventHandler(this.textBox18_TextChanged);
             // 
             // grpSearchProdazha
             // 
@@ -2476,6 +2505,24 @@
             // 
             this.pokupateliTableAdapter.ClearBeforeFill = true;
             // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(295, 96);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 1;
+            this.button3.Text = "button3";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(295, 78);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.TabIndex = 2;
+            this.button4.Text = "button4";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
             // Kontc_3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2523,6 +2570,10 @@
             this.bdnavZakupki.ResumeLayout(false);
             this.bdnavZakupki.PerformLayout();
             this.tabPage3.ResumeLayout(false);
+            this.grpCreateProdazha.ResumeLayout(false);
+            this.grpCreateProdazha.PerformLayout();
+            this.grpUpdateProdazha.ResumeLayout(false);
+            this.grpUpdateProdazha.PerformLayout();
             this.grpSearchProdazha.ResumeLayout(false);
             this.grpSearchProdazha.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.prodazhiBindingSource)).EndInit();
@@ -2796,6 +2847,10 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn namePokupatelDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn phonePokupatelDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn emailPokupatelDataGridViewTextBoxColumn;
+        private System.Windows.Forms.TextBox textBox23;
+        private System.Windows.Forms.TextBox textBox18;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button3;
     }
 }
 

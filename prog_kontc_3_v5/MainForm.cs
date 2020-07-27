@@ -140,6 +140,11 @@ namespace prog_kontc_3_v5
                 MessageBox.Show("Ошибка обновления");
             }
         }
+
+        private void textBox18_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 
