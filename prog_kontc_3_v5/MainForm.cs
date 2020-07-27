@@ -125,6 +125,21 @@ namespace prog_kontc_3_v5
             Form frmAddZakupka = new addZakupka();
             frmAddZakupka.ShowDialog();
         }
+
+        private void btnUpdateZakupka_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                this.Validate();
+                this.zakupkiBindingSource.EndEdit();
+                this.zakupkiTableAdapter.Update(this.kontc_3DataSet.zakupki);
+                MessageBox.Show("Данные обновлены");
+            }
+            catch (System.Exception)
+            {
+                MessageBox.Show("Ошибка обновления");
+            }
+        }
     }
 }
 

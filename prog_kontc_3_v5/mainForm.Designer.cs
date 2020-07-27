@@ -387,7 +387,6 @@
             this.textBox1.Text = "Редактирование данных о товаре производится в поле \r\nтовара после двойного клика " +
     "мыши или нажатия F2.\r\nПосле редактирования данных товара\r\nнажмите \"Подтвердить и" +
     "зменения\".";
-            
             // 
             // btnUpdateProduct
             // 
@@ -1076,6 +1075,7 @@
             this.btnUpdateZakupka.TabIndex = 14;
             this.btnUpdateZakupka.Text = "Подтвердить изменения";
             this.btnUpdateZakupka.UseVisualStyleBackColor = false;
+            this.btnUpdateZakupka.Click += new System.EventHandler(this.btnUpdateZakupka_Click);
             // 
             // grpCreateZakupka
             // 
@@ -1231,7 +1231,7 @@
             this.bdnavZakupki.MovePreviousItem = this.toolStripButton3;
             this.bdnavZakupki.Name = "bdnavZakupki";
             this.bdnavZakupki.PositionItem = this.toolStripTextBox1;
-            this.bdnavZakupki.Size = new System.Drawing.Size(445, 26);
+            this.bdnavZakupki.Size = new System.Drawing.Size(414, 26);
             this.bdnavZakupki.TabIndex = 1;
             this.bdnavZakupki.Text = "bindingNavigator2";
             // 
@@ -1491,7 +1491,6 @@
             this.textBox14.Size = new System.Drawing.Size(141, 33);
             this.textBox14.TabIndex = 7;
             this.textBox14.Text = "Код товара";
-            
             // 
             // grpProdazhi
             // 
