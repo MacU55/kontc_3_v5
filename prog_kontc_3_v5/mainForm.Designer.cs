@@ -437,7 +437,7 @@
             this.btnUpdateProduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.btnUpdateProduct.Location = new System.Drawing.Point(387, 39);
             this.btnUpdateProduct.Name = "btnUpdateProduct";
-            this.btnUpdateProduct.Size = new System.Drawing.Size(140, 59);
+            this.btnUpdateProduct.Size = new System.Drawing.Size(148, 71);
             this.btnUpdateProduct.TabIndex = 14;
             this.btnUpdateProduct.Text = "Подтвердить изменения";
             this.btnUpdateProduct.UseVisualStyleBackColor = false;
@@ -571,7 +571,7 @@
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button2.Location = new System.Drawing.Point(270, 80);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(140, 65);
+            this.button2.Size = new System.Drawing.Size(148, 71);
             this.button2.TabIndex = 8;
             this.button2.Text = "Внести товар в базу";
             this.button2.UseVisualStyleBackColor = false;
@@ -981,7 +981,7 @@
             this.comboBox6.FormattingEnabled = true;
             this.comboBox6.Location = new System.Drawing.Point(227, 244);
             this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(141, 26);
+            this.comboBox6.Size = new System.Drawing.Size(245, 26);
             this.comboBox6.TabIndex = 10;
             this.comboBox6.ValueMember = "priceSummaZakupka";
             // 
@@ -997,7 +997,7 @@
             this.comboBox5.FormattingEnabled = true;
             this.comboBox5.Location = new System.Drawing.Point(227, 196);
             this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(141, 26);
+            this.comboBox5.Size = new System.Drawing.Size(245, 26);
             this.comboBox5.TabIndex = 9;
             this.comboBox5.ValueMember = "kol_voProductZakupka";
             // 
@@ -1008,7 +1008,7 @@
             this.comboBox4.FormattingEnabled = true;
             this.comboBox4.Location = new System.Drawing.Point(227, 143);
             this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(141, 26);
+            this.comboBox4.Size = new System.Drawing.Size(245, 26);
             this.comboBox4.TabIndex = 8;
             this.comboBox4.ValueMember = "dateZakupka";
             // 
@@ -1019,7 +1019,7 @@
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Location = new System.Drawing.Point(227, 93);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(141, 26);
+            this.comboBox2.Size = new System.Drawing.Size(245, 26);
             this.comboBox2.TabIndex = 6;
             this.comboBox2.ValueMember = "id_postavshik";
             // 
@@ -1031,7 +1031,7 @@
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(227, 48);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(141, 26);
+            this.comboBox1.Size = new System.Drawing.Size(245, 26);
             this.comboBox1.TabIndex = 5;
             this.comboBox1.ValueMember = "id_product";
             // 
@@ -1114,9 +1114,9 @@
             this.btnUpdateZakupka.BackColor = System.Drawing.Color.LemonChiffon;
             this.btnUpdateZakupka.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnUpdateZakupka.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnUpdateZakupka.Location = new System.Drawing.Point(242, 32);
+            this.btnUpdateZakupka.Location = new System.Drawing.Point(251, 32);
             this.btnUpdateZakupka.Name = "btnUpdateZakupka";
-            this.btnUpdateZakupka.Size = new System.Drawing.Size(165, 59);
+            this.btnUpdateZakupka.Size = new System.Drawing.Size(148, 71);
             this.btnUpdateZakupka.TabIndex = 14;
             this.btnUpdateZakupka.Text = "Подтвердить изменения";
             this.btnUpdateZakupka.UseVisualStyleBackColor = false;
@@ -1152,7 +1152,7 @@
             this.btnAddZakupka.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnAddZakupka.Location = new System.Drawing.Point(251, 39);
             this.btnAddZakupka.Name = "btnAddZakupka";
-            this.btnAddZakupka.Size = new System.Drawing.Size(156, 58);
+            this.btnAddZakupka.Size = new System.Drawing.Size(148, 71);
             this.btnAddZakupka.TabIndex = 8;
             this.btnAddZakupka.Text = "Создать закупку";
             this.btnAddZakupka.UseVisualStyleBackColor = false;
@@ -1394,7 +1394,7 @@
             this.button4.BackColor = System.Drawing.Color.LemonChiffon;
             this.button4.Location = new System.Drawing.Point(277, 46);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(148, 70);
+            this.button4.Size = new System.Drawing.Size(148, 71);
             this.button4.TabIndex = 2;
             this.button4.Text = "Создать продажу";
             this.button4.UseVisualStyleBackColor = false;
@@ -1810,7 +1810,7 @@
             this.btnNewPostavshik.BackColor = System.Drawing.Color.LemonChiffon;
             this.btnNewPostavshik.Location = new System.Drawing.Point(279, 60);
             this.btnNewPostavshik.Name = "btnNewPostavshik";
-            this.btnNewPostavshik.Size = new System.Drawing.Size(130, 62);
+            this.btnNewPostavshik.Size = new System.Drawing.Size(148, 71);
             this.btnNewPostavshik.TabIndex = 2;
             this.btnNewPostavshik.Text = "Новый поставщик";
             this.btnNewPostavshik.UseVisualStyleBackColor = false;
@@ -1844,7 +1844,7 @@
             this.btnUpdatePostavshik.BackColor = System.Drawing.Color.LemonChiffon;
             this.btnUpdatePostavshik.Location = new System.Drawing.Point(279, 65);
             this.btnUpdatePostavshik.Name = "btnUpdatePostavshik";
-            this.btnUpdatePostavshik.Size = new System.Drawing.Size(130, 76);
+            this.btnUpdatePostavshik.Size = new System.Drawing.Size(148, 71);
             this.btnUpdatePostavshik.TabIndex = 1;
             this.btnUpdatePostavshik.Text = "Подтвердить изменения";
             this.btnUpdatePostavshik.UseVisualStyleBackColor = false;
@@ -2536,7 +2536,7 @@
             this.button8.BackColor = System.Drawing.Color.LemonChiffon;
             this.button8.Location = new System.Drawing.Point(285, 65);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(136, 60);
+            this.button8.Size = new System.Drawing.Size(148, 71);
             this.button8.TabIndex = 3;
             this.button8.Text = "Новый производитель";
             this.button8.UseVisualStyleBackColor = false;
@@ -2570,7 +2570,7 @@
             this.btnUpdateProizvoditel.BackColor = System.Drawing.Color.LemonChiffon;
             this.btnUpdateProizvoditel.Location = new System.Drawing.Point(285, 52);
             this.btnUpdateProizvoditel.Name = "btnUpdateProizvoditel";
-            this.btnUpdateProizvoditel.Size = new System.Drawing.Size(136, 58);
+            this.btnUpdateProizvoditel.Size = new System.Drawing.Size(148, 71);
             this.btnUpdateProizvoditel.TabIndex = 2;
             this.btnUpdateProizvoditel.Text = "Подтвердить изменения";
             this.btnUpdateProizvoditel.UseVisualStyleBackColor = false;
@@ -2805,6 +2805,7 @@
             // 
             // tabPage7
             // 
+            this.tabPage7.BackColor = System.Drawing.Color.DodgerBlue;
             this.tabPage7.Controls.Add(this.button1);
             this.tabPage7.Location = new System.Drawing.Point(4, 27);
             this.tabPage7.Name = "tabPage7";
@@ -2812,7 +2813,6 @@
             this.tabPage7.Size = new System.Drawing.Size(1072, 836);
             this.tabPage7.TabIndex = 6;
             this.tabPage7.Text = "Выход";
-            this.tabPage7.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
