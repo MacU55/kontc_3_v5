@@ -152,7 +152,7 @@
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Name = "addPokupatel";
-            this.Text = "addPokupatel";
+            this.Text = "Добавление нового покупателя";
             this.Load += new System.EventHandler(this.addPokupatel_Load);
             ((System.ComponentModel.ISupportInitialize)(this.kontc_3DataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pokupateliBindingSource)).EndInit();

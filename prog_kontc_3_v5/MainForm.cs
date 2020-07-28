@@ -74,10 +74,7 @@ namespace prog_kontc_3_v5
             Application.Exit();
         }
 
-        private void grp_productsSearch_Enter(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -101,25 +98,9 @@ namespace prog_kontc_3_v5
             kontc_3DataSet.AcceptChanges();
         }
 
-        private void bindingNavigatorDeleteItem_Click(object sender, EventArgs e)
-        {
+       
 
-        }
-
-        private void btnUpdateProduct_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                this.Validate();
-                this.productsBindingSource.EndEdit();
-                this.productsTableAdapter.Update(this.kontc_3DataSet.products);
-                MessageBox.Show("Данные обновлены");
-            }
-            catch (System.Exception)
-            {
-                MessageBox.Show("Ошибка обновления");
-            }
-        }
+       
         private void btnAddZakupka_Click(object sender, EventArgs e)
         {
             Form frmAddZakupka = new addZakupka();
@@ -196,6 +177,44 @@ namespace prog_kontc_3_v5
                 this.Validate();
                 this.pokupateliBindingSource.EndEdit();
                 this.pokupateliTableAdapter.Update(this.kontc_3DataSet.pokupateli);
+                MessageBox.Show("Данные обновлены");
+            }
+            catch (System.Exception)
+            {
+                MessageBox.Show("Ошибка обновления");
+            }
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            Form frmAddProizvoditel = new addProizvoditel();
+            frmAddProizvoditel.ShowDialog();
+        }
+
+        private void btnUpdateProizvoditel_Click(object sender, EventArgs e)
+        {
+            this.productProizvoditeliTableAdapter.Fill(this.kontc_3DataSet.productProizvoditeli);
+            try
+            {
+                this.Validate();
+                this.productProizvoditeliBindingSource.EndEdit();
+                this.productProizvoditeliTableAdapter.Update(this.kontc_3DataSet.productProizvoditeli);
+                MessageBox.Show("Данные обновлены");
+            }
+            catch (System.Exception)
+            {
+                MessageBox.Show("Ошибка обновления");
+            }
+        }
+
+        private void btnUpdateProduct_Click_1(object sender, EventArgs e)
+        {
+            this.productsTableAdapter.Fill(this.kontc_3DataSet.products);
+            try
+            {
+                this.Validate();
+                this.productsBindingSource.EndEdit();
+                this.productsTableAdapter.Update(this.kontc_3DataSet.products);
                 MessageBox.Show("Данные обновлены");
             }
             catch (System.Exception)

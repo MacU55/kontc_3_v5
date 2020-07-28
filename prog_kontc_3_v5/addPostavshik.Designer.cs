@@ -155,7 +155,7 @@
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Name = "addPostavshik";
-            this.Text = "addPostavshik";
+            this.Text = "Добавление нового поставщика";
             this.Load += new System.EventHandler(this.addPostavshik_Load);
             ((System.ComponentModel.ISupportInitialize)(this.kontc_3DataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.postavshikiBindingSource)).EndInit();

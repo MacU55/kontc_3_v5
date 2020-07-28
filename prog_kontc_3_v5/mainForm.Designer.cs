@@ -243,10 +243,22 @@
             this.toolStripSeparator17 = new System.Windows.Forms.ToolStripSeparator();
             this.tabPage6 = new System.Windows.Forms.TabPage();
             this.groupBox12 = new System.Windows.Forms.GroupBox();
+            this.button8 = new System.Windows.Forms.Button();
+            this.textBox35 = new System.Windows.Forms.TextBox();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
+            this.btnUpdateProizvoditel = new System.Windows.Forms.Button();
+            this.textBox34 = new System.Windows.Forms.TextBox();
             this.grpSearchProizvoditel = new System.Windows.Forms.GroupBox();
+            this.comboBox20 = new System.Windows.Forms.ComboBox();
+            this.productProizvoditeliBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.comboBox19 = new System.Windows.Forms.ComboBox();
+            this.textBox33 = new System.Windows.Forms.TextBox();
+            this.textBox32 = new System.Windows.Forms.TextBox();
             this.grpProizvoditeli = new System.Windows.Forms.GroupBox();
-            this.bindingNavigator2 = new System.Windows.Forms.BindingNavigator(this.components);
+            this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.idproizvoditelDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nameProizvoditelDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bindingNavigator1 = new System.Windows.Forms.BindingNavigator(this.components);
             this.toolStripLabel5 = new System.Windows.Forms.ToolStripLabel();
             this.toolStripButton21 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton22 = new System.Windows.Forms.ToolStripButton();
@@ -261,7 +273,6 @@
             this.tabPage7 = new System.Windows.Forms.TabPage();
             this.button1 = new System.Windows.Forms.Button();
             this.fKidProizvoditeliBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.productProizvoditeliBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.productsBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.productsBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.productsTableAdapter = new prog_kontc_3_v5.kontc_3DataSetTableAdapters.productsTableAdapter();
@@ -330,12 +341,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.bndNavPokupateli)).BeginInit();
             this.bndNavPokupateli.SuspendLayout();
             this.tabPage6.SuspendLayout();
+            this.groupBox12.SuspendLayout();
+            this.groupBox9.SuspendLayout();
+            this.grpSearchProizvoditel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.productProizvoditeliBindingSource)).BeginInit();
             this.grpProizvoditeli.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator2)).BeginInit();
-            this.bindingNavigator2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
+            this.bindingNavigator1.SuspendLayout();
             this.tabPage7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.fKidProizvoditeliBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.productProizvoditeliBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productsBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productsBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kontc_3DataSet1)).BeginInit();
@@ -417,15 +432,16 @@
             // 
             // btnUpdateProduct
             // 
-            this.btnUpdateProduct.BackColor = System.Drawing.Color.OldLace;
+            this.btnUpdateProduct.BackColor = System.Drawing.Color.LemonChiffon;
             this.btnUpdateProduct.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnUpdateProduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnUpdateProduct.Location = new System.Drawing.Point(357, 43);
+            this.btnUpdateProduct.Location = new System.Drawing.Point(387, 39);
             this.btnUpdateProduct.Name = "btnUpdateProduct";
-            this.btnUpdateProduct.Size = new System.Drawing.Size(165, 59);
+            this.btnUpdateProduct.Size = new System.Drawing.Size(140, 59);
             this.btnUpdateProduct.TabIndex = 14;
             this.btnUpdateProduct.Text = "Подтвердить изменения";
             this.btnUpdateProduct.UseVisualStyleBackColor = false;
+            this.btnUpdateProduct.Click += new System.EventHandler(this.btnUpdateProduct_Click_1);
             // 
             // grp_Products_Zakupki
             // 
@@ -550,12 +566,12 @@
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.OldLace;
+            this.button2.BackColor = System.Drawing.Color.LemonChiffon;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button2.Location = new System.Drawing.Point(284, 84);
+            this.button2.Location = new System.Drawing.Point(270, 80);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(126, 49);
+            this.button2.Size = new System.Drawing.Size(140, 65);
             this.button2.TabIndex = 8;
             this.button2.Text = "Внести товар в базу";
             this.button2.UseVisualStyleBackColor = false;
@@ -579,7 +595,6 @@
             this.grp_productsSearch.TabIndex = 5;
             this.grp_productsSearch.TabStop = false;
             this.grp_productsSearch.Text = "Поиск товара на складе";
-            this.grp_productsSearch.Enter += new System.EventHandler(this.grp_productsSearch_Enter);
             // 
             // cmbBoxProductDescript
             // 
@@ -776,7 +791,6 @@
             this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
             this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(172, 23);
             this.bindingNavigatorDeleteItem.Text = "Удалить товар из базы";
-            this.bindingNavigatorDeleteItem.Click += new System.EventHandler(this.bindingNavigatorDeleteItem_Click);
             // 
             // bindingNavigatorMoveFirstItem
             // 
@@ -1024,45 +1038,50 @@
             // textBox12
             // 
             this.textBox12.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.textBox12.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox12.Location = new System.Drawing.Point(16, 246);
             this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(175, 24);
+            this.textBox12.Size = new System.Drawing.Size(175, 17);
             this.textBox12.TabIndex = 4;
             this.textBox12.Text = "Сумма закупки";
             // 
             // textBox11
             // 
             this.textBox11.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.textBox11.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox11.Location = new System.Drawing.Point(16, 196);
             this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(175, 24);
+            this.textBox11.Size = new System.Drawing.Size(175, 17);
             this.textBox11.TabIndex = 3;
             this.textBox11.Text = "Количество закупки";
             // 
             // textBox10
             // 
             this.textBox10.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.textBox10.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox10.Location = new System.Drawing.Point(16, 145);
             this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(175, 24);
+            this.textBox10.Size = new System.Drawing.Size(175, 17);
             this.textBox10.TabIndex = 2;
             this.textBox10.Text = "Дата закупки";
             // 
             // textBox9
             // 
             this.textBox9.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.textBox9.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox9.Location = new System.Drawing.Point(16, 93);
             this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(175, 24);
+            this.textBox9.Size = new System.Drawing.Size(175, 17);
             this.textBox9.TabIndex = 1;
             this.textBox9.Text = "Код поставщика";
             // 
             // textBox8
             // 
             this.textBox8.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.textBox8.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox8.Location = new System.Drawing.Point(16, 48);
             this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(175, 24);
+            this.textBox8.Size = new System.Drawing.Size(175, 17);
             this.textBox8.TabIndex = 0;
             this.textBox8.Text = "Код товара";
             // 
@@ -1092,7 +1111,7 @@
             // 
             // btnUpdateZakupka
             // 
-            this.btnUpdateZakupka.BackColor = System.Drawing.Color.OldLace;
+            this.btnUpdateZakupka.BackColor = System.Drawing.Color.LemonChiffon;
             this.btnUpdateZakupka.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnUpdateZakupka.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.btnUpdateZakupka.Location = new System.Drawing.Point(242, 32);
@@ -1129,7 +1148,7 @@
             // 
             // btnAddZakupka
             // 
-            this.btnAddZakupka.BackColor = System.Drawing.Color.OldLace;
+            this.btnAddZakupka.BackColor = System.Drawing.Color.LemonChiffon;
             this.btnAddZakupka.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnAddZakupka.Location = new System.Drawing.Point(251, 39);
             this.btnAddZakupka.Name = "btnAddZakupka";
@@ -1372,12 +1391,13 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(298, 58);
+            this.button4.BackColor = System.Drawing.Color.LemonChiffon;
+            this.button4.Location = new System.Drawing.Point(277, 46);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(148, 70);
             this.button4.TabIndex = 2;
             this.button4.Text = "Создать продажу";
-            this.button4.UseVisualStyleBackColor = true;
+            this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // textBox23
@@ -1406,12 +1426,13 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(298, 70);
+            this.button3.BackColor = System.Drawing.Color.LemonChiffon;
+            this.button3.Location = new System.Drawing.Point(277, 76);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(127, 59);
+            this.button3.Size = new System.Drawing.Size(148, 71);
             this.button3.TabIndex = 1;
             this.button3.Text = "Подтвердить изменения";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // textBox18
@@ -1453,7 +1474,7 @@
             this.comboBox11.FormattingEnabled = true;
             this.comboBox11.Location = new System.Drawing.Point(213, 255);
             this.comboBox11.Name = "comboBox11";
-            this.comboBox11.Size = new System.Drawing.Size(141, 26);
+            this.comboBox11.Size = new System.Drawing.Size(227, 26);
             this.comboBox11.TabIndex = 16;
             this.comboBox11.ValueMember = "kol_voProductProdazha";
             // 
@@ -1470,7 +1491,7 @@
             this.comboBox10.FormattingEnabled = true;
             this.comboBox10.Location = new System.Drawing.Point(213, 202);
             this.comboBox10.Name = "comboBox10";
-            this.comboBox10.Size = new System.Drawing.Size(141, 26);
+            this.comboBox10.Size = new System.Drawing.Size(227, 26);
             this.comboBox10.TabIndex = 15;
             this.comboBox10.ValueMember = "priceProductProdazha";
             // 
@@ -1482,7 +1503,7 @@
             this.comboBox9.FormattingEnabled = true;
             this.comboBox9.Location = new System.Drawing.Point(213, 148);
             this.comboBox9.Name = "comboBox9";
-            this.comboBox9.Size = new System.Drawing.Size(141, 26);
+            this.comboBox9.Size = new System.Drawing.Size(227, 26);
             this.comboBox9.TabIndex = 14;
             this.comboBox9.ValueMember = "dateSale";
             // 
@@ -1494,7 +1515,7 @@
             this.comboBox8.FormattingEnabled = true;
             this.comboBox8.Location = new System.Drawing.Point(213, 96);
             this.comboBox8.Name = "comboBox8";
-            this.comboBox8.Size = new System.Drawing.Size(141, 26);
+            this.comboBox8.Size = new System.Drawing.Size(227, 26);
             this.comboBox8.TabIndex = 13;
             this.comboBox8.ValueMember = "id_pokupatel";
             // 
@@ -1506,7 +1527,7 @@
             this.comboBox7.FormattingEnabled = true;
             this.comboBox7.Location = new System.Drawing.Point(213, 46);
             this.comboBox7.Name = "comboBox7";
-            this.comboBox7.Size = new System.Drawing.Size(141, 26);
+            this.comboBox7.Size = new System.Drawing.Size(227, 26);
             this.comboBox7.TabIndex = 12;
             this.comboBox7.ValueMember = "id_product";
             // 
@@ -1786,16 +1807,19 @@
             // 
             // btnNewPostavshik
             // 
+            this.btnNewPostavshik.BackColor = System.Drawing.Color.LemonChiffon;
             this.btnNewPostavshik.Location = new System.Drawing.Point(279, 60);
             this.btnNewPostavshik.Name = "btnNewPostavshik";
             this.btnNewPostavshik.Size = new System.Drawing.Size(130, 62);
             this.btnNewPostavshik.TabIndex = 2;
             this.btnNewPostavshik.Text = "Новый поставщик";
-            this.btnNewPostavshik.UseVisualStyleBackColor = true;
+            this.btnNewPostavshik.UseVisualStyleBackColor = false;
             this.btnNewPostavshik.Click += new System.EventHandler(this.btnNewPostavshik_Click);
             // 
             // textBox25
             // 
+            this.textBox25.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.textBox25.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox25.Location = new System.Drawing.Point(17, 37);
             this.textBox25.Multiline = true;
             this.textBox25.Name = "textBox25";
@@ -1817,16 +1841,19 @@
             // 
             // btnUpdatePostavshik
             // 
+            this.btnUpdatePostavshik.BackColor = System.Drawing.Color.LemonChiffon;
             this.btnUpdatePostavshik.Location = new System.Drawing.Point(279, 65);
             this.btnUpdatePostavshik.Name = "btnUpdatePostavshik";
             this.btnUpdatePostavshik.Size = new System.Drawing.Size(130, 76);
             this.btnUpdatePostavshik.TabIndex = 1;
             this.btnUpdatePostavshik.Text = "Подтвердить изменения";
-            this.btnUpdatePostavshik.UseVisualStyleBackColor = true;
+            this.btnUpdatePostavshik.UseVisualStyleBackColor = false;
             this.btnUpdatePostavshik.Click += new System.EventHandler(this.btnUpdatePostavshik_Click);
             // 
             // textBox24
             // 
+            this.textBox24.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.textBox24.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox24.Location = new System.Drawing.Point(17, 41);
             this.textBox24.Multiline = true;
             this.textBox24.Name = "textBox24";
@@ -1860,7 +1887,7 @@
             this.comboBox13.FormattingEnabled = true;
             this.comboBox13.Location = new System.Drawing.Point(223, 204);
             this.comboBox13.Name = "comboBox13";
-            this.comboBox13.Size = new System.Drawing.Size(141, 26);
+            this.comboBox13.Size = new System.Drawing.Size(278, 26);
             this.comboBox13.TabIndex = 25;
             this.comboBox13.ValueMember = "emailPostavshik";
             // 
@@ -1877,7 +1904,7 @@
             this.comboBox14.FormattingEnabled = true;
             this.comboBox14.Location = new System.Drawing.Point(223, 143);
             this.comboBox14.Name = "comboBox14";
-            this.comboBox14.Size = new System.Drawing.Size(141, 26);
+            this.comboBox14.Size = new System.Drawing.Size(278, 26);
             this.comboBox14.TabIndex = 24;
             this.comboBox14.ValueMember = "phonePostavshik";
             // 
@@ -1889,7 +1916,7 @@
             this.comboBox15.FormattingEnabled = true;
             this.comboBox15.Location = new System.Drawing.Point(223, 91);
             this.comboBox15.Name = "comboBox15";
-            this.comboBox15.Size = new System.Drawing.Size(141, 26);
+            this.comboBox15.Size = new System.Drawing.Size(278, 26);
             this.comboBox15.TabIndex = 23;
             this.comboBox15.ValueMember = "namePostavshik";
             // 
@@ -1901,7 +1928,7 @@
             this.comboBox16.FormattingEnabled = true;
             this.comboBox16.Location = new System.Drawing.Point(223, 41);
             this.comboBox16.Name = "comboBox16";
-            this.comboBox16.Size = new System.Drawing.Size(141, 26);
+            this.comboBox16.Size = new System.Drawing.Size(278, 26);
             this.comboBox16.TabIndex = 22;
             this.comboBox16.ValueMember = "id_postavshik";
             // 
@@ -2145,16 +2172,19 @@
             // 
             // button6
             // 
+            this.button6.BackColor = System.Drawing.Color.LemonChiffon;
             this.button6.Location = new System.Drawing.Point(292, 55);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(125, 49);
             this.button6.TabIndex = 1;
             this.button6.Text = "Новый покупатель";
-            this.button6.UseVisualStyleBackColor = true;
+            this.button6.UseVisualStyleBackColor = false;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // textBox31
             // 
+            this.textBox31.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.textBox31.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox31.Location = new System.Drawing.Point(40, 41);
             this.textBox31.Multiline = true;
             this.textBox31.Name = "textBox31";
@@ -2176,16 +2206,19 @@
             // 
             // button5
             // 
+            this.button5.BackColor = System.Drawing.Color.LemonChiffon;
             this.button5.Location = new System.Drawing.Point(292, 58);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(125, 55);
             this.button5.TabIndex = 1;
             this.button5.Text = "Подтвердить изменения";
-            this.button5.UseVisualStyleBackColor = true;
+            this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // textBox30
             // 
+            this.textBox30.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.textBox30.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox30.Location = new System.Drawing.Point(27, 34);
             this.textBox30.Multiline = true;
             this.textBox30.Name = "textBox30";
@@ -2218,7 +2251,7 @@
             this.comboBox18.FormattingEnabled = true;
             this.comboBox18.Location = new System.Drawing.Point(286, 261);
             this.comboBox18.Name = "comboBox18";
-            this.comboBox18.Size = new System.Drawing.Size(121, 26);
+            this.comboBox18.Size = new System.Drawing.Size(220, 26);
             this.comboBox18.TabIndex = 7;
             this.comboBox18.ValueMember = "emailPokupatel";
             // 
@@ -2234,7 +2267,7 @@
             this.comboBox17.FormattingEnabled = true;
             this.comboBox17.Location = new System.Drawing.Point(286, 183);
             this.comboBox17.Name = "comboBox17";
-            this.comboBox17.Size = new System.Drawing.Size(121, 26);
+            this.comboBox17.Size = new System.Drawing.Size(220, 26);
             this.comboBox17.TabIndex = 6;
             this.comboBox17.ValueMember = "phonePokupatel";
             // 
@@ -2245,7 +2278,7 @@
             this.comboBox12.FormattingEnabled = true;
             this.comboBox12.Location = new System.Drawing.Point(286, 120);
             this.comboBox12.Name = "comboBox12";
-            this.comboBox12.Size = new System.Drawing.Size(121, 26);
+            this.comboBox12.Size = new System.Drawing.Size(220, 26);
             this.comboBox12.TabIndex = 5;
             this.comboBox12.ValueMember = "namePokupatel";
             // 
@@ -2256,12 +2289,14 @@
             this.comboBox3.FormattingEnabled = true;
             this.comboBox3.Location = new System.Drawing.Point(286, 69);
             this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(121, 26);
+            this.comboBox3.Size = new System.Drawing.Size(220, 26);
             this.comboBox3.TabIndex = 4;
             this.comboBox3.ValueMember = "id_pokupatel";
             // 
             // textBox29
             // 
+            this.textBox29.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.textBox29.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox29.Location = new System.Drawing.Point(46, 238);
             this.textBox29.Multiline = true;
             this.textBox29.Name = "textBox29";
@@ -2271,6 +2306,8 @@
             // 
             // textBox28
             // 
+            this.textBox28.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.textBox28.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox28.Location = new System.Drawing.Point(46, 169);
             this.textBox28.Multiline = true;
             this.textBox28.Name = "textBox28";
@@ -2280,6 +2317,8 @@
             // 
             // textBox27
             // 
+            this.textBox27.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.textBox27.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox27.Location = new System.Drawing.Point(46, 113);
             this.textBox27.Multiline = true;
             this.textBox27.Name = "textBox27";
@@ -2289,6 +2328,8 @@
             // 
             // textBox26
             // 
+            this.textBox26.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.textBox26.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox26.Location = new System.Drawing.Point(46, 58);
             this.textBox26.Multiline = true;
             this.textBox26.Name = "textBox26";
@@ -2481,6 +2522,8 @@
             // groupBox12
             // 
             this.groupBox12.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.groupBox12.Controls.Add(this.button8);
+            this.groupBox12.Controls.Add(this.textBox35);
             this.groupBox12.Location = new System.Drawing.Point(604, 656);
             this.groupBox12.Name = "groupBox12";
             this.groupBox12.Size = new System.Drawing.Size(462, 165);
@@ -2488,9 +2531,33 @@
             this.groupBox12.TabStop = false;
             this.groupBox12.Text = "Внесение нового производителя в базу данных";
             // 
+            // button8
+            // 
+            this.button8.BackColor = System.Drawing.Color.LemonChiffon;
+            this.button8.Location = new System.Drawing.Point(285, 65);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(136, 60);
+            this.button8.TabIndex = 3;
+            this.button8.Text = "Новый производитель";
+            this.button8.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
+            // 
+            // textBox35
+            // 
+            this.textBox35.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.textBox35.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox35.Location = new System.Drawing.Point(28, 50);
+            this.textBox35.Multiline = true;
+            this.textBox35.Name = "textBox35";
+            this.textBox35.Size = new System.Drawing.Size(213, 92);
+            this.textBox35.TabIndex = 2;
+            this.textBox35.Text = "После внесения в базу нового \r\nпроизводителя, нажмите\r\n\"Новый производитель\"";
+            // 
             // groupBox9
             // 
             this.groupBox9.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.groupBox9.Controls.Add(this.btnUpdateProizvoditel);
+            this.groupBox9.Controls.Add(this.textBox34);
             this.groupBox9.Location = new System.Drawing.Point(604, 452);
             this.groupBox9.Name = "groupBox9";
             this.groupBox9.Size = new System.Drawing.Size(462, 176);
@@ -2498,9 +2565,35 @@
             this.groupBox9.TabStop = false;
             this.groupBox9.Text = "Изменение данных о производителе";
             // 
+            // btnUpdateProizvoditel
+            // 
+            this.btnUpdateProizvoditel.BackColor = System.Drawing.Color.LemonChiffon;
+            this.btnUpdateProizvoditel.Location = new System.Drawing.Point(285, 52);
+            this.btnUpdateProizvoditel.Name = "btnUpdateProizvoditel";
+            this.btnUpdateProizvoditel.Size = new System.Drawing.Size(136, 58);
+            this.btnUpdateProizvoditel.TabIndex = 2;
+            this.btnUpdateProizvoditel.Text = "Подтвердить изменения";
+            this.btnUpdateProizvoditel.UseVisualStyleBackColor = false;
+            this.btnUpdateProizvoditel.Click += new System.EventHandler(this.btnUpdateProizvoditel_Click);
+            // 
+            // textBox34
+            // 
+            this.textBox34.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.textBox34.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox34.Location = new System.Drawing.Point(28, 42);
+            this.textBox34.Multiline = true;
+            this.textBox34.Name = "textBox34";
+            this.textBox34.Size = new System.Drawing.Size(213, 92);
+            this.textBox34.TabIndex = 1;
+            this.textBox34.Text = "После редактирования названия производителя, нажмите \"Подтвердить изменения\"";
+            // 
             // grpSearchProizvoditel
             // 
             this.grpSearchProizvoditel.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.grpSearchProizvoditel.Controls.Add(this.comboBox20);
+            this.grpSearchProizvoditel.Controls.Add(this.comboBox19);
+            this.grpSearchProizvoditel.Controls.Add(this.textBox33);
+            this.grpSearchProizvoditel.Controls.Add(this.textBox32);
             this.grpSearchProizvoditel.Location = new System.Drawing.Point(10, 452);
             this.grpSearchProizvoditel.Name = "grpSearchProizvoditel";
             this.grpSearchProizvoditel.Size = new System.Drawing.Size(565, 369);
@@ -2508,10 +2601,61 @@
             this.grpSearchProizvoditel.TabStop = false;
             this.grpSearchProizvoditel.Text = "Поиск производителя";
             // 
+            // comboBox20
+            // 
+            this.comboBox20.DataSource = this.productProizvoditeliBindingSource;
+            this.comboBox20.DisplayMember = "nameProizvoditel";
+            this.comboBox20.FormattingEnabled = true;
+            this.comboBox20.Location = new System.Drawing.Point(322, 173);
+            this.comboBox20.Name = "comboBox20";
+            this.comboBox20.Size = new System.Drawing.Size(121, 26);
+            this.comboBox20.TabIndex = 3;
+            this.comboBox20.ValueMember = "nameProizvoditel";
+            // 
+            // productProizvoditeliBindingSource
+            // 
+            this.productProizvoditeliBindingSource.DataMember = "productProizvoditeli";
+            this.productProizvoditeliBindingSource.DataSource = this.bindingSource1;
+            // 
+            // comboBox19
+            // 
+            this.comboBox19.DataSource = this.productProizvoditeliBindingSource;
+            this.comboBox19.DisplayMember = "id_proizvoditel";
+            this.comboBox19.FormattingEnabled = true;
+            this.comboBox19.Location = new System.Drawing.Point(322, 62);
+            this.comboBox19.Name = "comboBox19";
+            this.comboBox19.Size = new System.Drawing.Size(121, 26);
+            this.comboBox19.TabIndex = 2;
+            this.comboBox19.ValueMember = "id_proizvoditel";
+            // 
+            // textBox33
+            // 
+            this.textBox33.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.textBox33.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox33.Location = new System.Drawing.Point(62, 152);
+            this.textBox33.Multiline = true;
+            this.textBox33.Name = "textBox33";
+            this.textBox33.Size = new System.Drawing.Size(139, 47);
+            this.textBox33.TabIndex = 1;
+            this.textBox33.Text = "Название производителя";
+            // 
+            // textBox32
+            // 
+            this.textBox32.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.textBox32.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox32.Location = new System.Drawing.Point(62, 62);
+            this.textBox32.Multiline = true;
+            this.textBox32.Name = "textBox32";
+            this.textBox32.Size = new System.Drawing.Size(139, 48);
+            this.textBox32.TabIndex = 0;
+            this.textBox32.Text = "Код производителя";
+            // 
             // grpProizvoditeli
             // 
             this.grpProizvoditeli.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.grpProizvoditeli.Controls.Add(this.bindingNavigator2);
+            this.grpProizvoditeli.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.grpProizvoditeli.Controls.Add(this.dataGridView3);
+            this.grpProizvoditeli.Controls.Add(this.bindingNavigator1);
             this.grpProizvoditeli.Location = new System.Drawing.Point(10, 13);
             this.grpProizvoditeli.Name = "grpProizvoditeli";
             this.grpProizvoditeli.Size = new System.Drawing.Size(1056, 417);
@@ -2519,15 +2663,42 @@
             this.grpProizvoditeli.TabStop = false;
             this.grpProizvoditeli.Text = "Производители";
             // 
-            // bindingNavigator2
+            // dataGridView3
             // 
-            this.bindingNavigator2.AddNewItem = null;
-            this.bindingNavigator2.BindingSource = this.prodazhiBindingSource;
-            this.bindingNavigator2.CountItem = this.toolStripLabel5;
-            this.bindingNavigator2.DeleteItem = this.toolStripButton21;
-            this.bindingNavigator2.Dock = System.Windows.Forms.DockStyle.None;
-            this.bindingNavigator2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.bindingNavigator2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.dataGridView3.AutoGenerateColumns = false;
+            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView3.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idproizvoditelDataGridViewTextBoxColumn1,
+            this.nameProizvoditelDataGridViewTextBoxColumn});
+            this.dataGridView3.DataSource = this.productProizvoditeliBindingSource;
+            this.dataGridView3.Location = new System.Drawing.Point(22, 82);
+            this.dataGridView3.Name = "dataGridView3";
+            this.dataGridView3.Size = new System.Drawing.Size(431, 303);
+            this.dataGridView3.TabIndex = 6;
+            // 
+            // idproizvoditelDataGridViewTextBoxColumn1
+            // 
+            this.idproizvoditelDataGridViewTextBoxColumn1.DataPropertyName = "id_proizvoditel";
+            this.idproizvoditelDataGridViewTextBoxColumn1.HeaderText = "Код производителя";
+            this.idproizvoditelDataGridViewTextBoxColumn1.Name = "idproizvoditelDataGridViewTextBoxColumn1";
+            this.idproizvoditelDataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // nameProizvoditelDataGridViewTextBoxColumn
+            // 
+            this.nameProizvoditelDataGridViewTextBoxColumn.DataPropertyName = "nameProizvoditel";
+            this.nameProizvoditelDataGridViewTextBoxColumn.HeaderText = "Название производителя";
+            this.nameProizvoditelDataGridViewTextBoxColumn.Name = "nameProizvoditelDataGridViewTextBoxColumn";
+            this.nameProizvoditelDataGridViewTextBoxColumn.Width = 200;
+            // 
+            // bindingNavigator1
+            // 
+            this.bindingNavigator1.AddNewItem = null;
+            this.bindingNavigator1.BindingSource = this.productProizvoditeliBindingSource;
+            this.bindingNavigator1.CountItem = this.toolStripLabel5;
+            this.bindingNavigator1.DeleteItem = this.toolStripButton21;
+            this.bindingNavigator1.Dock = System.Windows.Forms.DockStyle.None;
+            this.bindingNavigator1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.bindingNavigator1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripButton22,
             this.toolStripButton23,
             this.toolStripSeparator18,
@@ -2539,16 +2710,16 @@
             this.toolStripSeparator20,
             this.toolStripButton21,
             this.toolStripSeparator21});
-            this.bindingNavigator2.Location = new System.Drawing.Point(307, 195);
-            this.bindingNavigator2.MoveFirstItem = this.toolStripButton22;
-            this.bindingNavigator2.MoveLastItem = this.toolStripButton25;
-            this.bindingNavigator2.MoveNextItem = this.toolStripButton24;
-            this.bindingNavigator2.MovePreviousItem = this.toolStripButton23;
-            this.bindingNavigator2.Name = "bindingNavigator2";
-            this.bindingNavigator2.PositionItem = this.toolStripTextBox5;
-            this.bindingNavigator2.Size = new System.Drawing.Size(443, 26);
-            this.bindingNavigator2.TabIndex = 4;
-            this.bindingNavigator2.Text = "bindingNavigator3";
+            this.bindingNavigator1.Location = new System.Drawing.Point(22, 35);
+            this.bindingNavigator1.MoveFirstItem = this.toolStripButton22;
+            this.bindingNavigator1.MoveLastItem = this.toolStripButton25;
+            this.bindingNavigator1.MoveNextItem = this.toolStripButton24;
+            this.bindingNavigator1.MovePreviousItem = this.toolStripButton23;
+            this.bindingNavigator1.Name = "bindingNavigator1";
+            this.bindingNavigator1.PositionItem = this.toolStripTextBox5;
+            this.bindingNavigator1.Size = new System.Drawing.Size(466, 26);
+            this.bindingNavigator1.TabIndex = 5;
+            this.bindingNavigator1.Text = "bindingNavigator3";
             // 
             // toolStripLabel5
             // 
@@ -2564,8 +2735,8 @@
             this.toolStripButton21.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton21.Image")));
             this.toolStripButton21.Name = "toolStripButton21";
             this.toolStripButton21.RightToLeftAutoMirrorImage = true;
-            this.toolStripButton21.Size = new System.Drawing.Size(217, 23);
-            this.toolStripButton21.Text = "Удалить поставщика из базы";
+            this.toolStripButton21.Size = new System.Drawing.Size(240, 23);
+            this.toolStripButton21.Text = "Удалить производителя из базы";
             // 
             // toolStripButton22
             // 
@@ -2657,11 +2828,6 @@
             // 
             this.fKidProizvoditeliBindingSource.DataMember = "FK_id_Proizvoditeli";
             this.fKidProizvoditeliBindingSource.DataSource = this.productProizvoditeliBindingSource;
-            // 
-            // productProizvoditeliBindingSource
-            // 
-            this.productProizvoditeliBindingSource.DataMember = "productProizvoditeli";
-            this.productProizvoditeliBindingSource.DataSource = this.bindingSource1;
             // 
             // productsBindingSource2
             // 
@@ -2810,14 +2976,21 @@
             this.bndNavPokupateli.ResumeLayout(false);
             this.bndNavPokupateli.PerformLayout();
             this.tabPage6.ResumeLayout(false);
+            this.groupBox12.ResumeLayout(false);
+            this.groupBox12.PerformLayout();
+            this.groupBox9.ResumeLayout(false);
+            this.groupBox9.PerformLayout();
+            this.grpSearchProizvoditel.ResumeLayout(false);
+            this.grpSearchProizvoditel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.productProizvoditeliBindingSource)).EndInit();
             this.grpProizvoditeli.ResumeLayout(false);
             this.grpProizvoditeli.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator2)).EndInit();
-            this.bindingNavigator2.ResumeLayout(false);
-            this.bindingNavigator2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).EndInit();
+            this.bindingNavigator1.ResumeLayout(false);
+            this.bindingNavigator1.PerformLayout();
             this.tabPage7.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.fKidProizvoditeliBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.productProizvoditeliBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.productsBindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.productsBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kontc_3DataSet1)).EndInit();
@@ -3037,18 +3210,6 @@
         private System.Windows.Forms.ToolStripButton toolStripButton20;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator16;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator17;
-        private System.Windows.Forms.BindingNavigator bindingNavigator2;
-        private System.Windows.Forms.ToolStripLabel toolStripLabel5;
-        private System.Windows.Forms.ToolStripButton toolStripButton21;
-        private System.Windows.Forms.ToolStripButton toolStripButton22;
-        private System.Windows.Forms.ToolStripButton toolStripButton23;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator18;
-        private System.Windows.Forms.ToolStripTextBox toolStripTextBox5;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator19;
-        private System.Windows.Forms.ToolStripButton toolStripButton24;
-        private System.Windows.Forms.ToolStripButton toolStripButton25;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator20;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator21;
         private System.Windows.Forms.BindingSource pokupateliBindingSource;
         private kontc_3DataSetTableAdapters.pokupateliTableAdapter pokupateliTableAdapter;
         private System.Windows.Forms.TextBox textBox23;
@@ -3075,6 +3236,29 @@
         private System.Windows.Forms.TextBox textBox30;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.DataGridView dataGridView3;
+        private System.Windows.Forms.BindingNavigator bindingNavigator1;
+        private System.Windows.Forms.ToolStripLabel toolStripLabel5;
+        private System.Windows.Forms.ToolStripButton toolStripButton21;
+        private System.Windows.Forms.ToolStripButton toolStripButton22;
+        private System.Windows.Forms.ToolStripButton toolStripButton23;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator18;
+        private System.Windows.Forms.ToolStripTextBox toolStripTextBox5;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator19;
+        private System.Windows.Forms.ToolStripButton toolStripButton24;
+        private System.Windows.Forms.ToolStripButton toolStripButton25;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator20;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator21;
+        private System.Windows.Forms.TextBox textBox33;
+        private System.Windows.Forms.TextBox textBox32;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idproizvoditelDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nameProizvoditelDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.TextBox textBox35;
+        private System.Windows.Forms.Button btnUpdateProizvoditel;
+        private System.Windows.Forms.TextBox textBox34;
+        private System.Windows.Forms.ComboBox comboBox20;
+        private System.Windows.Forms.ComboBox comboBox19;
     }
 }
 
