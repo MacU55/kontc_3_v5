@@ -68,7 +68,6 @@
             this.label1.Size = new System.Drawing.Size(122, 17);
             this.label1.TabIndex = 1;
             this.label1.Text = "Навзание товара";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -111,7 +110,6 @@
             this.cmbBoxKodProizvodit.Size = new System.Drawing.Size(160, 24);
             this.cmbBoxKodProizvodit.TabIndex = 5;
             this.cmbBoxKodProizvodit.ValueMember = "id_proizvoditel";
-            this.cmbBoxKodProizvodit.SelectedIndexChanged += new System.EventHandler(this.cmbBoxKodProizvodit_SelectedIndexChanged);
             // 
             // productProizvoditeliBindingSource
             // 
@@ -156,7 +154,7 @@
             this.btn_addNewProduct.TabIndex = 8;
             this.btn_addNewProduct.Text = "Добавить товар в базу";
             this.btn_addNewProduct.UseVisualStyleBackColor = false;
-            this.btn_addNewProduct.Click += new System.EventHandler(this.button1_Click);
+            
             // 
             // btn_cancel
             // 

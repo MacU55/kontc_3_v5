@@ -69,8 +69,6 @@ namespace prog_kontc_3_v5
             prodazhiTableAdapter.Update(kontc_3DataSet);
             zakupkiTableAdapter.Update(kontc_3DataSet);
             productProizvoditeliTableAdapter.Update(kontc_3DataSet);
-            //pokupateliTableAdapter.Update(kontc_3DataSet);
-            //postavshikiTableAdapter.Update(kontc_3DataSet);
             Application.Exit();
         }
 
@@ -222,6 +220,8 @@ namespace prog_kontc_3_v5
                 MessageBox.Show("Ошибка обновления");
             }
         }
+
+        
     }
 }
 

@@ -51,7 +51,7 @@
             this.productsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.grpCreateProduct = new System.Windows.Forms.GroupBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnaddProduct = new System.Windows.Forms.Button();
             this.grp_productsSearch = new System.Windows.Forms.GroupBox();
             this.cmbBoxProductDescript = new System.Windows.Forms.ComboBox();
             this.cmbBoxKolvoProduct = new System.Windows.Forms.ComboBox();
@@ -256,8 +256,6 @@
             this.textBox32 = new System.Windows.Forms.TextBox();
             this.grpProizvoditeli = new System.Windows.Forms.GroupBox();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
-            this.idproizvoditelDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nameProizvoditelDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bindingNavigator1 = new System.Windows.Forms.BindingNavigator(this.components);
             this.toolStripLabel5 = new System.Windows.Forms.ToolStripLabel();
             this.toolStripButton21 = new System.Windows.Forms.ToolStripButton();
@@ -286,6 +284,8 @@
             this.postavshikiTableAdapter = new prog_kontc_3_v5.kontc_3DataSetTableAdapters.postavshikiTableAdapter();
             this.prodazhiBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.pokupateliTableAdapter = new prog_kontc_3_v5.kontc_3DataSetTableAdapters.pokupateliTableAdapter();
+            this.idproizvoditelDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nameProizvoditelDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kontc_3DataSet)).BeginInit();
             this.razrab.SuspendLayout();
@@ -388,6 +388,7 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.AutoScroll = true;
             this.tabPage1.BackColor = System.Drawing.Color.FloralWhite;
             this.tabPage1.Controls.Add(this.grpUpdateProduct);
             this.tabPage1.Controls.Add(this.grp_Products_Zakupki);
@@ -412,7 +413,7 @@
             this.grpUpdateProduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.grpUpdateProduct.Location = new System.Drawing.Point(15, 404);
             this.grpUpdateProduct.Name = "grpUpdateProduct";
-            this.grpUpdateProduct.Size = new System.Drawing.Size(597, 136);
+            this.grpUpdateProduct.Size = new System.Drawing.Size(645, 136);
             this.grpUpdateProduct.TabIndex = 19;
             this.grpUpdateProduct.TabStop = false;
             this.grpUpdateProduct.Text = "Изменение данных товара";
@@ -543,11 +544,11 @@
             this.grpCreateProduct.BackColor = System.Drawing.Color.LightSteelBlue;
             this.grpCreateProduct.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.grpCreateProduct.Controls.Add(this.textBox4);
-            this.grpCreateProduct.Controls.Add(this.button2);
+            this.grpCreateProduct.Controls.Add(this.btnaddProduct);
             this.grpCreateProduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.grpCreateProduct.Location = new System.Drawing.Point(629, 314);
+            this.grpCreateProduct.Location = new System.Drawing.Point(666, 314);
             this.grpCreateProduct.Name = "grpCreateProduct";
-            this.grpCreateProduct.Size = new System.Drawing.Size(433, 220);
+            this.grpCreateProduct.Size = new System.Drawing.Size(396, 226);
             this.grpCreateProduct.TabIndex = 18;
             this.grpCreateProduct.TabStop = false;
             this.grpCreateProduct.Text = "Добавление нового товара в базу";
@@ -556,7 +557,7 @@
             // 
             this.textBox4.BackColor = System.Drawing.Color.LightSteelBlue;
             this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox4.Location = new System.Drawing.Point(24, 63);
+            this.textBox4.Location = new System.Drawing.Point(17, 55);
             this.textBox4.Multiline = true;
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(191, 96);
@@ -564,18 +565,17 @@
             this.textBox4.Text = "Для создания нового товара и добавления его в базу данных\r\nнажмите \"Внести товар " +
     "в базу\".";
             // 
-            // button2
+            // btnaddProduct
             // 
-            this.button2.BackColor = System.Drawing.Color.LemonChiffon;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button2.Location = new System.Drawing.Point(270, 80);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(148, 71);
-            this.button2.TabIndex = 8;
-            this.button2.Text = "Внести товар в базу";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btnaddProduct.BackColor = System.Drawing.Color.LemonChiffon;
+            this.btnaddProduct.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnaddProduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnaddProduct.Location = new System.Drawing.Point(229, 80);
+            this.btnaddProduct.Name = "btnaddProduct";
+            this.btnaddProduct.Size = new System.Drawing.Size(148, 71);
+            this.btnaddProduct.TabIndex = 8;
+            this.btnaddProduct.Text = "Внести товар в базу";
+            this.btnaddProduct.UseVisualStyleBackColor = false;
             // 
             // grp_productsSearch
             // 
@@ -589,9 +589,9 @@
             this.grp_productsSearch.Controls.Add(this.textBox2);
             this.grp_productsSearch.Controls.Add(this.txtbox_ProductName);
             this.grp_productsSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.grp_productsSearch.Location = new System.Drawing.Point(629, 19);
+            this.grp_productsSearch.Location = new System.Drawing.Point(666, 19);
             this.grp_productsSearch.Name = "grp_productsSearch";
-            this.grp_productsSearch.Size = new System.Drawing.Size(433, 280);
+            this.grp_productsSearch.Size = new System.Drawing.Size(396, 289);
             this.grp_productsSearch.TabIndex = 5;
             this.grp_productsSearch.TabStop = false;
             this.grp_productsSearch.Text = "Поиск товара на складе";
@@ -601,9 +601,9 @@
             this.cmbBoxProductDescript.DataSource = this.productsBindingSource;
             this.cmbBoxProductDescript.DisplayMember = "descriptProduct";
             this.cmbBoxProductDescript.FormattingEnabled = true;
-            this.cmbBoxProductDescript.Location = new System.Drawing.Point(257, 194);
+            this.cmbBoxProductDescript.Location = new System.Drawing.Point(184, 191);
             this.cmbBoxProductDescript.Name = "cmbBoxProductDescript";
-            this.cmbBoxProductDescript.Size = new System.Drawing.Size(153, 24);
+            this.cmbBoxProductDescript.Size = new System.Drawing.Size(193, 24);
             this.cmbBoxProductDescript.TabIndex = 13;
             // 
             // cmbBoxKolvoProduct
@@ -611,9 +611,9 @@
             this.cmbBoxKolvoProduct.DataSource = this.productsBindingSource;
             this.cmbBoxKolvoProduct.DisplayMember = "kol_voProductSklad";
             this.cmbBoxKolvoProduct.FormattingEnabled = true;
-            this.cmbBoxKolvoProduct.Location = new System.Drawing.Point(257, 142);
+            this.cmbBoxKolvoProduct.Location = new System.Drawing.Point(184, 139);
             this.cmbBoxKolvoProduct.Name = "cmbBoxKolvoProduct";
-            this.cmbBoxKolvoProduct.Size = new System.Drawing.Size(153, 24);
+            this.cmbBoxKolvoProduct.Size = new System.Drawing.Size(193, 24);
             this.cmbBoxKolvoProduct.TabIndex = 12;
             // 
             // cmbBoxProductName
@@ -621,16 +621,16 @@
             this.cmbBoxProductName.DataSource = this.productsBindingSource;
             this.cmbBoxProductName.DisplayMember = "nameProduct";
             this.cmbBoxProductName.FormattingEnabled = true;
-            this.cmbBoxProductName.Location = new System.Drawing.Point(257, 39);
+            this.cmbBoxProductName.Location = new System.Drawing.Point(184, 39);
             this.cmbBoxProductName.Name = "cmbBoxProductName";
-            this.cmbBoxProductName.Size = new System.Drawing.Size(153, 24);
+            this.cmbBoxProductName.Size = new System.Drawing.Size(193, 24);
             this.cmbBoxProductName.TabIndex = 11;
             // 
             // textBox5
             // 
             this.textBox5.BackColor = System.Drawing.Color.LightSteelBlue;
             this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox5.Location = new System.Drawing.Point(47, 194);
+            this.textBox5.Location = new System.Drawing.Point(17, 194);
             this.textBox5.Multiline = true;
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(141, 33);
@@ -641,7 +641,7 @@
             // 
             this.textBox3.BackColor = System.Drawing.Color.LightSteelBlue;
             this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Location = new System.Drawing.Point(47, 142);
+            this.textBox3.Location = new System.Drawing.Point(17, 142);
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(141, 33);
@@ -653,9 +653,9 @@
             this.cmbBoxProizvoditelName.DataSource = this.productsBindingSource;
             this.cmbBoxProizvoditelName.DisplayMember = "id_proizvoditel";
             this.cmbBoxProizvoditelName.FormattingEnabled = true;
-            this.cmbBoxProizvoditelName.Location = new System.Drawing.Point(257, 88);
+            this.cmbBoxProizvoditelName.Location = new System.Drawing.Point(184, 85);
             this.cmbBoxProizvoditelName.Name = "cmbBoxProizvoditelName";
-            this.cmbBoxProizvoditelName.Size = new System.Drawing.Size(153, 24);
+            this.cmbBoxProizvoditelName.Size = new System.Drawing.Size(193, 24);
             this.cmbBoxProizvoditelName.TabIndex = 3;
             this.cmbBoxProizvoditelName.ValueMember = "id_proizvoditel";
             // 
@@ -663,7 +663,7 @@
             // 
             this.textBox2.BackColor = System.Drawing.Color.LightSteelBlue;
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Location = new System.Drawing.Point(47, 88);
+            this.textBox2.Location = new System.Drawing.Point(17, 88);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(141, 33);
@@ -674,7 +674,7 @@
             // 
             this.txtbox_ProductName.BackColor = System.Drawing.Color.LightSteelBlue;
             this.txtbox_ProductName.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtbox_ProductName.Location = new System.Drawing.Point(47, 39);
+            this.txtbox_ProductName.Location = new System.Drawing.Point(17, 42);
             this.txtbox_ProductName.Multiline = true;
             this.txtbox_ProductName.Name = "txtbox_ProductName";
             this.txtbox_ProductName.Size = new System.Drawing.Size(141, 33);
@@ -689,7 +689,7 @@
             this.grp_Products.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.grp_Products.Location = new System.Drawing.Point(12, 19);
             this.grp_Products.Name = "grp_Products";
-            this.grp_Products.Size = new System.Drawing.Size(600, 379);
+            this.grp_Products.Size = new System.Drawing.Size(648, 379);
             this.grp_Products.TabIndex = 2;
             this.grp_Products.TabStop = false;
             this.grp_Products.Text = "Товары";
@@ -709,7 +709,7 @@
             this.dgvProduct.DataSource = this.productsBindingSource;
             this.dgvProduct.Location = new System.Drawing.Point(3, 60);
             this.dgvProduct.Name = "dgvProduct";
-            this.dgvProduct.Size = new System.Drawing.Size(577, 316);
+            this.dgvProduct.Size = new System.Drawing.Size(639, 316);
             this.dgvProduct.TabIndex = 0;
             this.dgvProduct.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -725,6 +725,7 @@
             this.nameProductDataGridViewTextBoxColumn.DataPropertyName = "nameProduct";
             this.nameProductDataGridViewTextBoxColumn.HeaderText = "Название товара";
             this.nameProductDataGridViewTextBoxColumn.Name = "nameProductDataGridViewTextBoxColumn";
+            this.nameProductDataGridViewTextBoxColumn.Width = 120;
             // 
             // idproizvoditelDataGridViewTextBoxColumn
             // 
@@ -744,6 +745,7 @@
             this.descriptProductDataGridViewTextBoxColumn.DataPropertyName = "descriptProduct";
             this.descriptProductDataGridViewTextBoxColumn.HeaderText = "Описание товара";
             this.descriptProductDataGridViewTextBoxColumn.Name = "descriptProductDataGridViewTextBoxColumn";
+            this.descriptProductDataGridViewTextBoxColumn.Width = 150;
             // 
             // bdvProducts
             // 
@@ -862,9 +864,9 @@
             this.grp_Products_Prodazhi.BackColor = System.Drawing.Color.LightSteelBlue;
             this.grp_Products_Prodazhi.Controls.Add(this.dgvProducts_Prodazhi);
             this.grp_Products_Prodazhi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.grp_Products_Prodazhi.Location = new System.Drawing.Point(15, 716);
+            this.grp_Products_Prodazhi.Location = new System.Drawing.Point(18, 707);
             this.grp_Products_Prodazhi.Name = "grp_Products_Prodazhi";
-            this.grp_Products_Prodazhi.Size = new System.Drawing.Size(734, 114);
+            this.grp_Products_Prodazhi.Size = new System.Drawing.Size(734, 123);
             this.grp_Products_Prodazhi.TabIndex = 3;
             this.grp_Products_Prodazhi.TabStop = false;
             this.grp_Products_Prodazhi.Text = "Информация о продажах";
@@ -886,7 +888,7 @@
             this.dgvProducts_Prodazhi.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvProducts_Prodazhi.Location = new System.Drawing.Point(3, 19);
             this.dgvProducts_Prodazhi.Name = "dgvProducts_Prodazhi";
-            this.dgvProducts_Prodazhi.Size = new System.Drawing.Size(728, 92);
+            this.dgvProducts_Prodazhi.Size = new System.Drawing.Size(728, 101);
             this.dgvProducts_Prodazhi.TabIndex = 0;
             // 
             // idprodazhaDataGridViewTextBoxColumn
@@ -2175,7 +2177,7 @@
             this.button6.BackColor = System.Drawing.Color.LemonChiffon;
             this.button6.Location = new System.Drawing.Point(292, 55);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(125, 49);
+            this.button6.Size = new System.Drawing.Size(148, 71);
             this.button6.TabIndex = 1;
             this.button6.Text = "Новый покупатель";
             this.button6.UseVisualStyleBackColor = false;
@@ -2209,7 +2211,7 @@
             this.button5.BackColor = System.Drawing.Color.LemonChiffon;
             this.button5.Location = new System.Drawing.Point(292, 58);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(125, 55);
+            this.button5.Size = new System.Drawing.Size(148, 71);
             this.button5.TabIndex = 1;
             this.button5.Text = "Подтвердить изменения";
             this.button5.UseVisualStyleBackColor = false;
@@ -2676,20 +2678,6 @@
             this.dataGridView3.Size = new System.Drawing.Size(431, 303);
             this.dataGridView3.TabIndex = 6;
             // 
-            // idproizvoditelDataGridViewTextBoxColumn1
-            // 
-            this.idproizvoditelDataGridViewTextBoxColumn1.DataPropertyName = "id_proizvoditel";
-            this.idproizvoditelDataGridViewTextBoxColumn1.HeaderText = "Код производителя";
-            this.idproizvoditelDataGridViewTextBoxColumn1.Name = "idproizvoditelDataGridViewTextBoxColumn1";
-            this.idproizvoditelDataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // nameProizvoditelDataGridViewTextBoxColumn
-            // 
-            this.nameProizvoditelDataGridViewTextBoxColumn.DataPropertyName = "nameProizvoditel";
-            this.nameProizvoditelDataGridViewTextBoxColumn.HeaderText = "Название производителя";
-            this.nameProizvoditelDataGridViewTextBoxColumn.Name = "nameProizvoditelDataGridViewTextBoxColumn";
-            this.nameProizvoditelDataGridViewTextBoxColumn.Width = 200;
-            // 
             // bindingNavigator1
             // 
             this.bindingNavigator1.AddNewItem = null;
@@ -2887,6 +2875,21 @@
             // 
             this.pokupateliTableAdapter.ClearBeforeFill = true;
             // 
+            // idproizvoditelDataGridViewTextBoxColumn1
+            // 
+            this.idproizvoditelDataGridViewTextBoxColumn1.DataPropertyName = "id_proizvoditel";
+            this.idproizvoditelDataGridViewTextBoxColumn1.HeaderText = "Код производителя";
+            this.idproizvoditelDataGridViewTextBoxColumn1.Name = "idproizvoditelDataGridViewTextBoxColumn1";
+            this.idproizvoditelDataGridViewTextBoxColumn1.ReadOnly = true;
+            this.idproizvoditelDataGridViewTextBoxColumn1.Width = 160;
+            // 
+            // nameProizvoditelDataGridViewTextBoxColumn
+            // 
+            this.nameProizvoditelDataGridViewTextBoxColumn.DataPropertyName = "nameProizvoditel";
+            this.nameProizvoditelDataGridViewTextBoxColumn.HeaderText = "Название производителя";
+            this.nameProizvoditelDataGridViewTextBoxColumn.Name = "nameProizvoditelDataGridViewTextBoxColumn";
+            this.nameProizvoditelDataGridViewTextBoxColumn.Width = 200;
+            // 
             // Kontc_3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -3048,7 +3051,7 @@
         private kontc_3DataSetTableAdapters.productProizvoditeliTableAdapter productProizvoditeliTableAdapter;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnaddProduct;
         private kontc_3DataSetTableAdapters.productsTableAdapter productsTableAdapter1_1;
         private System.Windows.Forms.BindingSource bindingSource2;
         private kontc_3DataSet kontc_3DataSet2;
@@ -3093,11 +3096,6 @@
         private System.Windows.Forms.BindingSource fKidProizvoditeliBindingSource;
         private System.Windows.Forms.BindingSource postavshikiBindingSource;
         private kontc_3DataSetTableAdapters.postavshikiTableAdapter postavshikiTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idproductDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nameProductDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idproizvoditelDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn kolvoProductSkladDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn descriptProductDataGridViewTextBoxColumn;
         private System.Windows.Forms.Button btnAddZakupka;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox4;
@@ -3251,14 +3249,19 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator21;
         private System.Windows.Forms.TextBox textBox33;
         private System.Windows.Forms.TextBox textBox32;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idproizvoditelDataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nameProizvoditelDataGridViewTextBoxColumn;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.TextBox textBox35;
         private System.Windows.Forms.Button btnUpdateProizvoditel;
         private System.Windows.Forms.TextBox textBox34;
         private System.Windows.Forms.ComboBox comboBox20;
         private System.Windows.Forms.ComboBox comboBox19;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idproductDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nameProductDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idproizvoditelDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn kolvoProductSkladDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn descriptProductDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idproizvoditelDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nameProizvoditelDataGridViewTextBoxColumn;
     }
 }
 
