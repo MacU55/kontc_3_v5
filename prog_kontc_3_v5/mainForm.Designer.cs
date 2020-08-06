@@ -286,6 +286,7 @@
             this.postavshikiTableAdapter = new prog_kontc_3_v5.kontc_3DataSetTableAdapters.postavshikiTableAdapter();
             this.prodazhiBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.pokupateliTableAdapter = new prog_kontc_3_v5.kontc_3DataSetTableAdapters.pokupateliTableAdapter();
+            this.tabPage8 = new System.Windows.Forms.TabPage();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kontc_3DataSet)).BeginInit();
             this.razrab.SuspendLayout();
@@ -377,6 +378,7 @@
             this.razrab.Controls.Add(this.tabPage4);
             this.razrab.Controls.Add(this.tabPage5);
             this.razrab.Controls.Add(this.tabPage6);
+            this.razrab.Controls.Add(this.tabPage8);
             this.razrab.Controls.Add(this.tabPage7);
             this.razrab.Cursor = System.Windows.Forms.Cursors.Hand;
             this.razrab.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -2887,6 +2889,16 @@
             // 
             this.pokupateliTableAdapter.ClearBeforeFill = true;
             // 
+            // tabPage8
+            // 
+            this.tabPage8.Location = new System.Drawing.Point(4, 27);
+            this.tabPage8.Name = "tabPage8";
+            this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage8.Size = new System.Drawing.Size(1072, 836);
+            this.tabPage8.TabIndex = 7;
+            this.tabPage8.Text = "Отчет";
+            this.tabPage8.UseVisualStyleBackColor = true;
+            // 
             // Kontc_3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -3259,6 +3271,7 @@
         private System.Windows.Forms.TextBox textBox34;
         private System.Windows.Forms.ComboBox comboBox20;
         private System.Windows.Forms.ComboBox comboBox19;
+        private System.Windows.Forms.TabPage tabPage8;
     }
 }
 
